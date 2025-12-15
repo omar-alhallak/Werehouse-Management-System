@@ -1,0 +1,74 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0D00828B-8608-4727-BC66-646E35666B48}|WinForm-sales_module\\WinForm-sales_module.csproj|c:\\users\\hp\\source\\repos\\management-system\\winform-sales_module\\winform-sales_module\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0D00828B-8608-4727-BC66-646E35666B48}|WinForm-sales_module\\WinForm-sales_module.csproj|solutionrelative:winform-sales_module\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D00828B-8608-4727-BC66-646E35666B48}|WinForm-sales_module\\WinForm-sales_module.csproj|c:\\users\\hp\\source\\repos\\management-system\\winform-sales_module\\winform-sales_module\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D00828B-8608-4727-BC66-646E35666B48}|WinForm-sales_module\\WinForm-sales_module.csproj|solutionrelative:winform-sales_module\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D00828B-8608-4727-BC66-646E35666B48}|WinForm-sales_module\\WinForm-sales_module.csproj|c:\\users\\hp\\source\\repos\\management-system\\winform-sales_module\\winform-sales_module\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D00828B-8608-4727-BC66-646E35666B48}|WinForm-sales_module\\WinForm-sales_module.csproj|solutionrelative:winform-sales_module\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 280,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\Source\\Repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\Form1.cs",
+              "RelativeDocumentMoniker": "WinForm-sales_module\\Form1.cs",
+              "ToolTip": "C:\\Users\\HP\\Source\\Repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\Form1.cs [Design]",
+              "RelativeToolTip": "WinForm-sales_module\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T11:39:41.687Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\Program.cs",
+              "RelativeDocumentMoniker": "WinForm-sales_module\\Program.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\Program.cs",
+              "RelativeToolTip": "WinForm-sales_module\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T11:39:39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Source\\Repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\Form1.cs",
+              "RelativeDocumentMoniker": "WinForm-sales_module\\Form1.cs",
+              "ToolTip": "C:\\Users\\HP\\Source\\Repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\Form1.cs",
+              "RelativeToolTip": "WinForm-sales_module\\Form1.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAMwBMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T11:38:10.448Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
