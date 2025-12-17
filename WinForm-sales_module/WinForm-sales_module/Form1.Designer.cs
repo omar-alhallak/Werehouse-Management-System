@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace WinForm_sales_module
 {
     partial class Form1
     {
