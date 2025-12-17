@@ -100,7 +100,6 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::WinForm_admin_module.Properties.Resources._4686696;
             this.pictureBox3.Location = new System.Drawing.Point(25, 204);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(33, 26);
@@ -120,7 +119,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::WinForm_admin_module.Properties.Resources._11284777;
             this.pictureBox1.Location = new System.Drawing.Point(114, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(106, 85);
