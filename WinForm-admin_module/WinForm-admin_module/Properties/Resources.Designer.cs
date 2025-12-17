@@ -93,9 +93,9 @@ namespace WinForm_admin_module.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _7903986 {
+        internal static System.Drawing.Bitmap تنزيل {
             get {
-                object obj = ResourceManager.GetObject("7903986", resourceCulture);
+                object obj = ResourceManager.GetObject("تنزيل", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,10 +103,9 @@ namespace WinForm_admin_module.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hd_red_square_close_x_button_icon_transparent_background_701751695038842smjnuhymfc {
+        internal static System.Drawing.Bitmap تنزيل__1_ {
             get {
-                object obj = ResourceManager.GetObject("hd-red-square-close-x-button-icon-transparent-background-701751695038842smjnuhymf" +
-                        "c", resourceCulture);
+                object obj = ResourceManager.GetObject("تنزيل (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -114,100 +113,9 @@ namespace WinForm_admin_module.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hd_red_square_close_x_button_icon_transparent_background_701751695038842smjnuhymfc1 {
+        internal static System.Drawing.Bitmap صورة_واتساب_بتاريخ_2025_12_17_في_17_27_21_b87a9534 {
             get {
-                object obj = ResourceManager.GetObject("hd-red-square-close-x-button-icon-transparent-background-701751695038842smjnuhymf" +
-                        "c1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap images {
-            get {
-                object obj = ResourceManager.GetObject("images", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap images__1_ {
-            get {
-                object obj = ResourceManager.GetObject("images (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap images1 {
-            get {
-                object obj = ResourceManager.GetObject("images1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap images2 {
-            get {
-                object obj = ResourceManager.GetObject("images2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap images3 {
-            get {
-                object obj = ResourceManager.GetObject("images3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap png_clipart_computer_icons_x_mark_check_mark_red_x_miscellaneous_text {
-            get {
-                object obj = ResourceManager.GetObject("png-clipart-computer-icons-x-mark-check-mark-red-x-miscellaneous-text", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap png_red_round_close_x_icon_701751695038864apmfqv2kp1 {
-            get {
-                object obj = ResourceManager.GetObject("png-red-round-close-x-icon-701751695038864apmfqv2kp1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap png_transparent_false_error_missing_absent_x_red_cross_letter_circle_gui {
-            get {
-                object obj = ResourceManager.GetObject("png-transparent-false-error-missing-absent-x-red-cross-letter-circle-gui", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Red_X_Mark_Icon_Free_Idea_png {
-            get {
-                object obj = ResourceManager.GetObject("Red-X-Mark-Icon-Free-Idea-png", resourceCulture);
+                object obj = ResourceManager.GetObject("صورة واتساب بتاريخ 2025-12-17 في 17.27.21_b87a9534", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

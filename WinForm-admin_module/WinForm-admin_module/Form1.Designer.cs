@@ -33,10 +33,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtPassword = new System.Windows.Forms.TextBox();
+            this.btnSign_IN = new System.Windows.Forms.Button();
+            this.btnShowPassword = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnSign_IN = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -98,8 +100,49 @@
             this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
             this.txtPassword.Leave += new System.EventHandler(this.txtPassword_Leave);
             // 
+            // btnSign_IN
+            // 
+            this.btnSign_IN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.btnSign_IN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSign_IN.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSign_IN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnSign_IN.Location = new System.Drawing.Point(114, 284);
+            this.btnSign_IN.Name = "btnSign_IN";
+            this.btnSign_IN.Size = new System.Drawing.Size(106, 38);
+            this.btnSign_IN.TabIndex = 0;
+            this.btnSign_IN.TabStop = false;
+            this.btnSign_IN.Text = "Sign IN";
+            this.btnSign_IN.UseVisualStyleBackColor = false;
+            this.btnSign_IN.Click += new System.EventHandler(this.btnSign_IN_Click);
+            // 
+            // btnShowPassword
+            // 
+            this.btnShowPassword.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل;
+            this.btnShowPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnShowPassword.FlatAppearance.BorderSize = 0;
+            this.btnShowPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShowPassword.Location = new System.Drawing.Point(308, 204);
+            this.btnShowPassword.Name = "btnShowPassword";
+            this.btnShowPassword.Size = new System.Drawing.Size(39, 39);
+            this.btnShowPassword.TabIndex = 10;
+            this.btnShowPassword.UseVisualStyleBackColor = true;
+            this.btnShowPassword.Click += new System.EventHandler(this.btnShowPassword_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackgroundImage = global::WinForm_admin_module.Properties.Resources.صورة_واتساب_بتاريخ_2025_12_17_في_17_27_21_b87a9534;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Location = new System.Drawing.Point(0, 0);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(29, 28);
+            this.btnExit.TabIndex = 9;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // pictureBox3
             // 
+            this.pictureBox3.Image = global::WinForm_admin_module.Properties.Resources._4686696;
             this.pictureBox3.Location = new System.Drawing.Point(25, 204);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(33, 26);
@@ -119,6 +162,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::WinForm_admin_module.Properties.Resources._11284777;
             this.pictureBox1.Location = new System.Drawing.Point(114, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(106, 85);
@@ -126,27 +170,14 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btnSign_IN
-            // 
-            this.btnSign_IN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.btnSign_IN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSign_IN.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSign_IN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnSign_IN.Location = new System.Drawing.Point(114, 284);
-            this.btnSign_IN.Name = "btnSign_IN";
-            this.btnSign_IN.Size = new System.Drawing.Size(106, 38);
-            this.btnSign_IN.TabIndex = 0;
-            this.btnSign_IN.TabStop = false;
-            this.btnSign_IN.Text = "Sign IN";
-            this.btnSign_IN.UseVisualStyleBackColor = false;
-            this.btnSign_IN.Click += new System.EventHandler(this.btnSign_IN_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(359, 334);
+            this.Controls.Add(this.btnShowPassword);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSign_IN);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox3);
@@ -180,6 +211,8 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnSign_IN;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnShowPassword;
     }
 }
 

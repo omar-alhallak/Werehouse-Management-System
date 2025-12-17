@@ -75,7 +75,29 @@ namespace WinForm_admin_module
             }
        
             MessageBox.Show("تم التحقق من المدخلات بنجاح",
-                    "نجاح التحقق", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    "تم التحقق بنجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnShowPassword_Click(object sender, EventArgs e)
+        {
+            
+            if (txtPassword.UseSystemPasswordChar)
+            {     
+                txtPassword.UseSystemPasswordChar = false;
+                btnShowPassword.BackgroundImage = Properties.Resources.تنزيل__1_;
+            
+            }
+            else
+            {
+                txtPassword.UseSystemPasswordChar = true;
+                btnShowPassword.BackgroundImage = Properties.Resources.تنزيل;
+               
+            }
         }
     }
 }
