@@ -93,6 +93,26 @@ namespace WinForm_admin_module.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap file_000000002b9471f8947f9f27c8abbf72 {
+            get {
+                object obj = ResourceManager.GetObject("file_000000002b9471f8947f9f27c8abbf72", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap file_00000000eff871fdad5a60662e5e7e00 {
+            get {
+                object obj = ResourceManager.GetObject("file_00000000eff871fdad5a60662e5e7e00", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap تنزيل {
             get {
                 object obj = ResourceManager.GetObject("تنزيل", resourceCulture);
@@ -116,6 +136,36 @@ namespace WinForm_admin_module.Properties {
         internal static System.Drawing.Bitmap تنزيل__2_ {
             get {
                 object obj = ResourceManager.GetObject("تنزيل (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap تنزيل__3_ {
+            get {
+                object obj = ResourceManager.GetObject("تنزيل (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap تنزيل__3_1 {
+            get {
+                object obj = ResourceManager.GetObject("تنزيل (3)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap تنزيل__4_ {
+            get {
+                object obj = ResourceManager.GetObject("تنزيل (4)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

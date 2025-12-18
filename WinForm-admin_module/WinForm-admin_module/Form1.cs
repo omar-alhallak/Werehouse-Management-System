@@ -99,5 +99,10 @@ namespace WinForm_admin_module
                
             }
         }
+
+        private void btnMinBox_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

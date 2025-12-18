@@ -34,6 +34,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnSign_IN = new System.Windows.Forms.Button();
+            this.btnMinBox = new System.Windows.Forms.Button();
             this.btnShowPassword = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -115,6 +116,19 @@
             this.btnSign_IN.UseVisualStyleBackColor = false;
             this.btnSign_IN.Click += new System.EventHandler(this.btnSign_IN_Click);
             // 
+            // btnMinBox
+            // 
+            this.btnMinBox.BackgroundImage = global::WinForm_admin_module.Properties.Resources.file_00000000eff871fdad5a60662e5e7e00;
+            this.btnMinBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMinBox.FlatAppearance.BorderSize = 0;
+            this.btnMinBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinBox.Location = new System.Drawing.Point(37, 0);
+            this.btnMinBox.Name = "btnMinBox";
+            this.btnMinBox.Size = new System.Drawing.Size(61, 37);
+            this.btnMinBox.TabIndex = 11;
+            this.btnMinBox.UseVisualStyleBackColor = true;
+            this.btnMinBox.Click += new System.EventHandler(this.btnMinBox_Click);
+            // 
             // btnShowPassword
             // 
             this.btnShowPassword.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل;
@@ -177,6 +191,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(359, 334);
+            this.Controls.Add(this.btnMinBox);
             this.Controls.Add(this.btnShowPassword);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSign_IN);
@@ -214,6 +229,7 @@
         private System.Windows.Forms.Button btnSign_IN;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnShowPassword;
+        private System.Windows.Forms.Button btnMinBox;
     }
 }
 
