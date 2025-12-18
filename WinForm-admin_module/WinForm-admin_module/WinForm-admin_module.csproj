@@ -93,9 +93,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\تنزيل.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\11284777.png" />
   </ItemGroup>
   <ItemGroup>
@@ -111,13 +108,7 @@
     <None Include="Resources\تنزيل %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\صورة واتساب بتاريخ 2025-12-17 في 17.27.21_b87a9534.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\تنزيل %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\تنزيل %283%29.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\file_00000000eff871fdad5a60662e5e7e00.png" />
