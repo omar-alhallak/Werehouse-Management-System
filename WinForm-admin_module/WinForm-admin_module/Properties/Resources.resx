@@ -118,22 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="تنزيل" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\تنزيل1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="7153150" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7153150.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="صورة واتساب بتاريخ 2025-12-17 في 17.27.21_b87a9534" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\صورة واتساب بتاريخ 2025-12-17 في 17.27.21_b87a9534.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="تنزيل (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\تنزيل (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4686696" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4686696.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="7153150" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\7153150.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="تنزيل" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\تنزيل1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="11284777" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\11284777.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="صورة واتساب بتاريخ 2025-12-17 في 17.27.21_b87a9534" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\صورة واتساب بتاريخ 2025-12-17 في 17.27.21_b87a9534.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="4686696" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4686696.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="تنزيل (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\تنزيل (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

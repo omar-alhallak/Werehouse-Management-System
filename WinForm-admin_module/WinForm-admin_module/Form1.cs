@@ -11,9 +11,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WinForm_admin_module
 {
-    public partial class Form1 : Form
+    public partial class Form_LogIN : Form
     {
-        public Form1()
+        public Form_LogIN()
         {
             InitializeComponent();          
         }
