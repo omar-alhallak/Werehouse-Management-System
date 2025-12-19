@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WinForm_admin_module
 {
-    internal class Users
+    public class Users
     {
         public int Id { get; set; }
 

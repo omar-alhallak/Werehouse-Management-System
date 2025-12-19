@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WinForm_admin_module
 {
-    public partial class Form2 : Form
+    public partial class Form_Dashboard : Form
     {
-        public Form2()
+        public Form_Dashboard()
         {
             InitializeComponent();
         }
@@ -25,6 +25,12 @@ namespace WinForm_admin_module
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnAccountMang_Click(object sender, EventArgs e)
+        {
+            var show = new Form_AccountManagement();
+            show.Show(); 
         }
     }
 }

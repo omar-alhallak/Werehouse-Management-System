@@ -1,6 +1,6 @@
 ﻿namespace WinForm_admin_module
 {
-    partial class Form2
+    partial class Form_Dashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -30,16 +30,16 @@
         {
             this.btnAccountMang = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnMinBox = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnChangePass = new System.Windows.Forms.Button();
-            this.btnSysInfo = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnMinBox = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnChangePass = new System.Windows.Forms.Button();
+            this.btnSysInfo = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -47,6 +47,7 @@
             // btnAccountMang
             // 
             this.btnAccountMang.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnAccountMang.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnAccountMang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAccountMang.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccountMang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
@@ -56,6 +57,7 @@
             this.btnAccountMang.TabIndex = 0;
             this.btnAccountMang.Text = "Account Management";
             this.btnAccountMang.UseVisualStyleBackColor = false;
+            this.btnAccountMang.Click += new System.EventHandler(this.btnAccountMang_Click);
             // 
             // panel1
             // 
@@ -68,47 +70,21 @@
             this.panel1.Size = new System.Drawing.Size(705, 57);
             this.panel1.TabIndex = 3;
             // 
-            // btnMinBox
-            // 
-            this.btnMinBox.BackgroundImage = global::WinForm_admin_module.Properties.Resources.file_00000000eff871fdad5a60662e5e7e00;
-            this.btnMinBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnMinBox.FlatAppearance.BorderSize = 0;
-            this.btnMinBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinBox.Location = new System.Drawing.Point(39, 3);
-            this.btnMinBox.Name = "btnMinBox";
-            this.btnMinBox.Size = new System.Drawing.Size(61, 37);
-            this.btnMinBox.TabIndex = 13;
-            this.btnMinBox.UseVisualStyleBackColor = true;
-            this.btnMinBox.Click += new System.EventHandler(this.btnMinBox_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__2_;
-            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Location = new System.Drawing.Point(2, 3);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(38, 37);
-            this.btnExit.TabIndex = 12;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.label1.Location = new System.Drawing.Point(203, 14);
+            this.label1.Location = new System.Drawing.Point(196, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(259, 33);
+            this.label1.Size = new System.Drawing.Size(299, 33);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Helllo (Name)(Admin)";
+            this.label1.Text = "Welcoom (Name)(Admin)";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(34, 257);
+            this.panel2.Location = new System.Drawing.Point(12, 257);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(623, 1);
             this.panel2.TabIndex = 4;
@@ -120,48 +96,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1, 189);
             this.panel3.TabIndex = 6;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::WinForm_admin_module.Properties.Resources.تنزيل__3_1;
-            this.pictureBox1.Location = new System.Drawing.Point(220, 58);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(215, 123);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnChangePass
-            // 
-            this.btnChangePass.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnChangePass.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__4_;
-            this.btnChangePass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnChangePass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChangePass.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChangePass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnChangePass.Location = new System.Drawing.Point(121, 284);
-            this.btnChangePass.Name = "btnChangePass";
-            this.btnChangePass.Size = new System.Drawing.Size(195, 116);
-            this.btnChangePass.TabIndex = 2;
-            this.btnChangePass.Text = "Change Password";
-            this.btnChangePass.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnChangePass.UseVisualStyleBackColor = false;
-            // 
-            // btnSysInfo
-            // 
-            this.btnSysInfo.BackColor = System.Drawing.Color.Orange;
-            this.btnSysInfo.BackgroundImage = global::WinForm_admin_module.Properties.Resources.file_000000002b9471f8947f9f27c8abbf72;
-            this.btnSysInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnSysInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSysInfo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSysInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnSysInfo.Location = new System.Drawing.Point(358, 284);
-            this.btnSysInfo.Name = "btnSysInfo";
-            this.btnSysInfo.Size = new System.Drawing.Size(197, 116);
-            this.btnSysInfo.TabIndex = 1;
-            this.btnSysInfo.Text = "System Information";
-            this.btnSysInfo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSysInfo.UseVisualStyleBackColor = false;
             // 
             // panel4
             // 
@@ -179,7 +113,78 @@
             this.panel5.Size = new System.Drawing.Size(1, 184);
             this.panel5.TabIndex = 0;
             // 
-            // Form2
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WinForm_admin_module.Properties.Resources.تنزيل__3_1;
+            this.pictureBox1.Location = new System.Drawing.Point(220, 58);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(215, 123);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnMinBox
+            // 
+            this.btnMinBox.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__5_;
+            this.btnMinBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMinBox.FlatAppearance.BorderSize = 0;
+            this.btnMinBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinBox.Location = new System.Drawing.Point(39, 3);
+            this.btnMinBox.Name = "btnMinBox";
+            this.btnMinBox.Size = new System.Drawing.Size(47, 37);
+            this.btnMinBox.TabIndex = 13;
+            this.btnMinBox.UseVisualStyleBackColor = true;
+            this.btnMinBox.Click += new System.EventHandler(this.btnMinBox_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__2_;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Location = new System.Drawing.Point(2, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(38, 37);
+            this.btnExit.TabIndex = 12;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnChangePass
+            // 
+            this.btnChangePass.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnChangePass.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__4_;
+            this.btnChangePass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnChangePass.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnChangePass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChangePass.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangePass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnChangePass.Location = new System.Drawing.Point(121, 284);
+            this.btnChangePass.Name = "btnChangePass";
+            this.btnChangePass.Size = new System.Drawing.Size(195, 116);
+            this.btnChangePass.TabIndex = 2;
+            this.btnChangePass.Text = "Change Password";
+            this.btnChangePass.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnChangePass.UseVisualStyleBackColor = false;
+            // 
+            // btnSysInfo
+            // 
+            this.btnSysInfo.BackColor = System.Drawing.Color.Orange;
+            this.btnSysInfo.BackgroundImage = global::WinForm_admin_module.Properties.Resources.file_000000002b9471f8947f9f27c8abbf72;
+            this.btnSysInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSysInfo.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnSysInfo.FlatAppearance.BorderSize = 2;
+            this.btnSysInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSysInfo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSysInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnSysInfo.Location = new System.Drawing.Point(358, 284);
+            this.btnSysInfo.Name = "btnSysInfo";
+            this.btnSysInfo.Size = new System.Drawing.Size(197, 116);
+            this.btnSysInfo.TabIndex = 1;
+            this.btnSysInfo.Text = "System Information";
+            this.btnSysInfo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSysInfo.UseVisualStyleBackColor = false;
+            // 
+            // Form_Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -195,7 +200,7 @@
             this.Controls.Add(this.btnSysInfo);
             this.Controls.Add(this.btnAccountMang);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form2";
+            this.Name = "Form_Dashboard";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

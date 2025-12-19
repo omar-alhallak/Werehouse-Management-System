@@ -104,6 +104,7 @@
             // btnSign_IN
             // 
             this.btnSign_IN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.btnSign_IN.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnSign_IN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSign_IN.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSign_IN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
@@ -118,13 +119,13 @@
             // 
             // btnMinBox
             // 
-            this.btnMinBox.BackgroundImage = global::WinForm_admin_module.Properties.Resources.file_00000000eff871fdad5a60662e5e7e00;
+            this.btnMinBox.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__5_;
             this.btnMinBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMinBox.FlatAppearance.BorderSize = 0;
             this.btnMinBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinBox.Location = new System.Drawing.Point(37, 0);
             this.btnMinBox.Name = "btnMinBox";
-            this.btnMinBox.Size = new System.Drawing.Size(61, 37);
+            this.btnMinBox.Size = new System.Drawing.Size(50, 37);
             this.btnMinBox.TabIndex = 11;
             this.btnMinBox.UseVisualStyleBackColor = true;
             this.btnMinBox.Click += new System.EventHandler(this.btnMinBox_Click);
