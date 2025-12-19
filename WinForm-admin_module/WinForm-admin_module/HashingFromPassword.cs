@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WinForm_admin_module
 {
-    public static class HachingFromPassword
+    public static class HashingFromPassword
     {
         private const int SaltSize = 16; // ليضمن أن لكل مستخدم لديه هاش 
         private const int KeySize = 32; // طول الهاش النهائي

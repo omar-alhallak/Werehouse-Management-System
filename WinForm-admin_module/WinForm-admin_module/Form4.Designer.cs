@@ -153,7 +153,7 @@
             "Admin",
             "Inventory",
             "Sales_man"});
-            this.comboBox1.Location = new System.Drawing.Point(65, 316);
+            this.comboBox1.Location = new System.Drawing.Point(62, 329);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(241, 21);
             this.comboBox1.TabIndex = 27;
@@ -260,7 +260,7 @@
             this.pictureBox6.Image = global::WinForm_admin_module.Properties.Resources.file_000000000b4c720aa4c013b126142c3e;
             this.pictureBox6.Location = new System.Drawing.Point(26, 316);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(33, 21);
+            this.pictureBox6.Size = new System.Drawing.Size(33, 34);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 31;
             this.pictureBox6.TabStop = false;

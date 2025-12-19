@@ -8,76 +8,101 @@ using System.Windows.Forms;
 
 namespace WinForm_admin_module
 {
+
     public static class RegexValidator
     {
-            
-        public static bool RegexFromUserName(string UserName)
+        public static bool RegexFromUserName(string userName, out string error)
         {
-            // يسمح فقط بلأحرف الأجنبية
-            // يسمح بكتابة أحرف أجنبية + أرقام
-            // يسمح على الأقل بأستخدتم 3 محارف و على الأكثر 15 محرف
-            // إذالة المسافات من بداية ونهاية الأسم
-            const string UserNamePattern = @"^[a-zA-Z0-9]{4,15}$";
+            // أسم المستخدم لا يمكن أن يكون فارغ
+            // يجب أن يحتوي على حروف إنجليزية وأرقام فقط
+            // طوله بين 4 و 15 محرف
+            error = null;
 
-            UserName = UserName.Trim();
+            const string pattern = @"^[a-zA-Z0-9]{4,15}$";
 
-            if (string.IsNullOrEmpty(UserName))
+            userName = (userName ?? "").Trim();
+
+            if (string.IsNullOrEmpty(userName))
             {
-                MessageBox.Show("اسم المستخدم لا يمكن أن يكون فارغاً.", "خطأ في الإدخال", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                error = "أسم المستخدم لا يمكن أن يكون فارغ.";
                 return false;
             }
 
-            if (System.Text.RegularExpressions.Regex.IsMatch(UserName, UserNamePattern))
+            if (!Regex.IsMatch(userName, pattern))
             {
-                return true;
-            }
-            else
-            {
-                MessageBox.Show("اسم المستخدم غير صالح. يجب أن يحتوي على حروف الإنجليزية وأرقام فقط، وطوله بين 3 و 15 محرف.",
-                                "خطأ في الإدخال", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                error = "اسم المستخدم غير صالح. يجب أن يحتوي على حروف إنجليزية وأرقام فقط، وطوله بين 4 و 15 محرف.";
                 return false;
             }
+
+            return true;
         }
 
-        public static bool RegexFromPassword(string Password)
+        public static bool RegexFromFullName(string fullName, out string error)
         {
-            // يجب أن تحوي على 8 حروف على الأقل
+            //  الاسم الكامل لا يمكن أن يكون فارغ
+            // يسمح فقط بأستخدتم أحرف أجنبية
+            // حد الأقصى للمحارف 30
+            error = null;
+
+            fullName = (fullName ?? "").Trim();
+
+            if (string.IsNullOrWhiteSpace(fullName))
+            {
+                error = "الاسم الكامل لا يمكن أن يكون فارغ.";
+                return false;
+            }
+ 
+            const string pattern = @"^[a-zA-Z\s]{3,30}$";
+
+            if (!Regex.IsMatch(fullName, pattern))
+            {
+                error = "الاسم الكامل غير صالح. يجب أن يحتوي على أحرف أجنبية ومسافات فقط، وبحد أقصى 30 محرف.";
+                return false;
+            }
+
+            return true;
+        }
+
+        public static bool RegexFromPassword(string password, out string error)
+        {
+            // يجب أن تحوي على 8 محارف على الأقل
             // يجب أن تحوي على حرف كبير واحد على الأقل
             // يجب أن تحوي على رقم واحد على الأقل
             // يجب أن تحوي على رمز خاص واحد على الأقل
+            error = null;
+
+            password = password ?? "";
 
             bool isValid = true;
-            string errorMessage = "كلمة المرور ضعيفة. يجب أن تفي بالشروط التالية:\n";
+            string Massage = "كلمة المرور ضعيفة. يجب أن تستوفي الشروط التالية:\n";
 
-            if (Password.Length < 8)
+            if (password.Length < 8)
             {
-                errorMessage += " - يجب أن يحوي على 8 حروف على الأقل.\n";
+                Massage += " - يجب أن تحوي على 8 محارف على الأقل.\n";
                 isValid = false;
             }
-            if (!Regex.IsMatch(Password, @"[A-Z]+")) 
+            if (!Regex.IsMatch(password, @"[A-Z]+"))
             {
-                errorMessage += " - يجب أن يحوي على حرف كبير واحد على الأقل.\n";
+                Massage += " - يجب أن تحوي على حرف كبير واحد على الأقل.\n";
                 isValid = false;
             }
-
-            if (!Regex.IsMatch(Password, @"[0-9]+")) 
+            if (!Regex.IsMatch(password, @"[0-9]+"))
             {
-                errorMessage += " - يجب أن يحوي على رقم واحد على الأقل.\n";
+                Massage += " - يجب أن تحوي على رقم واحد على الأقل.\n";
                 isValid = false;
             }
-
-            if (!Regex.IsMatch(Password, @"[^a-zA-Z0-9]+")) 
+            if (!Regex.IsMatch(password, @"[^a-zA-Z0-9]+"))
             {
-                errorMessage += " - يجب أن يحوي على رمز خاص ( @, #, $ ) واحد على الأقل.\n";
+                Massage += " - يجب أن تحوي على رمز خاص واحد على الأقل.\n";
                 isValid = false;
             }
 
             if (!isValid)
             {
-                MessageBox.Show(errorMessage, "كلمة المرور غير آمنة", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                error = Massage;
                 return false;
             }
-            
+
             return true;
         }
     }

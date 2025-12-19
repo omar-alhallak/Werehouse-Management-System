@@ -59,23 +59,6 @@ namespace WinForm_admin_module
         private void btnSign_IN_Click(object sender, EventArgs e)
         {
            
-            string username = txtUserName.Text; 
-            string password = txtPassword.Text; 
-
-            if (!WinForm_admin_module.RegexValidator.RegexFromUserName(username))
-            {
-                txtUserName.Focus(); 
-                return;         
-            }
-        
-            if (!WinForm_admin_module.RegexValidator.RegexFromPassword(password))
-            {
-                txtPassword.Focus(); 
-                return;           
-            }
-       
-            MessageBox.Show("تم التحقق من المدخلات بنجاح",
-                    "تم التحقق بنجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
