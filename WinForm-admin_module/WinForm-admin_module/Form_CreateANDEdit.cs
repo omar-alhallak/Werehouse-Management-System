@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WinForm_admin_module
 {
-    public partial class Form4 : Form
+    public partial class Form_CreateANDEdit : Form
     {
-        public Form4()
+        public Form_CreateANDEdit()
         {
             InitializeComponent();
         }

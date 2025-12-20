@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.NameApp = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -37,23 +37,23 @@
             this.btnMinBox = new System.Windows.Forms.Button();
             this.btnShowPassword = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pic3 = new System.Windows.Forms.PictureBox();
+            this.pic2 = new System.Windows.Forms.PictureBox();
+            this.pic1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pic3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // NameApp
             // 
-            this.label1.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.label1.Location = new System.Drawing.Point(33, 110);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(269, 29);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Warehouse Management System ";
+            this.NameApp.Font = new System.Drawing.Font("Tahoma", 13F);
+            this.NameApp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.NameApp.Location = new System.Drawing.Point(33, 110);
+            this.NameApp.Name = "NameApp";
+            this.NameApp.Size = new System.Drawing.Size(269, 29);
+            this.NameApp.TabIndex = 1;
+            this.NameApp.Text = "Warehouse Management System ";
             // 
             // txtUserName
             // 
@@ -156,35 +156,35 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // pictureBox3
+            // pic3
             // 
-            this.pictureBox3.Image = global::WinForm_admin_module.Properties.Resources._4686696;
-            this.pictureBox3.Location = new System.Drawing.Point(25, 204);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(33, 26);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
+            this.pic3.Image = global::WinForm_admin_module.Properties.Resources._4686696;
+            this.pic3.Location = new System.Drawing.Point(25, 204);
+            this.pic3.Name = "pic3";
+            this.pic3.Size = new System.Drawing.Size(33, 26);
+            this.pic3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic3.TabIndex = 7;
+            this.pic3.TabStop = false;
             // 
-            // pictureBox2
+            // pic2
             // 
-            this.pictureBox2.Image = global::WinForm_admin_module.Properties.Resources._7153150;
-            this.pictureBox2.Location = new System.Drawing.Point(25, 163);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(33, 26);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
+            this.pic2.Image = global::WinForm_admin_module.Properties.Resources._7153150;
+            this.pic2.Location = new System.Drawing.Point(25, 163);
+            this.pic2.Name = "pic2";
+            this.pic2.Size = new System.Drawing.Size(33, 26);
+            this.pic2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic2.TabIndex = 4;
+            this.pic2.TabStop = false;
             // 
-            // pictureBox1
+            // pic1
             // 
-            this.pictureBox1.Image = global::WinForm_admin_module.Properties.Resources._11284777;
-            this.pictureBox1.Location = new System.Drawing.Point(114, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(106, 85);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pic1.Image = global::WinForm_admin_module.Properties.Resources._11284777;
+            this.pic1.Location = new System.Drawing.Point(114, 12);
+            this.pic1.Name = "pic1";
+            this.pic1.Size = new System.Drawing.Size(106, 85);
+            this.pic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic1.TabIndex = 0;
+            this.pic1.TabStop = false;
             // 
             // Form_LogIN
             // 
@@ -197,21 +197,21 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSign_IN);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pic3);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pic2);
             this.Controls.Add(this.txtUserName);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.NameApp);
+            this.Controls.Add(this.pic1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_LogIN";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.TopMost = true;
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,13 +219,13 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pic1;
+        private System.Windows.Forms.Label NameApp;
         private System.Windows.Forms.TextBox txtUserName;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pic2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pic3;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnSign_IN;
         private System.Windows.Forms.Button btnExit;

@@ -1,6 +1,6 @@
 ﻿namespace WinForm_admin_module
 {
-    partial class Form4
+    partial class Form_CreateANDEdit
     {
         /// <summary>
         /// Required designer variable.
@@ -275,7 +275,7 @@
             this.pictureBox5.TabIndex = 32;
             this.pictureBox5.TabStop = false;
             // 
-            // Form4
+            // Form_CreateANDEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -302,7 +302,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form4";
+            this.Name = "Form_CreateANDEdit";
             this.Text = "v";
             this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

@@ -30,14 +30,14 @@
         {
             this.btnAccountMang = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnMinBox = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnMinBox = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.btnChangePass = new System.Windows.Forms.Button();
             this.btnSysInfo = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -69,6 +69,32 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(705, 57);
             this.panel1.TabIndex = 3;
+            // 
+            // btnMinBox
+            // 
+            this.btnMinBox.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__5_;
+            this.btnMinBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMinBox.FlatAppearance.BorderSize = 0;
+            this.btnMinBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinBox.Location = new System.Drawing.Point(39, 3);
+            this.btnMinBox.Name = "btnMinBox";
+            this.btnMinBox.Size = new System.Drawing.Size(47, 37);
+            this.btnMinBox.TabIndex = 13;
+            this.btnMinBox.UseVisualStyleBackColor = true;
+            this.btnMinBox.Click += new System.EventHandler(this.btnMinBox_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__2_;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Location = new System.Drawing.Point(2, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(38, 37);
+            this.btnExit.TabIndex = 12;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // label1
             // 
@@ -122,32 +148,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
-            // 
-            // btnMinBox
-            // 
-            this.btnMinBox.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__5_;
-            this.btnMinBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnMinBox.FlatAppearance.BorderSize = 0;
-            this.btnMinBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinBox.Location = new System.Drawing.Point(39, 3);
-            this.btnMinBox.Name = "btnMinBox";
-            this.btnMinBox.Size = new System.Drawing.Size(47, 37);
-            this.btnMinBox.TabIndex = 13;
-            this.btnMinBox.UseVisualStyleBackColor = true;
-            this.btnMinBox.Click += new System.EventHandler(this.btnMinBox_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__2_;
-            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Location = new System.Drawing.Point(2, 3);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(38, 37);
-            this.btnExit.TabIndex = 12;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnChangePass
             // 

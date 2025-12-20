@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WinForm_admin_module.Excptions;
 
 namespace WinForm_admin_module
 {
@@ -44,15 +45,15 @@ namespace WinForm_admin_module
             user.FullName = user.FullName?.Trim();
 
             if (!RegexValidator.RegexFromUserName(user.UserName, out string UserError))
-                throw new Exception(UserError);
+                throw new RegexException(UserError);
 
             if (!RegexValidator.RegexFromFullName(user.FullName, out string FullNameError))
-                throw new Exception(FullNameError);
+                throw new RegexException(FullNameError);
 
             if (!RegexValidator.RegexFromPassword(plainPassword, out string PasswordError))
-                throw new Exception(PasswordError);
+                throw new RegexException(PasswordError);
 
-            // 3) تأكد Username مو مكرر
+            //  تأكيد أنو Username مو مكرر
             if (FindByUsername(user.UserName) != null)
                 throw new Exception("Username already exists.");
 
@@ -79,7 +80,7 @@ namespace WinForm_admin_module
 
             var existing = users.FirstOrDefault(u => u.Id == updatedUser.Id);
             if (existing == null)
-                throw new Exception("User not found.");
+                throw new UserNotFoundException();
 
             existing.FullName = updatedUser.FullName?.Trim();
             existing.Role = updatedUser.Role;
@@ -96,7 +97,7 @@ namespace WinForm_admin_module
 
             var user = users.FirstOrDefault(u => u.Id == userId);
             if (user == null)
-                throw new Exception("User not found.");
+                throw new UserNotFoundException();
 
             user.PasswordHash = HashingFromPassword.HashPassword(newPlainPassword);
             Save();
@@ -107,7 +108,7 @@ namespace WinForm_admin_module
         {
             var user = users.FirstOrDefault(u => u.Id == id);
             if (user == null)
-                throw new Exception("User not found.");
+                throw new UserNotFoundException();
 
             user.IsActive = false;
             Save();

@@ -12,6 +12,13 @@ namespace WinForm_admin_module
 {
     public partial class Form_Dashboard : Form
     {
+        private Users userEnter;
+
+        public Form_Dashboard(Users user)
+        {
+            InitializeComponent();
+            userEnter = user;
+        }
         public Form_Dashboard()
         {
             InitializeComponent();

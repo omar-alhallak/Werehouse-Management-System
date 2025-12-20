@@ -49,29 +49,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Excptions\FatherExceptions.cs" />
+    <Compile Include="Excptions\RegexException.cs" />
+    <Compile Include="Excptions\UserNotFoundException.cs" />
+    <Compile Include="FormUsing.cs" />
+    <Compile Include="Form_LogIN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Form_LogIN.Designer.cs">
+      <DependentUpon>Form_LogIN.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="Form_Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Form_Dashboard.Designer.cs">
+      <DependentUpon>Form_Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="Form_AccountManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="Form_AccountManagement.Designer.cs">
+      <DependentUpon>Form_AccountManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="Form_CreateANDEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="Form_CreateANDEdit.Designer.cs">
+      <DependentUpon>Form_CreateANDEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="HashingFromPassword.cs" />
     <Compile Include="Program.cs" />
@@ -86,17 +90,18 @@
     <Compile Include="Users.cs" />
     <Compile Include="UserService.cs" />
     <Compile Include="UserStorage.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="User_AuthService.cs" />
+    <EmbeddedResource Include="Form_LogIN.resx">
+      <DependentUpon>Form_LogIN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Dashboard.resx">
+      <DependentUpon>Form_Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="Form_AccountManagement.resx">
+      <DependentUpon>Form_AccountManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="Form_CreateANDEdit.resx">
+      <DependentUpon>Form_CreateANDEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -160,4 +165,5 @@
     <None Include="Resources\file_000000000b4c720aa4c013b126142c3e.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions />
 </Project>

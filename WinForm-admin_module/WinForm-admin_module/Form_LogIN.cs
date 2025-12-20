@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinForm_admin_module.Excptions;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WinForm_admin_module
 {
     public partial class Form_LogIN : Form
     {
+        public event Action<Users> LoginSucceeded;
         public Form_LogIN()
         {
             InitializeComponent();          
@@ -43,6 +45,7 @@ namespace WinForm_admin_module
                 txtPassword.UseSystemPasswordChar = false;
                 txtPassword.Text = "Password";   
                 txtPassword.ForeColor = Color.Gray;
+                btnShowPassword.BackgroundImage = Properties.Resources.تنزيل;
             }
         }
 
@@ -58,7 +61,26 @@ namespace WinForm_admin_module
 
         private void btnSign_IN_Click(object sender, EventArgs e)
         {
-           
+            try
+            {
+                var auth = new User_AuthService(new UserStorage());
+                Users LogINUser = auth.Login(txtUserName.Text, txtPassword.Text);
+                var dashboard = new Form_Dashboard(LogINUser);
+                dashboard.Show();
+                this.Close(); 
+            }
+            catch (RegexException ex)
+            {
+                MessageBox.Show(ex.Message, "تنبيه :", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch (UserNotFoundException)
+            {
+                MessageBox.Show("الحساب غير موجود", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("مدري شو هابد يا أخوي ", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -68,18 +90,20 @@ namespace WinForm_admin_module
 
         private void btnShowPassword_Click(object sender, EventArgs e)
         {
-            
             if (txtPassword.UseSystemPasswordChar)
-            {     
+            {
                 txtPassword.UseSystemPasswordChar = false;
                 btnShowPassword.BackgroundImage = Properties.Resources.تنزيل__1_;
-            
             }
             else
             {
-                txtPassword.UseSystemPasswordChar = true;
-                btnShowPassword.BackgroundImage = Properties.Resources.تنزيل;
-               
+                if (txtPassword.Text == "Password")
+                { }
+                else
+                {
+                    txtPassword.UseSystemPasswordChar = true;
+                    btnShowPassword.BackgroundImage = Properties.Resources.تنزيل;
+                }
             }
         }
 
