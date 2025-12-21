@@ -16,7 +16,9 @@ namespace WinForm_admin_module
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormUsing());
+            Form_LogIN LogIn=new Form_LogIN();
+            LogIn.Show();
+            Application.Run();
         }
     }
 }

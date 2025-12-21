@@ -32,16 +32,16 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnMinBox = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labName = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pic1 = new System.Windows.Forms.PictureBox();
             this.btnChangePass = new System.Windows.Forms.Button();
             this.btnSysInfo = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAccountMang
@@ -55,6 +55,7 @@
             this.btnAccountMang.Name = "btnAccountMang";
             this.btnAccountMang.Size = new System.Drawing.Size(253, 55);
             this.btnAccountMang.TabIndex = 0;
+            this.btnAccountMang.TabStop = false;
             this.btnAccountMang.Text = "Account Management";
             this.btnAccountMang.UseVisualStyleBackColor = false;
             this.btnAccountMang.Click += new System.EventHandler(this.btnAccountMang_Click);
@@ -64,10 +65,10 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
             this.panel1.Controls.Add(this.btnMinBox);
             this.panel1.Controls.Add(this.btnExit);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.labName);
             this.panel1.Location = new System.Drawing.Point(-5, -5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(705, 57);
+            this.panel1.Size = new System.Drawing.Size(653, 57);
             this.panel1.TabIndex = 3;
             // 
             // btnMinBox
@@ -79,7 +80,8 @@
             this.btnMinBox.Location = new System.Drawing.Point(39, 3);
             this.btnMinBox.Name = "btnMinBox";
             this.btnMinBox.Size = new System.Drawing.Size(47, 37);
-            this.btnMinBox.TabIndex = 13;
+            this.btnMinBox.TabIndex = 0;
+            this.btnMinBox.TabStop = false;
             this.btnMinBox.UseVisualStyleBackColor = true;
             this.btnMinBox.Click += new System.EventHandler(this.btnMinBox_Click);
             // 
@@ -92,20 +94,20 @@
             this.btnExit.Location = new System.Drawing.Point(2, 3);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(38, 37);
-            this.btnExit.TabIndex = 12;
+            this.btnExit.TabIndex = 0;
+            this.btnExit.TabStop = false;
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // label1
+            // labName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.label1.Location = new System.Drawing.Point(196, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(299, 33);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Welcoom (Name)(Admin)";
+            this.labName.AutoSize = true;
+            this.labName.Font = new System.Drawing.Font("Arial Narrow", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.labName.Location = new System.Drawing.Point(165, 14);
+            this.labName.Name = "labName";
+            this.labName.Size = new System.Drawing.Size(0, 33);
+            this.labName.TabIndex = 4;
             // 
             // panel2
             // 
@@ -139,15 +141,15 @@
             this.panel5.Size = new System.Drawing.Size(1, 184);
             this.panel5.TabIndex = 0;
             // 
-            // pictureBox1
+            // pic1
             // 
-            this.pictureBox1.Image = global::WinForm_admin_module.Properties.Resources.تنزيل__3_1;
-            this.pictureBox1.Location = new System.Drawing.Point(220, 58);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(215, 123);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
+            this.pic1.Image = global::WinForm_admin_module.Properties.Resources.تنزيل__3_1;
+            this.pic1.Location = new System.Drawing.Point(220, 58);
+            this.pic1.Name = "pic1";
+            this.pic1.Size = new System.Drawing.Size(215, 123);
+            this.pic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic1.TabIndex = 5;
+            this.pic1.TabStop = false;
             // 
             // btnChangePass
             // 
@@ -161,7 +163,8 @@
             this.btnChangePass.Location = new System.Drawing.Point(121, 284);
             this.btnChangePass.Name = "btnChangePass";
             this.btnChangePass.Size = new System.Drawing.Size(195, 116);
-            this.btnChangePass.TabIndex = 2;
+            this.btnChangePass.TabIndex = 0;
+            this.btnChangePass.TabStop = false;
             this.btnChangePass.Text = "Change Password";
             this.btnChangePass.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnChangePass.UseVisualStyleBackColor = false;
@@ -179,7 +182,8 @@
             this.btnSysInfo.Location = new System.Drawing.Point(358, 284);
             this.btnSysInfo.Name = "btnSysInfo";
             this.btnSysInfo.Size = new System.Drawing.Size(197, 116);
-            this.btnSysInfo.TabIndex = 1;
+            this.btnSysInfo.TabIndex = 0;
+            this.btnSysInfo.TabStop = false;
             this.btnSysInfo.Text = "System Information";
             this.btnSysInfo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSysInfo.UseVisualStyleBackColor = false;
@@ -193,7 +197,7 @@
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pic1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnChangePass);
@@ -201,9 +205,11 @@
             this.Controls.Add(this.btnAccountMang);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_Dashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.Form_Dashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -214,9 +220,9 @@
         private System.Windows.Forms.Button btnSysInfo;
         private System.Windows.Forms.Button btnChangePass;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labName;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pic1;
         private System.Windows.Forms.Button btnMinBox;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Panel panel3;

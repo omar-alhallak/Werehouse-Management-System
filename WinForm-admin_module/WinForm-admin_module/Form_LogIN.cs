@@ -13,8 +13,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 namespace WinForm_admin_module
 {
     public partial class Form_LogIN : Form
-    {
-        public event Action<Users> LoginSucceeded;
+    { 
         public Form_LogIN()
         {
             InitializeComponent();          
@@ -65,7 +64,8 @@ namespace WinForm_admin_module
             {
                 var auth = new User_AuthService(new UserStorage());
                 Users LogINUser = auth.Login(txtUserName.Text, txtPassword.Text);
-                var dashboard = new Form_Dashboard(LogINUser);
+                Session.LogedINUser = (LogINUser);
+                var dashboard = new Form_Dashboard();
                 dashboard.Show();
                 this.Close(); 
             }
@@ -110,6 +110,6 @@ namespace WinForm_admin_module
         private void btnMinBox_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
-        }
+        } 
     }
 }

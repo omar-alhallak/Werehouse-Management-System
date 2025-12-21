@@ -16,32 +16,12 @@ namespace WinForm_admin_module
         {
             InitializeComponent();
         }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
+ 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
-            var show = new Form_Dashboard();
-            show.Show();
-        }
-
-        private void Form_AccountManagement_Load(object sender, EventArgs e)
-        {
-
+            Form_Dashboard Dashboard = new Form_Dashboard();
+            Dashboard.Show();
+            this.Close(); 
         }
     }
 }

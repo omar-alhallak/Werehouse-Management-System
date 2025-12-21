@@ -12,13 +12,6 @@ namespace WinForm_admin_module
 {
     public partial class Form_Dashboard : Form
     {
-        private Users userEnter;
-
-        public Form_Dashboard(Users user)
-        {
-            InitializeComponent();
-            userEnter = user;
-        }
         public Form_Dashboard()
         {
             InitializeComponent();
@@ -36,8 +29,17 @@ namespace WinForm_admin_module
 
         private void btnAccountMang_Click(object sender, EventArgs e)
         {
-            var show = new Form_AccountManagement();
-            show.Show(); 
+            Form_AccountManagement AccountManagement = new Form_AccountManagement();
+            AccountManagement.Show();
+            this.Close(); 
+        }
+
+        private void Form_Dashboard_Load(object sender, EventArgs e)
+        {
+            if (Session.LogedINUser != null)
+            {
+                labName.Text= "Welcoom " + Session.LogedINUser.FullName + " (Admin)";
+            }
         }
     }
 }

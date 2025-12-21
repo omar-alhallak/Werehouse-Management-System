@@ -29,84 +29,84 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_AccountManagement));
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.btnDisable = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnMinBoxs = new System.Windows.Forms.Button();
+            this.btnExits = new System.Windows.Forms.Button();
+            this.labl = new System.Windows.Forms.Label();
+            this.DataGrid = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.txtSelect = new System.Windows.Forms.TextBox();
             this.btnMinBox = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnEdit
             // 
-            this.button1.BackColor = System.Drawing.Color.Yellow;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderSize = 3;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.button1.Location = new System.Drawing.Point(354, 368);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 47);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Edit";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnEdit.BackColor = System.Drawing.Color.Yellow;
+            this.btnEdit.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnEdit.FlatAppearance.BorderSize = 3;
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnEdit.Location = new System.Drawing.Point(354, 368);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(154, 47);
+            this.btnEdit.TabIndex = 0;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseVisualStyleBackColor = false;
             // 
-            // btnClose
+            // btnBack
             // 
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnClose.Location = new System.Drawing.Point(12, 368);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(154, 47);
-            this.btnClose.TabIndex = 1;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnBack.Location = new System.Drawing.Point(12, 368);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(154, 47);
+            this.btnBack.TabIndex = 0;
+            this.btnBack.TabStop = false;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // button4
+            // btnDisable
             // 
-            this.button4.BackColor = System.Drawing.Color.Maroon;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(185, 368);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(154, 47);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Disable";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnDisable.BackColor = System.Drawing.Color.Maroon;
+            this.btnDisable.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnDisable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDisable.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDisable.ForeColor = System.Drawing.Color.White;
+            this.btnDisable.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDisable.Location = new System.Drawing.Point(185, 368);
+            this.btnDisable.Name = "btnDisable";
+            this.btnDisable.Size = new System.Drawing.Size(154, 47);
+            this.btnDisable.TabIndex = 3;
+            this.btnDisable.Text = "Disable";
+            this.btnDisable.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnSearch
             // 
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(8, 220);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(29, 27);
-            this.button5.TabIndex = 0;
-            this.button5.TabStop = false;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
+            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Location = new System.Drawing.Point(8, 220);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(29, 27);
+            this.btnSearch.TabIndex = 0;
+            this.btnSearch.TabStop = false;
+            this.btnSearch.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -122,33 +122,56 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.btnMinBoxs);
+            this.panel1.Controls.Add(this.btnExits);
+            this.panel1.Controls.Add(this.labl);
             this.panel1.Location = new System.Drawing.Point(-3, -1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(522, 59);
             this.panel1.TabIndex = 17;
             // 
-            // label2
+            // btnMinBoxs
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.label2.Location = new System.Drawing.Point(142, 11);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(264, 33);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Account Management";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.btnMinBoxs.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__5_;
+            this.btnMinBoxs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMinBoxs.FlatAppearance.BorderSize = 0;
+            this.btnMinBoxs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinBoxs.Location = new System.Drawing.Point(39, 3);
+            this.btnMinBoxs.Name = "btnMinBoxs";
+            this.btnMinBoxs.Size = new System.Drawing.Size(47, 37);
+            this.btnMinBoxs.TabIndex = 13;
+            this.btnMinBoxs.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // btnExits
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 64);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(493, 150);
-            this.dataGridView1.TabIndex = 19;
+            this.btnExits.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__2_;
+            this.btnExits.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnExits.FlatAppearance.BorderSize = 0;
+            this.btnExits.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExits.Location = new System.Drawing.Point(2, 3);
+            this.btnExits.Name = "btnExits";
+            this.btnExits.Size = new System.Drawing.Size(38, 37);
+            this.btnExits.TabIndex = 12;
+            this.btnExits.UseVisualStyleBackColor = true;
+            // 
+            // labl
+            // 
+            this.labl.AutoSize = true;
+            this.labl.Font = new System.Drawing.Font("Arial Narrow", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.labl.Location = new System.Drawing.Point(142, 11);
+            this.labl.Name = "labl";
+            this.labl.Size = new System.Drawing.Size(264, 33);
+            this.labl.TabIndex = 4;
+            this.labl.Text = "Account Management";
+            // 
+            // DataGrid
+            // 
+            this.DataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGrid.Location = new System.Drawing.Point(12, 64);
+            this.DataGrid.Name = "DataGrid";
+            this.DataGrid.Size = new System.Drawing.Size(493, 150);
+            this.DataGrid.TabIndex = 19;
             // 
             // panel2
             // 
@@ -158,18 +181,18 @@
             this.panel2.Size = new System.Drawing.Size(195, 1);
             this.panel2.TabIndex = 23;
             // 
-            // txtPassword
+            // txtSearch
             // 
-            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPassword.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.ForeColor = System.Drawing.Color.Gray;
-            this.txtPassword.Location = new System.Drawing.Point(46, 228);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(157, 18);
-            this.txtPassword.TabIndex = 22;
-            this.txtPassword.TabStop = false;
-            this.txtPassword.Text = "Search";
+            this.txtSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSearch.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.ForeColor = System.Drawing.Color.Gray;
+            this.txtSearch.Location = new System.Drawing.Point(46, 228);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(157, 18);
+            this.txtSearch.TabIndex = 22;
+            this.txtSearch.TabStop = false;
+            this.txtSearch.Text = "Search";
             // 
             // panel3
             // 
@@ -179,43 +202,19 @@
             this.panel3.Size = new System.Drawing.Size(157, 1);
             this.panel3.TabIndex = 25;
             // 
-            // textBox1
+            // txtSelect
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Gray;
-            this.textBox1.Location = new System.Drawing.Point(354, 323);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(157, 18);
-            this.textBox1.TabIndex = 24;
-            this.textBox1.TabStop = false;
-            this.textBox1.Text = "Select Account";
-            // 
-            // button6
-            // 
-            this.button6.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__5_;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(39, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(47, 37);
-            this.button6.TabIndex = 13;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__2_;
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(2, 3);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(38, 37);
-            this.button7.TabIndex = 12;
-            this.button7.UseVisualStyleBackColor = true;
+            this.txtSelect.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.txtSelect.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSelect.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSelect.ForeColor = System.Drawing.Color.Gray;
+            this.txtSelect.Location = new System.Drawing.Point(354, 323);
+            this.txtSelect.Name = "txtSelect";
+            this.txtSelect.ReadOnly = true;
+            this.txtSelect.Size = new System.Drawing.Size(157, 18);
+            this.txtSelect.TabIndex = 24;
+            this.txtSelect.TabStop = false;
+            this.txtSelect.Text = "Select Account";
             // 
             // btnMinBox
             // 
@@ -241,20 +240,19 @@
             this.btnExit.TabIndex = 15;
             this.btnExit.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnAdd
             // 
-            this.button3.BackColor = System.Drawing.Color.Green;
-            this.button3.BackgroundImage = global::WinForm_admin_module.Properties.Resources.file_000000006f407246adfaa8911ddcdc7f;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(411, 220);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 74);
-            this.button3.TabIndex = 2;
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnAdd.BackColor = System.Drawing.Color.Green;
+            this.btnAdd.BackgroundImage = global::WinForm_admin_module.Properties.Resources.file_000000006f407246adfaa8911ddcdc7f;
+            this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(411, 220);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(94, 74);
+            this.btnAdd.TabIndex = 2;
+            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAdd.UseVisualStyleBackColor = false;
             // 
             // Form_AccountManagement
             // 
@@ -263,27 +261,26 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(517, 427);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSelect);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.DataGrid);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnMinBox);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.btnDisable);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.btnEdit);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_AccountManagement";
-            this.Text = "Form3";
-            this.Load += new System.EventHandler(this.Form_AccountManagement_Load);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -291,22 +288,22 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnDisable;
+        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnMinBox;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnMinBoxs;
+        private System.Windows.Forms.Button btnExits;
+        private System.Windows.Forms.Label labl;
+        private System.Windows.Forms.DataGridView DataGrid;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSelect;
     }
 }

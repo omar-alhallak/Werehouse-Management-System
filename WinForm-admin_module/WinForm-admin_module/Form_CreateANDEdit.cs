@@ -16,10 +16,5 @@ namespace WinForm_admin_module
         {
             InitializeComponent();
         }
-
-        private void Form4_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
