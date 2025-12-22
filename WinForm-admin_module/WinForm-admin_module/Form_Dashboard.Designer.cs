@@ -206,6 +206,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_Dashboard_FormClosed);
             this.Load += new System.EventHandler(this.Form_Dashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

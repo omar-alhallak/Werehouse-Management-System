@@ -3,40 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EA72FD74-4430-4ACA-9B26-32043EB5D55B}|WinForm-admin_module\\WinForm-admin_module.csproj|C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\winform-admin_module\\form_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA72FD74-4430-4ACA-9B26-32043EB5D55B}|WinForm-admin_module\\WinForm-admin_module.csproj|solutionrelative:winform-admin_module\\form_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA72FD74-4430-4ACA-9B26-32043EB5D55B}|WinForm-admin_module\\WinForm-admin_module.csproj|c:\\users\\omar alhallak\\source\\repos\\management-system\\winform-admin_module\\winform-admin_module\\form_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA72FD74-4430-4ACA-9B26-32043EB5D55B}|WinForm-admin_module\\WinForm-admin_module.csproj|solutionrelative:winform-admin_module\\form_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA72FD74-4430-4ACA-9B26-32043EB5D55B}|WinForm-admin_module\\WinForm-admin_module.csproj|c:\\users\\omar alhallak\\source\\repos\\management-system\\winform-admin_module\\winform-admin_module\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA72FD74-4430-4ACA-9B26-32043EB5D55B}|WinForm-admin_module\\WinForm-admin_module.csproj|solutionrelative:winform-admin_module\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA72FD74-4430-4ACA-9B26-32043EB5D55B}|WinForm-admin_module\\WinForm-admin_module.csproj|c:\\users\\omar alhallak\\source\\repos\\management-system\\winform-admin_module\\winform-admin_module\\form_createandedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA72FD74-4430-4ACA-9B26-32043EB5D55B}|WinForm-admin_module\\WinForm-admin_module.csproj|solutionrelative:winform-admin_module\\form_createandedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EA72FD74-4430-4ACA-9B26-32043EB5D55B}|WinForm-admin_module\\WinForm-admin_module.csproj|C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\winform-admin_module\\form_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EA72FD74-4430-4ACA-9B26-32043EB5D55B}|WinForm-admin_module\\WinForm-admin_module.csproj|solutionrelative:winform-admin_module\\form_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{EA72FD74-4430-4ACA-9B26-32043EB5D55B}|WinForm-admin_module\\WinForm-admin_module.csproj|c:\\users\\omar alhallak\\source\\repos\\management-system\\winform-admin_module\\winform-admin_module\\form_createandedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EA72FD74-4430-4ACA-9B26-32043EB5D55B}|WinForm-admin_module\\WinForm-admin_module.csproj|solutionrelative:winform-admin_module\\form_createandedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EA72FD74-4430-4ACA-9B26-32043EB5D55B}|WinForm-admin_module\\WinForm-admin_module.csproj|C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\winform-admin_module\\form_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EA72FD74-4430-4ACA-9B26-32043EB5D55B}|WinForm-admin_module\\WinForm-admin_module.csproj|solutionrelative:winform-admin_module\\form_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA72FD74-4430-4ACA-9B26-32043EB5D55B}|WinForm-admin_module\\WinForm-admin_module.csproj|C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\winform-admin_module\\form_accountmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA72FD74-4430-4ACA-9B26-32043EB5D55B}|WinForm-admin_module\\WinForm-admin_module.csproj|solutionrelative:winform-admin_module\\form_accountmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA72FD74-4430-4ACA-9B26-32043EB5D55B}|WinForm-admin_module\\WinForm-admin_module.csproj|c:\\users\\omar alhallak\\source\\repos\\management-system\\winform-admin_module\\winform-admin_module\\regex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA72FD74-4430-4ACA-9B26-32043EB5D55B}|WinForm-admin_module\\WinForm-admin_module.csproj|solutionrelative:winform-admin_module\\regex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EA72FD74-4430-4ACA-9B26-32043EB5D55B}|WinForm-admin_module\\WinForm-admin_module.csproj|C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\winform-admin_module\\form_accountmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EA72FD74-4430-4ACA-9B26-32043EB5D55B}|WinForm-admin_module\\WinForm-admin_module.csproj|solutionrelative:winform-admin_module\\form_accountmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA72FD74-4430-4ACA-9B26-32043EB5D55B}|WinForm-admin_module\\WinForm-admin_module.csproj|C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\winform-admin_module\\form_createandedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EA72FD74-4430-4ACA-9B26-32043EB5D55B}|WinForm-admin_module\\WinForm-admin_module.csproj|solutionrelative:winform-admin_module\\form_createandedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA72FD74-4430-4ACA-9B26-32043EB5D55B}|WinForm-admin_module\\WinForm-admin_module.csproj|C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\winform-admin_module\\form_createandedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA72FD74-4430-4ACA-9B26-32043EB5D55B}|WinForm-admin_module\\WinForm-admin_module.csproj|solutionrelative:winform-admin_module\\form_createandedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA72FD74-4430-4ACA-9B26-32043EB5D55B}|WinForm-admin_module\\WinForm-admin_module.csproj|c:\\users\\omar alhallak\\source\\repos\\management-system\\winform-admin_module\\winform-admin_module\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA72FD74-4430-4ACA-9B26-32043EB5D55B}|WinForm-admin_module\\WinForm-admin_module.csproj|solutionrelative:winform-admin_module\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,12 +42,12 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Form_LogIN.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\WinForm-admin_module\\Form_LogIN.cs",
               "RelativeDocumentMoniker": "WinForm-admin_module\\Form_LogIN.cs",
-              "ToolTip": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\WinForm-admin_module\\Form_LogIN.cs [Design]*",
-              "RelativeToolTip": "WinForm-admin_module\\Form_LogIN.cs [Design]*",
+              "ToolTip": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\WinForm-admin_module\\Form_LogIN.cs [Design]",
+              "RelativeToolTip": "WinForm-admin_module\\Form_LogIN.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-17T16:15:20.65Z",
               "IsPinned": true,
@@ -63,12 +55,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Form_Dashboard.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\WinForm-admin_module\\Form_Dashboard.cs",
               "RelativeDocumentMoniker": "WinForm-admin_module\\Form_Dashboard.cs",
-              "ToolTip": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\WinForm-admin_module\\Form_Dashboard.cs [Design]*",
-              "RelativeToolTip": "WinForm-admin_module\\Form_Dashboard.cs [Design]*",
+              "ToolTip": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\WinForm-admin_module\\Form_Dashboard.cs [Design]",
+              "RelativeToolTip": "WinForm-admin_module\\Form_Dashboard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-18T17:04:16.886Z",
               "IsPinned": true,
@@ -76,12 +68,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Form_AccountManagement.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\WinForm-admin_module\\Form_AccountManagement.cs",
               "RelativeDocumentMoniker": "WinForm-admin_module\\Form_AccountManagement.cs",
-              "ToolTip": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\WinForm-admin_module\\Form_AccountManagement.cs [Design]*",
-              "RelativeToolTip": "WinForm-admin_module\\Form_AccountManagement.cs [Design]*",
+              "ToolTip": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\WinForm-admin_module\\Form_AccountManagement.cs [Design]",
+              "RelativeToolTip": "WinForm-admin_module\\Form_AccountManagement.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-19T14:51:54.44Z",
               "IsPinned": true,
@@ -89,12 +81,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Form_CreateANDEdit.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\WinForm-admin_module\\Form_CreateANDEdit.cs",
               "RelativeDocumentMoniker": "WinForm-admin_module\\Form_CreateANDEdit.cs",
-              "ToolTip": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\WinForm-admin_module\\Form_CreateANDEdit.cs [Design]",
-              "RelativeToolTip": "WinForm-admin_module\\Form_CreateANDEdit.cs [Design]",
+              "ToolTip": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\WinForm-admin_module\\Form_CreateANDEdit.cs [Design]*",
+              "RelativeToolTip": "WinForm-admin_module\\Form_CreateANDEdit.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-19T15:59:52.499Z",
               "IsPinned": true,
@@ -103,69 +95,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form_Dashboard.cs",
-              "DocumentMoniker": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\WinForm-admin_module\\Form_Dashboard.cs",
-              "RelativeDocumentMoniker": "WinForm-admin_module\\Form_Dashboard.cs",
-              "ToolTip": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\WinForm-admin_module\\Form_Dashboard.cs*",
-              "RelativeToolTip": "WinForm-admin_module\\Form_Dashboard.cs*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAQwA0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T10:11:28.831Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Form_AccountManagement.cs",
-              "DocumentMoniker": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\WinForm-admin_module\\Form_AccountManagement.cs",
-              "RelativeDocumentMoniker": "WinForm-admin_module\\Form_AccountManagement.cs",
-              "ToolTip": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\WinForm-admin_module\\Form_AccountManagement.cs*",
-              "RelativeToolTip": "WinForm-admin_module\\Form_AccountManagement.cs*",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAIwBcAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T15:21:29.167Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Form_CreateANDEdit.cs",
               "DocumentMoniker": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\WinForm-admin_module\\Form_CreateANDEdit.cs",
               "RelativeDocumentMoniker": "WinForm-admin_module\\Form_CreateANDEdit.cs",
-              "ToolTip": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\WinForm-admin_module\\Form_CreateANDEdit.cs",
-              "RelativeToolTip": "WinForm-admin_module\\Form_CreateANDEdit.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\WinForm-admin_module\\Form_CreateANDEdit.cs*",
+              "RelativeToolTip": "WinForm-admin_module\\Form_CreateANDEdit.cs*",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCoAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T17:17:19.12Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-12-22T15:06:46.219Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Session.cs",
-              "DocumentMoniker": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\WinForm-admin_module\\Session.cs",
-              "RelativeDocumentMoniker": "WinForm-admin_module\\Session.cs",
-              "ToolTip": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\WinForm-admin_module\\Session.cs*",
-              "RelativeToolTip": "WinForm-admin_module\\Session.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Regex.cs",
+              "DocumentMoniker": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\WinForm-admin_module\\Regex.cs",
+              "RelativeDocumentMoniker": "WinForm-admin_module\\Regex.cs",
+              "ToolTip": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\WinForm-admin_module\\Regex.cs",
+              "RelativeToolTip": "WinForm-admin_module\\Regex.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwE8AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T16:24:08.172Z",
+              "WhenOpened": "2025-12-22T16:55:04.332Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form_LogIN.cs",
-              "DocumentMoniker": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\WinForm-admin_module\\Form_LogIN.cs",
-              "RelativeDocumentMoniker": "WinForm-admin_module\\Form_LogIN.cs",
-              "ToolTip": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\WinForm-admin_module\\Form_LogIN.cs*",
-              "RelativeToolTip": "WinForm-admin_module\\Form_LogIN.cs*",
-              "ViewState": "AgIAADgAAAAAAAAAAAAAwEMAAAA1AAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\WinForm-admin_module\\Program.cs",
+              "RelativeDocumentMoniker": "WinForm-admin_module\\Program.cs",
+              "ToolTip": "C:\\Users\\Omar alhallak\\source\\repos\\Management-System\\WinForm-admin_module\\WinForm-admin_module\\Program.cs",
+              "RelativeToolTip": "WinForm-admin_module\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T16:21:55.443Z",
+              "WhenOpened": "2025-12-22T15:15:14.944Z",
               "EditorCaption": ""
             }
           ]

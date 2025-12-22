@@ -64,7 +64,7 @@ namespace WinForm_admin_module
             {
                 var auth = new User_AuthService(new UserStorage());
                 Users LogINUser = auth.Login(txtUserName.Text, txtPassword.Text);
-                Session.LogedINUser = (LogINUser);
+                Program.LogedINUser = LogINUser;
                 var dashboard = new Form_Dashboard();
                 dashboard.Show();
                 this.Close(); 
@@ -110,6 +110,14 @@ namespace WinForm_admin_module
         private void btnMinBox_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
-        } 
+        }
+
+        private void Form_LogIN_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if(Application.OpenForms.Count==0)
+            {
+                Application.Exit();
+            }
+        }
     }
 }

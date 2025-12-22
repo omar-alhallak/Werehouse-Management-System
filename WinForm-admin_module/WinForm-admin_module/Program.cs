@@ -11,12 +11,16 @@ namespace WinForm_admin_module
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        /// 
+      
+         public static Users LogedINUser;
+        
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Form_LogIN LogIn=new Form_LogIN();
+            Form_CreateANDEdit LogIn=new Form_CreateANDEdit();
             LogIn.Show();
             Application.Run();
         }

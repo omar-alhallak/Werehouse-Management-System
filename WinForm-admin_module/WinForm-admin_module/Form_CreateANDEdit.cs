@@ -16,5 +16,192 @@ namespace WinForm_admin_module
         {
             InitializeComponent();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnMinBox_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnShowPassword_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.UseSystemPasswordChar)
+            {
+                txtPassword.UseSystemPasswordChar = false;
+                btnShowPassword.BackgroundImage = Properties.Resources.تنزيل__1_;
+            }
+            else
+            {
+                if (txtPassword.Text == "Password")
+                { }
+                else
+                {
+                    txtPassword.UseSystemPasswordChar = true;
+                    btnShowPassword.BackgroundImage = Properties.Resources.تنزيل;
+                }
+            }
+        }
+
+        private void txtPassword_Enter(object sender, EventArgs e)
+        {
+            if (txtPassword.Text == "Password")
+            {
+                txtPassword.Text = "";
+                txtPassword.UseSystemPasswordChar = true;
+                txtPassword.ForeColor = Color.White;
+            }
+        }
+
+        private void txtPassword_Leave(object sender, EventArgs e)
+        {
+            if (txtPassword.Text == "")
+            {
+                txtPassword.UseSystemPasswordChar = false;
+                txtPassword.Text = "Password";
+                txtPassword.ForeColor = Color.Gray;
+                btnShowPassword.BackgroundImage = Properties.Resources.تنزيل;
+            }
+        }
+
+        private void txtConfirm_Enter(object sender, EventArgs e)
+        {
+            if (txtConfirm.Text == "Confirm Password")
+            {
+                txtConfirm.Text = "";
+                txtConfirm.UseSystemPasswordChar = true;
+                txtConfirm.ForeColor = Color.White;
+            }
+        }
+
+        private void txtConfirm_Leave(object sender, EventArgs e)
+        {
+            if (txtConfirm.Text == "")
+            {
+                txtConfirm.UseSystemPasswordChar = false;
+                txtConfirm.Text = "Confirm Password";
+                txtConfirm.ForeColor = Color.Gray;
+                btnShowPassword.BackgroundImage = Properties.Resources.تنزيل;
+            }
+        }
+
+        private void Form_CreateANDEdit_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (Application.OpenForms.Count == 0)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void txtUserName_Enter(object sender, EventArgs e)
+        {
+            if (txtUserName.Text == "UserName")
+            {
+                txtUserName.Text = "";
+                txtUserName.ForeColor = Color.White;
+            }
+        }
+
+        private void txtUserName_Leave(object sender, EventArgs e)
+        {
+            if (txtUserName.Text == "")
+            {
+                txtUserName.Text = "UserName";
+                txtUserName.ForeColor = Color.Gray;
+                btnShowPassword.BackgroundImage = Properties.Resources.تنزيل;
+            }
+        }
+       
+        private void txtFullName_Enter(object sender, EventArgs e)
+        {
+            if (txtFullName.Text == "Full Name")
+            {
+                txtFullName.Text = "";
+                txtFullName.ForeColor = Color.White;
+            }
+        }
+
+        private void txtFullName_Leave(object sender, EventArgs e)
+        {
+            if (txtFullName.Text == "")
+            {
+                txtFullName.Text = "Full Name";
+                txtFullName.ForeColor = Color.Gray;
+                btnShowPassword.BackgroundImage = Properties.Resources.تنزيل;
+            }
+        }
+
+        private void btnCreate_Edit_Click(object sender, EventArgs e)
+        {
+            if(!RegexValidator.RegexFromUserName(txtUserName.Text,out string error))
+            {
+                MessageBox.Show(error,"UserName :",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                txtUserName.Focus();
+                return;
+            }
+            if (!RegexValidator.RegexFromFullName(txtFullName.Text, out error))
+            {
+                MessageBox.Show(error, "Full Name :", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtFullName.Focus();
+                return;
+            }
+            if (!RegexValidator.RegexFromPassword(txtPassword.Text, out error))
+            {
+                MessageBox.Show(error, "Password :", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtPassword.Focus();
+                return;
+            }
+            if(txtPassword.Text!=txtConfirm.Text)
+            {
+                MessageBox.Show("- كلمتا السر غير متطابقتان.", "Confirm Password :", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            if (ComBoxRole.SelectedIndex == 0)
+            {
+                MessageBox.Show("- يرجى أختيار صلاحيات للحساب.", "Select Role :", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+            if (txtPassword.Text == "Password")
+            {
+                txtConfirm.Enabled = false;
+                return;
+            }
+            if (RegexValidator.RegexFromPassword(txtPassword.Text, out string error))
+            {
+                txtConfirm.Enabled = true;
+            }
+            else
+            {
+                txtConfirm.Text = "Confirm Password";
+                txtConfirm.UseSystemPasswordChar = false;
+                txtConfirm.Enabled = false;
+            }
+        }
+
+        private void ComBoxRole_Enter(object sender, EventArgs e)
+        {
+            if (ComBoxRole.SelectedIndex == 0)
+            {
+                ComBoxRole.ForeColor = Color.White;
+            }    
+        }
+
+        private void ComBoxRole_Leave(object sender, EventArgs e)
+        {
+            if (ComBoxRole.SelectedIndex == 0)
+            { 
+                ComBoxRole.ForeColor = Color.Gray;
+            }
+        }
+
+        private void Form_CreateANDEdit_Load(object sender, EventArgs e)
+        {
+            ComBoxRole.SelectedIndex = 0;
+        }
     }
 }

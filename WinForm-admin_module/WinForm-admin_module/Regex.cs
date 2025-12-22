@@ -16,21 +16,22 @@ namespace WinForm_admin_module
             // أسم المستخدم لا يمكن أن يكون فارغ
             // يجب أن يحتوي على حروف إنجليزية وأرقام فقط
             // طوله بين 4 و 15 محرف
+            // يسمح فقط برموز الأتية ( _ - ) فقط 
             error = null;
 
-            const string pattern = @"^[a-zA-Z0-9]{4,15}$";
+            const string pattern = @"^[a-zA-Z0-9\-_]{4,15}$";
 
             userName = (userName ?? "").Trim();
 
-            if (string.IsNullOrEmpty(userName))
+            if (string.IsNullOrEmpty(userName)||userName== "UserName")
             {
-                error = "أسم المستخدم لا يمكن أن يكون فارغ.";
+                error = "- أسم المستخدم لا يمكن أن يكون فارغ.";
                 return false;
             }
 
             if (!Regex.IsMatch(userName, pattern))
             {
-                error = "اسم المستخدم غير صالح. يجب أن يحتوي على حروف إنجليزية وأرقام فقط، وطوله بين 4 و 15 محرف.";
+                error = "- اسم المستخدم غير صالح. يجب أن يحتوي على حروف إنجليزية وأرقام فقط، وطوله بين 4 و 15 محرف. \n - يسمح فقط برموز الأتية ( _ - ) فقط.";
                 return false;
             }
 
@@ -42,21 +43,22 @@ namespace WinForm_admin_module
             //  الاسم الكامل لا يمكن أن يكون فارغ
             // يسمح فقط بأستخدتم أحرف أجنبية
             // حد الأقصى للمحارف 30
+            // حد أقل 4 محارف
             error = null;
 
             fullName = (fullName ?? "").Trim();
 
-            if (string.IsNullOrWhiteSpace(fullName))
+            if (string.IsNullOrWhiteSpace(fullName) || fullName == "Full Name")
             {
-                error = "الاسم الكامل لا يمكن أن يكون فارغ.";
+                error = "- الاسم الكامل لا يمكن أن يكون فارغ.";
                 return false;
             }
  
-            const string pattern = @"^[a-zA-Z\s]{3,30}$";
+            const string pattern = @"^[a-zA-Z\s]{4,30}$";
 
             if (!Regex.IsMatch(fullName, pattern))
             {
-                error = "الاسم الكامل غير صالح. يجب أن يحتوي على أحرف أجنبية ومسافات فقط، وبحد أقصى 30 محرف.";
+                error = "- الاسم الكامل غير صالح. يجب أن يحتوي على أحرف أجنبية ومسافات فقط، وبحد أقصى 30 محرف. وحد أقل 4 محارف.";
                 return false;
             }
 
@@ -72,6 +74,12 @@ namespace WinForm_admin_module
             error = null;
 
             password = password ?? "";
+
+            if (string.IsNullOrWhiteSpace(password) || password == "Password")
+            {
+                error = "- كلمة المرور لا يمكن أن تكون فارغة.";
+                return false;
+            }
 
             bool isValid = true;
             string Massage = "كلمة المرور ضعيفة. يجب أن تستوفي الشروط التالية:\n";

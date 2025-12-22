@@ -36,9 +36,17 @@ namespace WinForm_admin_module
 
         private void Form_Dashboard_Load(object sender, EventArgs e)
         {
-            if (Session.LogedINUser != null)
+            if (Program.LogedINUser != null)
             {
-                labName.Text= "Welcoom " + Session.LogedINUser.FullName + " (Admin)";
+                labName.Text= "Welcoom " + Program.LogedINUser.FullName + " (Admin)";
+            }
+        }
+
+        private void Form_Dashboard_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (Application.OpenForms.Count == 0)
+            {
+                Application.Exit();
             }
         }
     }

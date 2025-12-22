@@ -23,5 +23,19 @@ namespace WinForm_admin_module
             Dashboard.Show();
             this.Close(); 
         }
+        
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            Form_CreateANDEdit CreateANDEdit = new Form_CreateANDEdit();
+            CreateANDEdit.Show();
+        }
+
+        private void Form_AccountManagement_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (Application.OpenForms.Count == 0)
+            {
+                Application.Exit();
+            }
+        }
     }
 }

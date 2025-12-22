@@ -85,7 +85,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Regex.cs" />
-    <Compile Include="Session.cs" />
     <Compile Include="UserRole___Permissions.cs" />
     <Compile Include="Users.cs" />
     <Compile Include="UserService.cs" />

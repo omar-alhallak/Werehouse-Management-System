@@ -35,16 +35,14 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnMinBoxs = new System.Windows.Forms.Button();
-            this.btnExits = new System.Windows.Forms.Button();
+            this.btnMinBox = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.labl = new System.Windows.Forms.Label();
             this.DataGrid = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtSelect = new System.Windows.Forms.TextBox();
-            this.btnMinBox = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).BeginInit();
@@ -122,37 +120,37 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.panel1.Controls.Add(this.btnMinBoxs);
-            this.panel1.Controls.Add(this.btnExits);
+            this.panel1.Controls.Add(this.btnMinBox);
+            this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.labl);
-            this.panel1.Location = new System.Drawing.Point(-3, -1);
+            this.panel1.Location = new System.Drawing.Point(8, -1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(522, 59);
             this.panel1.TabIndex = 17;
             // 
-            // btnMinBoxs
+            // btnMinBox
             // 
-            this.btnMinBoxs.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__5_;
-            this.btnMinBoxs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnMinBoxs.FlatAppearance.BorderSize = 0;
-            this.btnMinBoxs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinBoxs.Location = new System.Drawing.Point(39, 3);
-            this.btnMinBoxs.Name = "btnMinBoxs";
-            this.btnMinBoxs.Size = new System.Drawing.Size(47, 37);
-            this.btnMinBoxs.TabIndex = 13;
-            this.btnMinBoxs.UseVisualStyleBackColor = true;
+            this.btnMinBox.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__5_;
+            this.btnMinBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMinBox.FlatAppearance.BorderSize = 0;
+            this.btnMinBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinBox.Location = new System.Drawing.Point(39, 3);
+            this.btnMinBox.Name = "btnMinBox";
+            this.btnMinBox.Size = new System.Drawing.Size(47, 37);
+            this.btnMinBox.TabIndex = 13;
+            this.btnMinBox.UseVisualStyleBackColor = true;
             // 
-            // btnExits
+            // btnExit
             // 
-            this.btnExits.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__2_;
-            this.btnExits.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnExits.FlatAppearance.BorderSize = 0;
-            this.btnExits.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExits.Location = new System.Drawing.Point(2, 3);
-            this.btnExits.Name = "btnExits";
-            this.btnExits.Size = new System.Drawing.Size(38, 37);
-            this.btnExits.TabIndex = 12;
-            this.btnExits.UseVisualStyleBackColor = true;
+            this.btnExit.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__2_;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Location = new System.Drawing.Point(2, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(38, 37);
+            this.btnExit.TabIndex = 12;
+            this.btnExit.UseVisualStyleBackColor = true;
             // 
             // labl
             // 
@@ -190,7 +188,7 @@
             this.txtSearch.Location = new System.Drawing.Point(46, 228);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(157, 18);
-            this.txtSearch.TabIndex = 22;
+            this.txtSearch.TabIndex = 0;
             this.txtSearch.TabStop = false;
             this.txtSearch.Text = "Search";
             // 
@@ -212,33 +210,9 @@
             this.txtSelect.Name = "txtSelect";
             this.txtSelect.ReadOnly = true;
             this.txtSelect.Size = new System.Drawing.Size(157, 18);
-            this.txtSelect.TabIndex = 24;
+            this.txtSelect.TabIndex = 0;
             this.txtSelect.TabStop = false;
             this.txtSelect.Text = "Select Account";
-            // 
-            // btnMinBox
-            // 
-            this.btnMinBox.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__5_;
-            this.btnMinBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnMinBox.FlatAppearance.BorderSize = 0;
-            this.btnMinBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinBox.Location = new System.Drawing.Point(165, -1);
-            this.btnMinBox.Name = "btnMinBox";
-            this.btnMinBox.Size = new System.Drawing.Size(47, 37);
-            this.btnMinBox.TabIndex = 16;
-            this.btnMinBox.UseVisualStyleBackColor = true;
-            // 
-            // btnExit
-            // 
-            this.btnExit.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__2_;
-            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Location = new System.Drawing.Point(128, -1);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(38, 37);
-            this.btnExit.TabIndex = 15;
-            this.btnExit.UseVisualStyleBackColor = true;
             // 
             // btnAdd
             // 
@@ -247,12 +221,13 @@
             this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(411, 220);
+            this.btnAdd.Location = new System.Drawing.Point(412, 220);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(94, 74);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // Form_AccountManagement
             // 
@@ -266,8 +241,6 @@
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.DataGrid);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnMinBox);
-            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnDisable);
@@ -278,6 +251,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_AccountManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_AccountManagement_FormClosed);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid)).EndInit();
@@ -293,12 +267,10 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnDisable;
         private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.Button btnMinBox;
-        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnMinBoxs;
-        private System.Windows.Forms.Button btnExits;
+        private System.Windows.Forms.Button btnMinBox;
+        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label labl;
         private System.Windows.Forms.DataGridView DataGrid;
         private System.Windows.Forms.Panel panel2;
