@@ -16,7 +16,7 @@ namespace WinForm_inventory_module
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Category());
+            Application.Run(new InventoryDashboardForm());
         }
     }
 }
