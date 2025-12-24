@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Excptions\FatherExceptions.cs" />
     <Compile Include="Excptions\RegexException.cs" />
+    <Compile Include="Excptions\UserNameAlreadyExiste.cs" />
     <Compile Include="Excptions\UserNotFoundException.cs" />
     <Compile Include="Form_LogIN.cs">
       <SubType>Form</SubType>
@@ -108,9 +109,6 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Data\Users.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

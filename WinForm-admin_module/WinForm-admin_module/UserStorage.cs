@@ -11,7 +11,6 @@ namespace WinForm_admin_module
     public class UserStorage
     {
         private readonly string FilePath;
-        private readonly string ProjectFilePath;
 
         // لبناء مسار التخزين
         public UserStorage()
@@ -20,13 +19,8 @@ namespace WinForm_admin_module
                 (
                 AppDomain.CurrentDomain.BaseDirectory,
                 "Data",
-                "Users.json"
-                );
-            string projectRoot = Path.GetFullPath
-                (
-                Path.Combine(AppDomain.CurrentDomain.BaseDirectory,@"..\..\")
-                );
-            ProjectFilePath = Path.Combine(projectRoot, "Data", "Users.json");
+                "Users.txt"
+                );   
         }
 
         // قراءة الحسابات من الملف
@@ -59,9 +53,7 @@ namespace WinForm_admin_module
 
             string json = JsonConvert.SerializeObject(users, Formatting.Indented);
 
-            File.WriteAllText(FilePath, json);
-            EnsureProjectDirectoryExists();
-            File.WriteAllText(ProjectFilePath, json);
+            File.WriteAllText(FilePath, json);     
         }
 
         // يتأكد أن مجلد Data موجود
@@ -73,23 +65,13 @@ namespace WinForm_admin_module
                 Directory.CreateDirectory(dir);
         }
 
-        // يتأكد أن ملف users.json موجود
+        // يتأكد أن ملف users.txt موجود
         private void EnsureFileExists()
         {
             EnsureDirectoryExists();
 
             if (!File.Exists(FilePath))
                 File.WriteAllText(FilePath, "[]");
-        }
-
-        // يتأكد أن مجلد Data موجود
-        // إذا مو موجود يأنشأه
-        private void EnsureProjectDirectoryExists()
-        {
-            string dir = Path.GetDirectoryName(ProjectFilePath);
-
-            if (!Directory.Exists(dir))
-                Directory.CreateDirectory(dir);
         }
     }
 }

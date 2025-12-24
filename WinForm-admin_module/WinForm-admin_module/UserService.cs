@@ -44,21 +44,12 @@ namespace WinForm_admin_module
             user.UserName = user.UserName?.Trim();
             user.FullName = user.FullName?.Trim();
 
-            if (!RegexValidator.RegexFromUserName(user.UserName, out string UserError))
-                throw new RegexException(UserError);
-
-            if (!RegexValidator.RegexFromFullName(user.FullName, out string FullNameError))
-                throw new RegexException(FullNameError);
-
-            if (!RegexValidator.RegexFromPassword(plainPassword, out string PasswordError))
-                throw new RegexException(PasswordError);
-
             //  تأكيد أنو Username مو مكرر
             if (FindByUsername(user.UserName) != null)
-                throw new Exception("Username already exists.");
+                throw new UserNameAlreadyExiste();
 
             // تعيين Id جديد
-            int nextId = (users.Count == 0) ? 1 : users.Max(u => u.Id) + 1;
+            int nextId = (users.Count == 0) ? 100 : users.Max(u => u.Id) + 1;
             user.Id = nextId;
 
             // هاش لكلمة المرور وتخزينها

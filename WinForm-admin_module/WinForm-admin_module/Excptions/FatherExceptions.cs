@@ -12,7 +12,7 @@ namespace WinForm_admin_module.Excptions
         { 
             
         }
-        public FatherExceptions(string massege) : base(massege) 
+        public FatherExceptions(string messege) : base(messege) 
         {
 
         }

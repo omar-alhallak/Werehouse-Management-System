@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinForm_admin_module.Excptions;
 
 namespace WinForm_admin_module
 {
@@ -125,6 +126,7 @@ namespace WinForm_admin_module
             }
         }
 
+        private readonly UserService userserver1=new UserService();
         private void btnCreate_Edit_Click(object sender, EventArgs e)
         {
             if(!RegexValidator.RegexFromUserName(txtUserName.Text,out string error))
@@ -148,10 +150,47 @@ namespace WinForm_admin_module
             if(txtPassword.Text!=txtConfirm.Text)
             {
                 MessageBox.Show("- كلمتا السر غير متطابقتان.", "Confirm Password :", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtConfirm.Focus();
+                return;
             }
             if (ComBoxRole.SelectedIndex == 0)
             {
                 MessageBox.Show("- يرجى أختيار صلاحيات للحساب.", "Select Role :", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ComBoxRole.Focus();
+                return;
+            }
+            string selectedText = ComBoxRole.SelectedItem.ToString();
+
+            // تحويل النص إلى enum
+            UserRole selectedRole =
+                (UserRole)Enum.Parse(typeof(UserRole), selectedText);
+
+            // إنشاء المستخدم
+            var user = new Users
+            {
+                UserName = txtUserName.Text.Trim(),
+                FullName = txtFullName.Text.Trim(),
+                Role = selectedRole
+            };
+
+            string plainPassword = txtPassword.Text;
+   
+            try
+            {
+                // للتحقق من عملية الإضافة كاملة
+                userserver1.AddUser(user, plainPassword);
+
+                MessageBox.Show( $"_تم إنشاء الحساب بنجاح.\nرقم الحساب (ID): {user.Id}",   "Save Successful:", MessageBoxButtons.OK,   MessageBoxIcon.Information);
+
+                this.Close();
+            }
+            catch (UserNameAlreadyExiste Error) 
+            {
+                MessageBox.Show(Error.Message, "Error:", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception) 
+            {
+                MessageBox.Show("حدث خطأ غير متوقع يرجى المحاولة لاحقاً.", "Error:", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
