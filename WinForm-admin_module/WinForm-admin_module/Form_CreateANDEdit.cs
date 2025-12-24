@@ -27,22 +27,19 @@ namespace WinForm_admin_module
             this.WindowState = FormWindowState.Minimized;
         }
 
+        bool isHidden = true;
         private void btnShowPassword_Click(object sender, EventArgs e)
         {
-            if (txtPassword.UseSystemPasswordChar)
+            isHidden = !isHidden;
+            PasswordHelper.ApplyLogic(txtPassword, "Password", isHidden);
+            PasswordHelper.ApplyLogic(txtConfirm, "Confirm Password", isHidden);
+            if(isHidden)
             {
-                txtPassword.UseSystemPasswordChar = false;
-                btnShowPassword.BackgroundImage = Properties.Resources.تنزيل__1_;
+                btnShowPassword.BackgroundImage =Properties.Resources.تنزيل;
             }
             else
             {
-                if (txtPassword.Text == "Password")
-                { }
-                else
-                {
-                    txtPassword.UseSystemPasswordChar = true;
-                    btnShowPassword.BackgroundImage = Properties.Resources.تنزيل;
-                }
+                btnShowPassword.BackgroundImage = Properties.Resources.تنزيل__1_;
             }
         }
 
@@ -51,7 +48,6 @@ namespace WinForm_admin_module
             if (txtPassword.Text == "Password")
             {
                 txtPassword.Text = "";
-                txtPassword.UseSystemPasswordChar = true;
                 txtPassword.ForeColor = Color.White;
             }
         }
@@ -60,10 +56,8 @@ namespace WinForm_admin_module
         {
             if (txtPassword.Text == "")
             {
-                txtPassword.UseSystemPasswordChar = false;
                 txtPassword.Text = "Password";
                 txtPassword.ForeColor = Color.Gray;
-                btnShowPassword.BackgroundImage = Properties.Resources.تنزيل;
             }
         }
 
@@ -71,9 +65,8 @@ namespace WinForm_admin_module
         {
             if (txtConfirm.Text == "Confirm Password")
             {
-                txtConfirm.Text = "";
-                txtConfirm.UseSystemPasswordChar = true;
-                txtConfirm.ForeColor = Color.White;
+                    txtConfirm.Text = "";
+                    txtConfirm.ForeColor = Color.White; 
             }
         }
 
@@ -81,10 +74,8 @@ namespace WinForm_admin_module
         {
             if (txtConfirm.Text == "")
             {
-                txtConfirm.UseSystemPasswordChar = false;
                 txtConfirm.Text = "Confirm Password";
                 txtConfirm.ForeColor = Color.Gray;
-                btnShowPassword.BackgroundImage = Properties.Resources.تنزيل;
             }
         }
 
@@ -181,6 +172,7 @@ namespace WinForm_admin_module
                 txtConfirm.UseSystemPasswordChar = false;
                 txtConfirm.Enabled = false;
             }
+            PasswordHelper.ApplyLogic(txtPassword, "Password", isHidden);
         }
 
         private void ComBoxRole_Enter(object sender, EventArgs e)
@@ -202,6 +194,11 @@ namespace WinForm_admin_module
         private void Form_CreateANDEdit_Load(object sender, EventArgs e)
         {
             ComBoxRole.SelectedIndex = 0;
+        }
+
+        private void txtConfirm_TextChanged(object sender, EventArgs e)
+        {
+            PasswordHelper.ApplyLogic(txtConfirm, "Confirm Password", isHidden);
         }
     }
 }

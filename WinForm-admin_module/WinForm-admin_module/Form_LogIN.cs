@@ -41,10 +41,8 @@ namespace WinForm_admin_module
         {
             if (txtPassword.Text == "")
             {
-                txtPassword.UseSystemPasswordChar = false;
                 txtPassword.Text = "Password";   
                 txtPassword.ForeColor = Color.Gray;
-                btnShowPassword.BackgroundImage = Properties.Resources.تنزيل;
             }
         }
 
@@ -53,7 +51,6 @@ namespace WinForm_admin_module
             if (txtPassword.Text == "Password")
             {
                 txtPassword.Text = "";
-                txtPassword.UseSystemPasswordChar = true;
                 txtPassword.ForeColor = Color.White;
             }
         }
@@ -77,10 +74,6 @@ namespace WinForm_admin_module
             {
                 MessageBox.Show("الحساب غير موجود", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            catch (Exception)
-            {
-                MessageBox.Show("مدري شو هابد يا أخوي ", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -88,22 +81,18 @@ namespace WinForm_admin_module
             Application.Exit();
         }
 
+        bool isHidden = true;
         private void btnShowPassword_Click(object sender, EventArgs e)
         {
-            if (txtPassword.UseSystemPasswordChar)
+            isHidden = !isHidden;
+            PasswordHelper.ApplyLogic(txtPassword, "Password", isHidden);
+            if (isHidden)
             {
-                txtPassword.UseSystemPasswordChar = false;
-                btnShowPassword.BackgroundImage = Properties.Resources.تنزيل__1_;
+                btnShowPassword.BackgroundImage = Properties.Resources.تنزيل;
             }
             else
             {
-                if (txtPassword.Text == "Password")
-                { }
-                else
-                {
-                    txtPassword.UseSystemPasswordChar = true;
-                    btnShowPassword.BackgroundImage = Properties.Resources.تنزيل;
-                }
+                btnShowPassword.BackgroundImage = Properties.Resources.تنزيل__1_;
             }
         }
 
@@ -118,6 +107,11 @@ namespace WinForm_admin_module
             {
                 Application.Exit();
             }
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+            PasswordHelper.ApplyLogic(txtPassword, "Password", isHidden);
         }
     }
 }

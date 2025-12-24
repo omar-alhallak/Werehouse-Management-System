@@ -94,6 +94,7 @@
             this.txtConfirm.TabIndex = 0;
             this.txtConfirm.TabStop = false;
             this.txtConfirm.Text = "Confirm Password";
+            this.txtConfirm.TextChanged += new System.EventHandler(this.txtConfirm_TextChanged);
             this.txtConfirm.Enter += new System.EventHandler(this.txtConfirm_Enter);
             this.txtConfirm.Leave += new System.EventHandler(this.txtConfirm_Leave);
             // 
