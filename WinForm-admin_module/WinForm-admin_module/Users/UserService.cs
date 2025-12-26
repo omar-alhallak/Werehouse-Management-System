@@ -70,14 +70,18 @@ namespace WinForm_admin_module
             if (updatedUser == null)
                 throw new ArgumentNullException(nameof(updatedUser));
 
+            // ابحث عن المستخدم الأصلي حسب الـ Id
             var existing = users.FirstOrDefault(u => u.Id == updatedUser.Id);
             if (existing == null)
                 throw new UserNotFoundException();
 
+            // عدّل البيانات
+            existing.UserName = updatedUser.UserName?.Trim();
             existing.FullName = updatedUser.FullName?.Trim();
             existing.Role = updatedUser.Role;
             existing.IsActive = updatedUser.IsActive;
 
+            // احفظ بالتخزين
             Save();
         }
 

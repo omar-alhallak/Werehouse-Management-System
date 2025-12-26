@@ -13,6 +13,8 @@ namespace WinForm_admin_module
 {
     public partial class Form_CreateANDEdit : Form
     {
+        private readonly UserService userserver1 = new UserService();
+
         public Form_CreateANDEdit()
         {
             InitializeComponent();
@@ -124,12 +126,11 @@ namespace WinForm_admin_module
             }
         }
 
-        private readonly UserService userserver1=new UserService();
         private void btnCreate_Edit_Click(object sender, EventArgs e)
         {
-            if(!RegexValidator.RegexFromUserName(txtUserName.Text,out string error))
+            if (!RegexValidator.RegexFromUserName(txtUserName.Text, out string error))
             {
-                MessageBox.Show(error,"UserName :",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show(error, "UserName :", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtUserName.Focus();
                 return;
             }
@@ -145,7 +146,7 @@ namespace WinForm_admin_module
                 txtPassword.Focus();
                 return;
             }
-            if(txtPassword.Text!=txtConfirm.Text)
+            if (txtPassword.Text != txtConfirm.Text)
             {
                 MessageBox.Show("- كلمتا السر غير متطابقتان.", "Confirm Password :", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtConfirm.Focus();
@@ -159,11 +160,11 @@ namespace WinForm_admin_module
             }
             string selectedText = ComBoxRole.SelectedItem.ToString();
 
-            // تحويل النص إلى enum
+            // تحويل النص إلى enum  
             UserRole selectedRole =
                 (UserRole)Enum.Parse(typeof(UserRole), selectedText);
 
-            // إنشاء المستخدم
+            // إنشاء المستخدم  
             var user = new Users
             {
                 UserName = txtUserName.Text.Trim(),
@@ -172,22 +173,22 @@ namespace WinForm_admin_module
             };
 
             string plainPassword = txtPassword.Text;
-   
+
             try
             {
-                // للتحقق من عملية الإضافة كاملة
+                // للتحقق من عملية الإضافة كاملة  
                 userserver1.AddUser(user, plainPassword);
-                
-                MessageBox.Show( $"_تم إنشاء الحساب بنجاح.\nرقم الحساب (ID): {user.Id}",   "Save Successful:", MessageBoxButtons.OK,   MessageBoxIcon.Information);
+
+                MessageBox.Show($"_تم إنشاء الحساب بنجاح.\nرقم الحساب (ID): {user.Id}", "Save Successful:", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             }
-            catch (UserNameAlreadyExiste Error) 
+            catch (UserNameAlreadyExiste Error)
             {
                 MessageBox.Show(Error.Message, "Error:", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            catch (Exception) 
+            catch (Exception)
             {
                 MessageBox.Show("حدث خطأ غير متوقع يرجى المحاولة لاحقاً.", "Error:", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -231,7 +232,7 @@ namespace WinForm_admin_module
 
         private void Form_CreateANDEdit_Load(object sender, EventArgs e)
         {
-            ComBoxRole.SelectedIndex = 0;
+                ComBoxRole.SelectedIndex = 0;
         }
 
         private void txtConfirm_TextChanged(object sender, EventArgs e)

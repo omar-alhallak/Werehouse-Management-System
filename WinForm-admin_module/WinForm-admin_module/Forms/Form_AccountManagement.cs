@@ -104,10 +104,10 @@ namespace WinForm_admin_module
 
             var allUsers = userserver1.GetAllUsers();
 
-            var filtered = allUsers .Where(u =>(!string.IsNullOrEmpty(u.UserName) && u.UserName.StartsWith(term, StringComparison.OrdinalIgnoreCase))
+            var filtered = allUsers.Where(u => (!string.IsNullOrEmpty(u.UserName) && u.UserName.StartsWith(term, StringComparison.OrdinalIgnoreCase))
                  || (!string.IsNullOrEmpty(u.FullName) && u.FullName.StartsWith(term, StringComparison.OrdinalIgnoreCase))).ToList();
 
-            if(filtered.Count==0)
+            if (filtered.Count == 0)
             {
                 lblUserNotFound.Visible = true;
                 DataGrid.DataSource = null;
@@ -119,8 +119,13 @@ namespace WinForm_admin_module
 
         private void DataGrid_SelectionChanged(object sender, EventArgs e)
         {
-            string userName = DataGrid.CurrentRow.Cells["UserName"].Value.ToString(); 
+            string userName = DataGrid.CurrentRow.Cells["UserName"].Value.ToString();
             txtSelect.Text = userName;
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -120,9 +120,10 @@
             // 
             // lbltext
             // 
+            this.lbltext.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbltext.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.lbltext.Location = new System.Drawing.Point(56, 109);
+            this.lbltext.Location = new System.Drawing.Point(69, 109);
             this.lbltext.Name = "lbltext";
             this.lbltext.Size = new System.Drawing.Size(220, 29);
             this.lbltext.TabIndex = 0;

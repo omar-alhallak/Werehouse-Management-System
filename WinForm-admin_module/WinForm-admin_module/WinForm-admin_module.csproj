@@ -53,32 +53,32 @@
     <Compile Include="Excptions\RegexException.cs" />
     <Compile Include="Excptions\UserNameAlreadyExiste.cs" />
     <Compile Include="Excptions\UserNotFoundException.cs" />
-    <Compile Include="Form_LogIN.cs">
+    <Compile Include="Forms\Form_LogIN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_LogIN.Designer.cs">
+    <Compile Include="Forms\Form_LogIN.Designer.cs">
       <DependentUpon>Form_LogIN.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Dashboard.cs">
+    <Compile Include="Forms\Form_Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Dashboard.Designer.cs">
+    <Compile Include="Forms\Form_Dashboard.Designer.cs">
       <DependentUpon>Form_Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_AccountManagement.cs">
+    <Compile Include="Forms\Form_AccountManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_AccountManagement.Designer.cs">
+    <Compile Include="Forms\Form_AccountManagement.Designer.cs">
       <DependentUpon>Form_AccountManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_CreateANDEdit.cs">
+    <Compile Include="Forms\Form_CreateANDEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_CreateANDEdit.Designer.cs">
+    <Compile Include="Forms\Form_CreateANDEdit.Designer.cs">
       <DependentUpon>Form_CreateANDEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="HashingFromPassword.cs" />
-    <Compile Include="LoadUserGrid.cs" />
+    <Compile Include="Users\LoadUserGrid.cs" />
     <Compile Include="PasswordHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -88,21 +88,21 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Regex.cs" />
-    <Compile Include="UserRole___Permissions.cs" />
-    <Compile Include="Users.cs" />
-    <Compile Include="UserService.cs" />
-    <Compile Include="UserStorage.cs" />
-    <Compile Include="User_AuthService.cs" />
-    <EmbeddedResource Include="Form_LogIN.resx">
+    <Compile Include="Users\UserRole___Permissions.cs" />
+    <Compile Include="Users\Users.cs" />
+    <Compile Include="Users\UserService.cs" />
+    <Compile Include="Users\UserStorage.cs" />
+    <Compile Include="Users\User_AuthService.cs" />
+    <EmbeddedResource Include="Forms\Form_LogIN.resx">
       <DependentUpon>Form_LogIN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Dashboard.resx">
+    <EmbeddedResource Include="Forms\Form_Dashboard.resx">
       <DependentUpon>Form_Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_AccountManagement.resx">
+    <EmbeddedResource Include="Forms\Form_AccountManagement.resx">
       <DependentUpon>Form_AccountManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_CreateANDEdit.resx">
+    <EmbeddedResource Include="Forms\Form_CreateANDEdit.resx">
       <DependentUpon>Form_CreateANDEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

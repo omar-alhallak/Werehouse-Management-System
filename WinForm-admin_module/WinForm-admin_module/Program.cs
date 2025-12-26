@@ -19,7 +19,7 @@ namespace WinForm_admin_module
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Form_AccountManagement LogIn=new Form_AccountManagement();
+            Form_LogIN LogIn=new Form_LogIN();
             LogIn.Show();
             Application.Run();
         }
