@@ -60,12 +60,18 @@
     <Compile Include="CategoryManagement\CategoryManager.cs" />
     <Compile Include="CategoryManagement\CategoryValidation.cs" />
     <Compile Include="CategoryManagement\CategoryStorage.cs" />
-    <Compile Include="FormUsing.cs" />
+    <Compile Include="CategoryManagement\Product.cs" />
     <Compile Include="InventoryDashboardForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="InventoryDashboardForm.Designer.cs">
       <DependentUpon>InventoryDashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductManagmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductManagmentForm.Designer.cs">
+      <DependentUpon>ProductManagmentForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InventoryDashboardForm.resx">
       <DependentUpon>InventoryDashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductManagmentForm.resx">
+      <DependentUpon>ProductManagmentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

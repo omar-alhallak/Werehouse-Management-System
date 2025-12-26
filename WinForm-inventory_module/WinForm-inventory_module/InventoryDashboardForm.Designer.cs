@@ -60,7 +60,7 @@
             // 
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
             this.label1.Image = global::WinForm_inventory_module.Properties.Resources.x_removebg_preview;
-            this.label1.Location = new System.Drawing.Point(898, 0);
+            this.label1.Location = new System.Drawing.Point(2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 31);
             this.label1.TabIndex = 9;
@@ -91,11 +91,12 @@
             // lblStatus
             // 
             this.lblStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblStatus.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.lblStatus.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.lblStatus.Location = new System.Drawing.Point(0, 566);
+            this.lblStatus.Location = new System.Drawing.Point(0, 562);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(933, 22);
+            this.lblStatus.Size = new System.Drawing.Size(933, 26);
             this.lblStatus.TabIndex = 2;
             this.lblStatus.Text = "Welcome to Inventory Management System";
             // 
@@ -103,7 +104,7 @@
             // 
             this.toolStripStatusLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(239, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(297, 20);
             this.toolStripStatusLabel1.Text = "Welcome to Inventory Management System";
             // 
             // panel1
@@ -173,6 +174,7 @@
             this.btnManageProducts.Text = "Manage Products";
             this.btnManageProducts.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnManageProducts.UseVisualStyleBackColor = false;
+            this.btnManageProducts.Click += new System.EventHandler(this.btnManageProducts_Click_1);
             // 
             // btnManageCategories
             // 
@@ -198,7 +200,7 @@
             // 
             // InventoryDashboardForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(933, 588);

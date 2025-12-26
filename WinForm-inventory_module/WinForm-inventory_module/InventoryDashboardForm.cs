@@ -16,29 +16,6 @@ namespace WinForm_inventory_module
         {
             InitializeComponent();
         }
-
-       
-
-        private void btnManageCategories_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnManageProducts_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnViewStock_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -48,6 +25,11 @@ namespace WinForm_inventory_module
         {
             new CategoryManagementForm().Show();
 
+        }
+
+        private void btnManageProducts_Click_1(object sender, EventArgs e)
+        {
+            new ProductManagmentForm().Show();
         }
     }
 }

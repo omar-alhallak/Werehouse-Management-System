@@ -19,8 +19,6 @@ namespace WinForm_inventory_module
         public CategoryManagementForm()
         {
             InitializeComponent();
-           //this.Load += CategoryManagementForm_Load;
-           // btnAdd.Click += btnAdd_Click;
 
         }
        
@@ -171,6 +169,11 @@ namespace WinForm_inventory_module
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

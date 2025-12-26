@@ -66,17 +66,24 @@ namespace WinForm_inventory_module.CategoryManagement
         // حذف تصنيف
         public void Delete(int id)
         {
+            var c = Categories.FirstOrDefault(x => x.Id == id);
+
+            if (c.Equals(default(Category)))
+                throw new CategoryException("Category not found.");
+
+            // 1) حذف التصنيف
+            Categories.Remove(c);
+
+            // 2) إعادة ترقيم Ids من 1 إلى n
             for (int i = 0; i < Categories.Count; i++)
             {
-                if (Categories[i].Id == id)
-                {
-                    Categories.RemoveAt(i);
-                    Storage.Save(Categories);
-                    return;
-                }
+                var item = Categories[i];
+                Categories[i] = new Category(i + 1, item.Name);
             }
 
-            throw new CategoryException("Category not found.");
+            // 3) حفظ بعد إعادة الترتيب
+            Storage.Save(Categories);
+          
         }
     }
 }

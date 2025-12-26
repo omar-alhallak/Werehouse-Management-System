@@ -1,10 +1,10 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace WinForm_inventory_module.CategoryManagement
 {
@@ -16,7 +16,7 @@ namespace WinForm_inventory_module.CategoryManagement
         public CategoryStorage()
         {
             DataFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data");
-            FilePath = Path.Combine(DataFolder, "Categories.json");
+            FilePath = Path.Combine(DataFolder, "Categories.txt");
         }
 
         // قراءة التصنيفات من ملف JSON

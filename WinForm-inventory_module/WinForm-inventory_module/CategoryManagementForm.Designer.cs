@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pnlHeader = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.picHeaderIcon = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.splitMain = new System.Windows.Forms.SplitContainer();
@@ -59,6 +60,7 @@
             // pnlHeader
             // 
             this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.pnlHeader.Controls.Add(this.label1);
             this.pnlHeader.Controls.Add(this.picHeaderIcon);
             this.pnlHeader.Controls.Add(this.lblTitle);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
@@ -67,6 +69,16 @@
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(933, 80);
             this.pnlHeader.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.label1.Image = global::WinForm_inventory_module.Properties.Resources.x_removebg_preview;
+            this.label1.Location = new System.Drawing.Point(-4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 31);
+            this.label1.TabIndex = 10;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // picHeaderIcon
             // 
@@ -336,5 +348,6 @@
         private System.Windows.Forms.Panel pnlSearch;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Label lb1Search;
+        private System.Windows.Forms.Label label1;
     }
 }
