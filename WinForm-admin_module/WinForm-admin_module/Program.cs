@@ -11,7 +11,6 @@ namespace WinForm_admin_module
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        /// 
       
          public static Users LogedINUser;
         
@@ -20,7 +19,7 @@ namespace WinForm_admin_module
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Form_LogIN LogIn=new Form_LogIN();
+            Form_AccountManagement LogIn=new Form_AccountManagement();
             LogIn.Show();
             Application.Run();
         }

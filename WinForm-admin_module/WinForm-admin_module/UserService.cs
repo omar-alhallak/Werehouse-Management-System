@@ -20,6 +20,7 @@ namespace WinForm_admin_module
 
         public List<Users> GetAllUsers()
         {
+            users=storage.LoadUsers();
             return users.ToList();
         }
 
@@ -84,7 +85,7 @@ namespace WinForm_admin_module
         public void ChangePassword(int userId, string newPlainPassword)
         {
             if (string.IsNullOrWhiteSpace(newPlainPassword))
-                throw new Exception("New password is required.");
+                throw new ArgumentException("New password is required.",nameof(newPlainPassword));
 
             var user = users.FirstOrDefault(u => u.Id == userId);
             if (user == null)
@@ -110,7 +111,7 @@ namespace WinForm_admin_module
         {
             var user = users.FirstOrDefault(u => u.Id == id);
             if (user == null)
-                throw new Exception("User not found.");
+                throw new UserNotFoundException();
 
             user.IsActive = true;
             Save();

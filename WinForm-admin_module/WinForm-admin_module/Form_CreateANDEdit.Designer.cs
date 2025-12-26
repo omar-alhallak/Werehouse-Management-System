@@ -67,8 +67,7 @@
             this.btnCreate_Edit.Location = new System.Drawing.Point(115, 400);
             this.btnCreate_Edit.Name = "btnCreate_Edit";
             this.btnCreate_Edit.Size = new System.Drawing.Size(106, 38);
-            this.btnCreate_Edit.TabIndex = 12;
-            this.btnCreate_Edit.TabStop = false;
+            this.btnCreate_Edit.TabIndex = 9;
             this.btnCreate_Edit.Text = "Create";
             this.btnCreate_Edit.UseVisualStyleBackColor = false;
             this.btnCreate_Edit.Click += new System.EventHandler(this.btnCreate_Edit_Click);
@@ -91,8 +90,7 @@
             this.txtConfirm.Location = new System.Drawing.Point(65, 285);
             this.txtConfirm.Name = "txtConfirm";
             this.txtConfirm.Size = new System.Drawing.Size(238, 18);
-            this.txtConfirm.TabIndex = 0;
-            this.txtConfirm.TabStop = false;
+            this.txtConfirm.TabIndex = 6;
             this.txtConfirm.Text = "Confirm Password";
             this.txtConfirm.TextChanged += new System.EventHandler(this.txtConfirm_TextChanged);
             this.txtConfirm.Enter += new System.EventHandler(this.txtConfirm_Enter);
@@ -115,8 +113,7 @@
             this.txtUserName.Location = new System.Drawing.Point(65, 171);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(238, 18);
-            this.txtUserName.TabIndex = 0;
-            this.txtUserName.TabStop = false;
+            this.txtUserName.TabIndex = 3;
             this.txtUserName.Text = "UserName";
             this.txtUserName.Enter += new System.EventHandler(this.txtUserName_Enter);
             this.txtUserName.Leave += new System.EventHandler(this.txtUserName_Leave);
@@ -128,7 +125,7 @@
             this.lbltext.Location = new System.Drawing.Point(56, 109);
             this.lbltext.Name = "lbltext";
             this.lbltext.Size = new System.Drawing.Size(220, 29);
-            this.lbltext.TabIndex = 16;
+            this.lbltext.TabIndex = 0;
             this.lbltext.Text = "Create Account";
             // 
             // panel3
@@ -148,8 +145,7 @@
             this.txtPassword.Location = new System.Drawing.Point(65, 251);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(238, 18);
-            this.txtPassword.TabIndex = 0;
-            this.txtPassword.TabStop = false;
+            this.txtPassword.TabIndex = 5;
             this.txtPassword.Text = "Password";
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
@@ -171,8 +167,7 @@
             this.ComBoxRole.Location = new System.Drawing.Point(66, 316);
             this.ComBoxRole.Name = "ComBoxRole";
             this.ComBoxRole.Size = new System.Drawing.Size(236, 26);
-            this.ComBoxRole.TabIndex = 0;
-            this.ComBoxRole.TabStop = false;
+            this.ComBoxRole.TabIndex = 8;
             this.ComBoxRole.Enter += new System.EventHandler(this.ComBoxRole_Enter);
             this.ComBoxRole.Leave += new System.EventHandler(this.ComBoxRole_Leave);
             // 
@@ -193,8 +188,7 @@
             this.txtFullName.Location = new System.Drawing.Point(66, 210);
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Size = new System.Drawing.Size(238, 18);
-            this.txtFullName.TabIndex = 0;
-            this.txtFullName.TabStop = false;
+            this.txtFullName.TabIndex = 4;
             this.txtFullName.Text = "Full Name";
             this.txtFullName.Enter += new System.EventHandler(this.txtFullName_Enter);
             this.txtFullName.Leave += new System.EventHandler(this.txtFullName_Leave);
@@ -218,7 +212,7 @@
             this.btnMinBox.Location = new System.Drawing.Point(38, 0);
             this.btnMinBox.Name = "btnMinBox";
             this.btnMinBox.Size = new System.Drawing.Size(50, 37);
-            this.btnMinBox.TabIndex = 23;
+            this.btnMinBox.TabIndex = 2;
             this.btnMinBox.UseVisualStyleBackColor = true;
             this.btnMinBox.Click += new System.EventHandler(this.btnMinBox_Click);
             // 
@@ -231,7 +225,7 @@
             this.btnShowPassword.Location = new System.Drawing.Point(309, 243);
             this.btnShowPassword.Name = "btnShowPassword";
             this.btnShowPassword.Size = new System.Drawing.Size(39, 60);
-            this.btnShowPassword.TabIndex = 22;
+            this.btnShowPassword.TabIndex = 7;
             this.btnShowPassword.UseVisualStyleBackColor = true;
             this.btnShowPassword.Click += new System.EventHandler(this.btnShowPassword_Click);
             // 
@@ -244,7 +238,7 @@
             this.btnExit.Location = new System.Drawing.Point(1, 0);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(38, 37);
-            this.btnExit.TabIndex = 21;
+            this.btnExit.TabIndex = 1;
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 

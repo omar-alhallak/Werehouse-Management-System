@@ -103,7 +103,6 @@ namespace WinForm_admin_module
             {
                 txtUserName.Text = "UserName";
                 txtUserName.ForeColor = Color.Gray;
-                btnShowPassword.BackgroundImage = Properties.Resources.تنزيل;
             }
         }
        
@@ -122,7 +121,6 @@ namespace WinForm_admin_module
             {
                 txtFullName.Text = "Full Name";
                 txtFullName.ForeColor = Color.Gray;
-                btnShowPassword.BackgroundImage = Properties.Resources.تنزيل;
             }
         }
 
@@ -179,9 +177,10 @@ namespace WinForm_admin_module
             {
                 // للتحقق من عملية الإضافة كاملة
                 userserver1.AddUser(user, plainPassword);
-
+                
                 MessageBox.Show( $"_تم إنشاء الحساب بنجاح.\nرقم الحساب (ID): {user.Id}",   "Save Successful:", MessageBoxButtons.OK,   MessageBoxIcon.Information);
 
+                this.DialogResult = DialogResult.OK;
                 this.Close();
             }
             catch (UserNameAlreadyExiste Error) 

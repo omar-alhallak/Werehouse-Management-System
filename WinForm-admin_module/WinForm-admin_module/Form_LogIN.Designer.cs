@@ -52,7 +52,7 @@
             this.NameApp.Location = new System.Drawing.Point(33, 110);
             this.NameApp.Name = "NameApp";
             this.NameApp.Size = new System.Drawing.Size(269, 29);
-            this.NameApp.TabIndex = 1;
+            this.NameApp.TabIndex = 0;
             this.NameApp.Text = "Warehouse Management System ";
             // 
             // txtUserName
@@ -64,8 +64,7 @@
             this.txtUserName.Location = new System.Drawing.Point(64, 171);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(238, 18);
-            this.txtUserName.TabIndex = 0;
-            this.txtUserName.TabStop = false;
+            this.txtUserName.TabIndex = 3;
             this.txtUserName.Text = "UserName";
             this.txtUserName.Enter += new System.EventHandler(this.txtUserName_Enter);
             this.txtUserName.Leave += new System.EventHandler(this.txtUserName_Leave);
@@ -95,8 +94,7 @@
             this.txtPassword.Location = new System.Drawing.Point(64, 212);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(238, 18);
-            this.txtPassword.TabIndex = 0;
-            this.txtPassword.TabStop = false;
+            this.txtPassword.TabIndex = 4;
             this.txtPassword.Text = "Password";
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
@@ -112,8 +110,7 @@
             this.btnSign_IN.Location = new System.Drawing.Point(114, 284);
             this.btnSign_IN.Name = "btnSign_IN";
             this.btnSign_IN.Size = new System.Drawing.Size(106, 38);
-            this.btnSign_IN.TabIndex = 0;
-            this.btnSign_IN.TabStop = false;
+            this.btnSign_IN.TabIndex = 6;
             this.btnSign_IN.Text = "Sign IN";
             this.btnSign_IN.UseVisualStyleBackColor = false;
             this.btnSign_IN.Click += new System.EventHandler(this.btnSign_IN_Click);
@@ -127,7 +124,7 @@
             this.btnMinBox.Location = new System.Drawing.Point(37, 0);
             this.btnMinBox.Name = "btnMinBox";
             this.btnMinBox.Size = new System.Drawing.Size(50, 37);
-            this.btnMinBox.TabIndex = 11;
+            this.btnMinBox.TabIndex = 2;
             this.btnMinBox.UseVisualStyleBackColor = true;
             this.btnMinBox.Click += new System.EventHandler(this.btnMinBox_Click);
             // 
@@ -140,7 +137,7 @@
             this.btnShowPassword.Location = new System.Drawing.Point(308, 204);
             this.btnShowPassword.Name = "btnShowPassword";
             this.btnShowPassword.Size = new System.Drawing.Size(39, 39);
-            this.btnShowPassword.TabIndex = 10;
+            this.btnShowPassword.TabIndex = 5;
             this.btnShowPassword.UseVisualStyleBackColor = true;
             this.btnShowPassword.Click += new System.EventHandler(this.btnShowPassword_Click);
             // 
@@ -153,7 +150,7 @@
             this.btnExit.Location = new System.Drawing.Point(0, 0);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(38, 37);
-            this.btnExit.TabIndex = 9;
+            this.btnExit.TabIndex = 1;
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 

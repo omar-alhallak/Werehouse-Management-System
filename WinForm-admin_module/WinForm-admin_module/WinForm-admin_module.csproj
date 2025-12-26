@@ -78,6 +78,7 @@
       <DependentUpon>Form_CreateANDEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="HashingFromPassword.cs" />
+    <Compile Include="LoadUserGrid.cs" />
     <Compile Include="PasswordHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -161,6 +162,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\file_000000000b4c720aa4c013b126142c3e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000008158724692ac433db54a39d8.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions />

@@ -123,6 +123,16 @@ namespace WinForm_admin_module.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap file_000000008158724692ac433db54a39d8 {
+            get {
+                object obj = ResourceManager.GetObject("file_000000008158724692ac433db54a39d8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap file_00000000eff871fdad5a60662e5e7e00 {
             get {
                 object obj = ResourceManager.GetObject("file_00000000eff871fdad5a60662e5e7e00", resourceCulture);

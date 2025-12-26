@@ -54,8 +54,7 @@
             this.btnAccountMang.Location = new System.Drawing.Point(204, 187);
             this.btnAccountMang.Name = "btnAccountMang";
             this.btnAccountMang.Size = new System.Drawing.Size(253, 55);
-            this.btnAccountMang.TabIndex = 0;
-            this.btnAccountMang.TabStop = false;
+            this.btnAccountMang.TabIndex = 3;
             this.btnAccountMang.Text = "Account Management";
             this.btnAccountMang.UseVisualStyleBackColor = false;
             this.btnAccountMang.Click += new System.EventHandler(this.btnAccountMang_Click);
@@ -80,8 +79,7 @@
             this.btnMinBox.Location = new System.Drawing.Point(39, 3);
             this.btnMinBox.Name = "btnMinBox";
             this.btnMinBox.Size = new System.Drawing.Size(47, 37);
-            this.btnMinBox.TabIndex = 0;
-            this.btnMinBox.TabStop = false;
+            this.btnMinBox.TabIndex = 2;
             this.btnMinBox.UseVisualStyleBackColor = true;
             this.btnMinBox.Click += new System.EventHandler(this.btnMinBox_Click);
             // 
@@ -94,8 +92,7 @@
             this.btnExit.Location = new System.Drawing.Point(2, 3);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(38, 37);
-            this.btnExit.TabIndex = 0;
-            this.btnExit.TabStop = false;
+            this.btnExit.TabIndex = 1;
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -163,8 +160,7 @@
             this.btnChangePass.Location = new System.Drawing.Point(121, 284);
             this.btnChangePass.Name = "btnChangePass";
             this.btnChangePass.Size = new System.Drawing.Size(195, 116);
-            this.btnChangePass.TabIndex = 0;
-            this.btnChangePass.TabStop = false;
+            this.btnChangePass.TabIndex = 4;
             this.btnChangePass.Text = "Change Password";
             this.btnChangePass.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnChangePass.UseVisualStyleBackColor = false;
@@ -182,8 +178,7 @@
             this.btnSysInfo.Location = new System.Drawing.Point(358, 284);
             this.btnSysInfo.Name = "btnSysInfo";
             this.btnSysInfo.Size = new System.Drawing.Size(197, 116);
-            this.btnSysInfo.TabIndex = 0;
-            this.btnSysInfo.TabStop = false;
+            this.btnSysInfo.TabIndex = 5;
             this.btnSysInfo.Text = "System Information";
             this.btnSysInfo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSysInfo.UseVisualStyleBackColor = false;
