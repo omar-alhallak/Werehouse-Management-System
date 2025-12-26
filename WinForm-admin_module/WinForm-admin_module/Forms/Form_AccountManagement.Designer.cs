@@ -97,6 +97,7 @@
             this.btnDisable.TabIndex = 7;
             this.btnDisable.Text = "Disable";
             this.btnDisable.UseVisualStyleBackColor = false;
+            this.btnDisable.Click += new System.EventHandler(this.btnDisable_Click);
             // 
             // label1
             // 

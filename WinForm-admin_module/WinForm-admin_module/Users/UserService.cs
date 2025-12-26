@@ -35,7 +35,7 @@ namespace WinForm_admin_module
                 u.UserName.Equals(username.Trim(), StringComparison.OrdinalIgnoreCase));
         }
 
-        // إضافة مستخدم جديد مع كلمة مرور مؤقتا
+        // إضافة مستخدم جديد مع كلمة مرور 
         public void AddUser(Users user, string plainPassword)
         {
             if (user == null)

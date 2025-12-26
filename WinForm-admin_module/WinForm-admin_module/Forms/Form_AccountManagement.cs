@@ -119,13 +119,75 @@ namespace WinForm_admin_module
 
         private void DataGrid_SelectionChanged(object sender, EventArgs e)
         {
-            string userName = DataGrid.CurrentRow.Cells["UserName"].Value.ToString();
+            string userName = DataGrid.CurrentRow.Cells["UserName"].Value?.ToString();
+
+            if (string.IsNullOrEmpty(userName))
+                return;
+
             txtSelect.Text = userName;
+
+            var user = userserver1.FindByUsername(userName);
+
+            if (user != null)
+            {
+                btnDisable.Text = user.IsActive ? "Disable" : "Enable";
+                if(btnDisable.Text == "Enable")
+                {
+                    btnDisable.BackColor = Color.SeaGreen;
+                }
+                else
+                {
+                    btnDisable.BackColor = Color.Maroon;
+                }
+            }
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnDisable_Click(object sender, EventArgs e)
+        {
+            string userName = txtSelect.Text?.Trim();
+
+            if (string.IsNullOrEmpty(userName) || userName == "Select Account")
+            {
+                MessageBox.Show("_يرجى اختيار حساب أولاً.", "Select Account :",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                var user = userserver1.FindByUsername(userName);
+
+                if (user.IsActive)
+                {
+                    if (MessageBox.Show($"هل أنت متأكد من تعطيل هذا الحساب:\n{user.UserName} ؟","Disable Account :", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        userserver1.DisableUser(user.Id);
+                    }
+                }
+                else
+                {
+                    if (MessageBox.Show($"هل أنت متأكد من تفعيل هذا الحساب:\n{user.UserName} ؟","Enable Account :", MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        userserver1.EnableUser(user.Id);
+                    }
+                }
+
+                LoadUsers();
+
+                txtSelect.Text = user.UserName;
+                txtSelect.ForeColor = Color.White;
+            
+                btnDisable.Text = user.IsActive ? "Disable" : "Enable";
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("_حدث خطأ غير متوقع.\n" + error.Message);
+            }
         }
     }
 }

@@ -68,7 +68,7 @@ namespace WinForm_admin_module
             }
             catch (RegexException ex)
             {
-                MessageBox.Show(ex.Message, "تنبيه :", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(ex.Message, "Warning :", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (UserNotFoundException)
             {
