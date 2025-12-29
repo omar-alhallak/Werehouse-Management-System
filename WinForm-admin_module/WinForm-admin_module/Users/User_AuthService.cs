@@ -7,7 +7,7 @@ using WinForm_admin_module.Excptions;
 
 namespace WinForm_admin_module
 {
-    public class User_AuthService
+    public sealed class User_AuthService
     {
         private readonly UserStorage Storage;
 

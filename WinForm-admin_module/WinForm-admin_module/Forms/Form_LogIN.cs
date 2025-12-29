@@ -19,42 +19,6 @@ namespace WinForm_admin_module
             InitializeComponent();          
         }
 
-        private void txtUserName_Enter(object sender, EventArgs e)
-        {
-            if (txtUserName.Text == "UserName")
-            {
-                txtUserName.Text = "";
-                txtUserName.ForeColor = Color.White;
-            }
-        }
-
-        private void txtUserName_Leave(object sender, EventArgs e)
-        {
-            if (txtUserName.Text == "")
-            {
-                txtUserName.Text = "UserName";         
-                txtUserName.ForeColor = Color.Gray;
-            }
-        }
-
-        private void txtPassword_Leave(object sender, EventArgs e)
-        {
-            if (txtPassword.Text == "")
-            {
-                txtPassword.Text = "Password";   
-                txtPassword.ForeColor = Color.Gray;
-            }
-        }
-
-        private void txtPassword_Enter(object sender, EventArgs e)
-        {
-            if (txtPassword.Text == "Password")
-            {
-                txtPassword.Text = "";
-                txtPassword.ForeColor = Color.White;
-            }
-        }
-
         private void btnSign_IN_Click(object sender, EventArgs e)
         {
             try
@@ -64,15 +28,15 @@ namespace WinForm_admin_module
                 Program.LogedINUser = LogINUser;
                 var dashboard = new Form_Dashboard();
                 dashboard.Show();
-                this.Close(); 
+                this.Close();
             }
-            catch (RegexException ex)
+            catch (RegexException error)
             {
-                MessageBox.Show(ex.Message, "Warning :", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(error.Message, "Waring :", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (UserNotFoundException)
             {
-                MessageBox.Show("الحساب غير موجود", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("_ الحساب غير موجود.", "Error :", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -112,6 +76,12 @@ namespace WinForm_admin_module
         private void txtPassword_TextChanged(object sender, EventArgs e)
         {
             PasswordHelper.ApplyLogic(txtPassword, "Password", isHidden);
+        }
+
+        private void Form_LogIN_Load(object sender, EventArgs e)
+        {
+            PlaceholderHelper.PlaceholderFromTextBox(txtUserName, "UserName");
+            PlaceholderHelper.PlaceholderFromTextBox(txtPassword, "Password");
         }
     }
 }

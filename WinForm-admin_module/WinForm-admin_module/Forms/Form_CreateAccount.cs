@@ -11,11 +11,11 @@ using WinForm_admin_module.Excptions;
 
 namespace WinForm_admin_module
 {
-    public partial class Form_CreateANDEdit : Form
+    public partial class Form_CreateAccount : Form
     {
         private readonly UserService userserver1 = new UserService();
 
-        public Form_CreateANDEdit()
+        public Form_CreateAccount()
         {
             InitializeComponent();
         }
@@ -46,43 +46,7 @@ namespace WinForm_admin_module
             }
         }
 
-        private void txtPassword_Enter(object sender, EventArgs e)
-        {
-            if (txtPassword.Text == "Password")
-            {
-                txtPassword.Text = "";
-                txtPassword.ForeColor = Color.White;
-            }
-        }
-
-        private void txtPassword_Leave(object sender, EventArgs e)
-        {
-            if (txtPassword.Text == "")
-            {
-                txtPassword.Text = "Password";
-                txtPassword.ForeColor = Color.Gray;
-            }
-        }
-
-        private void txtConfirm_Enter(object sender, EventArgs e)
-        {
-            if (txtConfirm.Text == "Confirm Password")
-            {
-                    txtConfirm.Text = "";
-                    txtConfirm.ForeColor = Color.White; 
-            }
-        }
-
-        private void txtConfirm_Leave(object sender, EventArgs e)
-        {
-            if (txtConfirm.Text == "")
-            {
-                txtConfirm.Text = "Confirm Password";
-                txtConfirm.ForeColor = Color.Gray;
-            }
-        }
-
-        private void Form_CreateANDEdit_FormClosed(object sender, FormClosedEventArgs e)
+        private void Form_CreateAccount_FormClosed(object sender, FormClosedEventArgs e)
         {
             if (Application.OpenForms.Count == 0)
             {
@@ -90,43 +54,7 @@ namespace WinForm_admin_module
             }
         }
 
-        private void txtUserName_Enter(object sender, EventArgs e)
-        {
-            if (txtUserName.Text == "UserName")
-            {
-                txtUserName.Text = "";
-                txtUserName.ForeColor = Color.White;
-            }
-        }
-
-        private void txtUserName_Leave(object sender, EventArgs e)
-        {
-            if (txtUserName.Text == "")
-            {
-                txtUserName.Text = "UserName";
-                txtUserName.ForeColor = Color.Gray;
-            }
-        }
-       
-        private void txtFullName_Enter(object sender, EventArgs e)
-        {
-            if (txtFullName.Text == "Full Name")
-            {
-                txtFullName.Text = "";
-                txtFullName.ForeColor = Color.White;
-            }
-        }
-
-        private void txtFullName_Leave(object sender, EventArgs e)
-        {
-            if (txtFullName.Text == "")
-            {
-                txtFullName.Text = "Full Name";
-                txtFullName.ForeColor = Color.Gray;
-            }
-        }
-
-        private void btnCreate_Edit_Click(object sender, EventArgs e)
+        private void btnCreate_Click(object sender, EventArgs e)
         {
             if (!RegexValidator.RegexFromUserName(txtUserName.Text, out string error))
             {
@@ -172,12 +100,10 @@ namespace WinForm_admin_module
                 Role = selectedRole
             };
 
-            string plainPassword = txtPassword.Text;
-
             try
             {
                 // للتحقق من عملية الإضافة كاملة  
-                userserver1.AddUser(user, plainPassword);
+                userserver1.AddUser(user, txtPassword.Text);
 
                 MessageBox.Show($"_تم إنشاء الحساب بنجاح.\nرقم الحساب (ID): {user.Id}", "Save Successful:", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -214,25 +140,13 @@ namespace WinForm_admin_module
             PasswordHelper.ApplyLogic(txtPassword, "Password", isHidden);
         }
 
-        private void ComBoxRole_Enter(object sender, EventArgs e)
+        private void Form_CreateAccount_Load(object sender, EventArgs e)
         {
-            if (ComBoxRole.SelectedIndex == 0)
-            {
-                ComBoxRole.ForeColor = Color.White;
-            }    
-        }
-
-        private void ComBoxRole_Leave(object sender, EventArgs e)
-        {
-            if (ComBoxRole.SelectedIndex == 0)
-            { 
-                ComBoxRole.ForeColor = Color.Gray;
-            }
-        }
-
-        private void Form_CreateANDEdit_Load(object sender, EventArgs e)
-        {
-                ComBoxRole.SelectedIndex = 0;
+            PlaceholderHelper.PlaceholderFromTextBox(txtUserName, "UserName");
+            PlaceholderHelper.PlaceholderFromTextBox(txtFullName, "Full Name");
+            PlaceholderHelper.PlaceholderFromTextBox(txtPassword, "Password");
+            PlaceholderHelper.PlaceholderFromTextBox(txtConfirm, "Confirm Password");
+            PlaceholderHelper.PlaceholderFromComboBox(ComBoxRole, "Select Role ");
         }
 
         private void txtConfirm_TextChanged(object sender, EventArgs e)

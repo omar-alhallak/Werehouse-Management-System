@@ -17,6 +17,7 @@ namespace WinForm_admin_module
         {
             InitializeComponent();
         }
+ 
         private void LoadUsers(List<Users> source = null)
         {
             var users = source ?? userserver1.GetAllUsers();
@@ -39,7 +40,7 @@ namespace WinForm_admin_module
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            using (var form = new Form_CreateANDEdit())
+            using (var form = new Form_CreateAccount())
             {
                 var result = form.ShowDialog();
 
@@ -71,31 +72,14 @@ namespace WinForm_admin_module
         private void Form_AccountManagement_Load(object sender, EventArgs e)
         {
             LoadUsers();
+            PlaceholderHelper.PlaceholderFromTextBox(txtSearch, "Search");
         }
-
-        private void txtSearch_Leave(object sender, EventArgs e)
-        {
-            if (txtSearch.Text == "")
-            {
-                txtSearch.Text = "Search";
-                txtSearch.ForeColor = Color.Gray;
-            }
-        }
-
-        private void txtSearch_Enter(object sender, EventArgs e)
-        {
-            if (txtSearch.Text == "Search")
-            {
-                txtSearch.Text = "";
-                txtSearch.ForeColor = Color.White;
-            }
-        }
-
+   
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
             string term = txtSearch.Text.Trim();
 
-            if (string.IsNullOrEmpty(term) || term == "Search")
+            if (string.IsNullOrWhiteSpace(term) || term == "Search")
             {
                 lblUserNotFound.Visible = false;
                 LoadUsers();
@@ -124,27 +108,41 @@ namespace WinForm_admin_module
             if (string.IsNullOrEmpty(userName))
                 return;
 
-            txtSelect.Text = userName;
+            txtSelect.ForeColor = Color.White;
+            txtSelect.Text = userName; 
 
             var user = userserver1.FindByUsername(userName);
 
             if (user != null)
             {
                 btnDisable.Text = user.IsActive ? "Disable" : "Enable";
-                if(btnDisable.Text == "Enable")
-                {
-                    btnDisable.BackColor = Color.SeaGreen;
-                }
-                else
-                {
-                    btnDisable.BackColor = Color.Maroon;
-                }
+                btnDisable.BackColor = user.IsActive ? Color.Maroon : Color.SeaGreen;
             }
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
+            string selectedUserName = txtSelect.Text.Trim();
 
+            if (string.IsNullOrWhiteSpace(selectedUserName) || selectedUserName == "Select Account")
+            {
+                MessageBox.Show("_يرجى اختيار حساب أولاً.", "Warning :",MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtSelect.Focus();
+                return;
+            }
+
+            var user = userserver1.FindByUsername(selectedUserName);
+
+            using (var form = new Form_EditAccount(user))
+            {
+                if (form.ShowDialog(this) == DialogResult.OK)
+                {
+                    LoadUsers();
+
+                    txtSelect.Text = "Select Account";
+                    txtSelect.ForeColor = Color.Gray;
+                }
+            }
         }
 
         private void btnDisable_Click(object sender, EventArgs e)
@@ -153,8 +151,7 @@ namespace WinForm_admin_module
 
             if (string.IsNullOrEmpty(userName) || userName == "Select Account")
             {
-                MessageBox.Show("_يرجى اختيار حساب أولاً.", "Select Account :",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("_ يرجى اختيار حساب أولاً.", "Select Account :", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -164,14 +161,14 @@ namespace WinForm_admin_module
 
                 if (user.IsActive)
                 {
-                    if (MessageBox.Show($"هل أنت متأكد من تعطيل هذا الحساب:\n{user.UserName} ؟","Disable Account :", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    if (MessageBox.Show($"_ هل أنت متأكد من تعطيل هذا الحساب:\n{user.UserName} ؟","Disable Account :", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
                         userserver1.DisableUser(user.Id);
                     }
                 }
                 else
                 {
-                    if (MessageBox.Show($"هل أنت متأكد من تفعيل هذا الحساب:\n{user.UserName} ؟","Enable Account :", MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
+                    if (MessageBox.Show($"_ هل أنت متأكد من تفعيل هذا الحساب:\n{user.UserName} ؟","Enable Account :", MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
                     {
                         userserver1.EnableUser(user.Id);
                     }
@@ -184,9 +181,9 @@ namespace WinForm_admin_module
             
                 btnDisable.Text = user.IsActive ? "Disable" : "Enable";
             }
-            catch (Exception error)
+            catch (Exception)
             {
-                MessageBox.Show("_حدث خطأ غير متوقع.\n" + error.Message);
+                MessageBox.Show("_ حدث خطأ غير متوقع.\n", "Error :", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

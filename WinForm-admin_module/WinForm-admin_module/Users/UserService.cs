@@ -7,7 +7,7 @@ using WinForm_admin_module.Excptions;
 
 namespace WinForm_admin_module
 {
-    public class UserService
+    public sealed class UserService
     {
         private readonly UserStorage storage;
         private List<Users> users;
@@ -15,12 +15,11 @@ namespace WinForm_admin_module
         public UserService()
         {
             storage = new UserStorage();
-            users = storage.LoadUsers();
+            users = storage.LoadUsers() ?? new List<Users>();
         }
 
         public List<Users> GetAllUsers()
         {
-            users=storage.LoadUsers();
             return users.ToList();
         }
 
@@ -75,8 +74,7 @@ namespace WinForm_admin_module
             if (existing == null)
                 throw new UserNotFoundException();
 
-            // عدّل البيانات
-            existing.UserName = updatedUser.UserName?.Trim();
+            // عدّل البيانات 
             existing.FullName = updatedUser.FullName?.Trim();
             existing.Role = updatedUser.Role;
             existing.IsActive = updatedUser.IsActive;

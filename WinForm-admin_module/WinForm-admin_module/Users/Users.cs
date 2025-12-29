@@ -18,12 +18,11 @@ namespace WinForm_admin_module
 
         public UserRole Role { set; get; }
 
-        public bool IsActive { get; set; } // لتفعيل و تعطيل الحساب
+        public bool IsActive { get; set; }
 
         public Users()
         {
             IsActive = true;
         }
-
     }
 }

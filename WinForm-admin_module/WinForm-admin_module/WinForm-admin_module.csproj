@@ -71,23 +71,30 @@
     <Compile Include="Forms\Form_AccountManagement.Designer.cs">
       <DependentUpon>Form_AccountManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form_CreateANDEdit.cs">
+    <Compile Include="Forms\Form_CreateAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form_CreateANDEdit.Designer.cs">
-      <DependentUpon>Form_CreateANDEdit.cs</DependentUpon>
+    <Compile Include="Forms\Form_CreateAccount.Designer.cs">
+      <DependentUpon>Form_CreateAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="HashingFromPassword.cs" />
-    <Compile Include="Users\LoadUserGrid.cs" />
-    <Compile Include="PasswordHelper.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\Form_EditAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_EditAccount.Designer.cs">
+      <DependentUpon>Form_EditAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Regex.cs" />
+    <Compile Include="Validation &amp; Regex\HashingFromPassword.cs" />
+    <Compile Include="Validation &amp; Regex\PlaceholderHelper.cs" />
+    <Compile Include="Users\LoadUserGrid.cs" />
+    <Compile Include="Validation &amp; Regex\PasswordHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validation &amp; Regex\Regex.cs" />
     <Compile Include="Users\UserRole___Permissions.cs" />
     <Compile Include="Users\Users.cs" />
     <Compile Include="Users\UserService.cs" />
@@ -102,8 +109,11 @@
     <EmbeddedResource Include="Forms\Form_AccountManagement.resx">
       <DependentUpon>Form_AccountManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form_CreateANDEdit.resx">
-      <DependentUpon>Form_CreateANDEdit.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Form_CreateAccount.resx">
+      <DependentUpon>Form_CreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_EditAccount.resx">
+      <DependentUpon>Form_EditAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -125,46 +135,28 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\تنزيل %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\11284777.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\7153150.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\4686696.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\تنزيل1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\تنزيل %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\تنزيل %282%29.png" />
+    <None Include="Resources\تنزيل.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\file_00000000eff871fdad5a60662e5e7e00.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\file_000000002b9471f8947f9f27c8abbf72.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\تنزيل %284%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\تنزيل %283%291.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\تنزيل %285%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\file_000000006f407246adfaa8911ddcdc7f.png" />
+    <None Include="Resources\file_00000000785071f49870ab9c3cb76de3 %281%29.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\file_000000000b4c720aa4c013b126142c3e.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\file_000000008158724692ac433db54a39d8.png" />
+    <None Include="Resources\تنزيل %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions />

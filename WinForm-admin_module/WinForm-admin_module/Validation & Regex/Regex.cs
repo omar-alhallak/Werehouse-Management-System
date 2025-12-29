@@ -8,7 +8,6 @@ using System.Windows.Forms;
 
 namespace WinForm_admin_module
 {
-
     public static class RegexValidator
     {
         public static bool RegexFromUserName(string userName, out string error)
@@ -21,13 +20,12 @@ namespace WinForm_admin_module
 
             const string pattern = @"^[a-zA-Z0-9\-_]{4,15}$";
 
-            userName = (userName ?? "").Trim();
-
             if (string.IsNullOrEmpty(userName)||userName== "UserName")
             {
-                error = "- أسم المستخدم لا يمكن أن يكون فارغ.";
+                error = "_ أسم المستخدم لا يمكن أن يكون فارغ.";
                 return false;
             }
+            userName = userName.Trim();
 
             if (!Regex.IsMatch(userName, pattern))
             {
@@ -44,24 +42,22 @@ namespace WinForm_admin_module
             // يسمح فقط بأستخدتم أحرف أجنبية
             // حد الأقصى للمحارف 30
             // حد أقل 4 محارف
-            error = null;
-
-            fullName = (fullName ?? "").Trim();
+            error = null;  
 
             if (string.IsNullOrWhiteSpace(fullName) || fullName == "Full Name")
             {
-                error = "- الاسم الكامل لا يمكن أن يكون فارغ.";
+                error = "_ الاسم الكامل لا يمكن أن يكون فارغ.";
                 return false;
             }
- 
+            fullName = fullName.Trim();
+
             const string pattern = @"^[a-zA-Z\s]{4,30}$";
 
             if (!Regex.IsMatch(fullName, pattern))
             {
-                error = "- الاسم الكامل غير صالح. يجب أن يحتوي على أحرف أجنبية ومسافات فقط، وبحد أقصى 30 محرف. وحد أقل 4 محارف.";
+                error = "_ الاسم الكامل غير صالح. يجب أن يحتوي على أحرف أجنبية ومسافات فقط، وبحد أقصى 30 محرف. وحد أقل 4 محارف.";
                 return false;
             }
-
             return true;
         }
 
@@ -73,35 +69,33 @@ namespace WinForm_admin_module
             // يجب أن تحوي على رمز خاص واحد على الأقل
             error = null;
 
-            password = password ?? "";
-
             if (string.IsNullOrWhiteSpace(password) || password == "Password")
             {
-                error = "- كلمة المرور لا يمكن أن تكون فارغة.";
+                error = "_ كلمة المرور لا يمكن أن تكون فارغة.";
                 return false;
             }
 
             bool isValid = true;
-            string Massage = "كلمة المرور ضعيفة. يجب أن تستوفي الشروط التالية:\n";
+            string Massage = "كلمة المرور ضعيفة. يجب أن تستوفي الشروط التالية :\n";
 
             if (password.Length < 8)
             {
-                Massage += " - يجب أن تحوي على 8 محارف على الأقل.\n";
+                Massage += "_ يجب أن تحوي على 8 محارف على الأقل.\n";
                 isValid = false;
             }
             if (!Regex.IsMatch(password, @"[A-Z]+"))
             {
-                Massage += " - يجب أن تحوي على حرف كبير واحد على الأقل.\n";
+                Massage += "_ يجب أن تحوي على حرف كبير واحد على الأقل.\n";
                 isValid = false;
             }
             if (!Regex.IsMatch(password, @"[0-9]+"))
             {
-                Massage += " - يجب أن تحوي على رقم واحد على الأقل.\n";
+                Massage += "_ يجب أن تحوي على رقم واحد على الأقل.\n";
                 isValid = false;
             }
             if (!Regex.IsMatch(password, @"[^a-zA-Z0-9]+"))
             {
-                Massage += " - يجب أن تحوي على رمز خاص واحد على الأقل.\n";
+                Massage += "_ يجب أن تحوي على رمز خاص واحد على الأقل.\n";
                 isValid = false;
             }
 
@@ -110,7 +104,6 @@ namespace WinForm_admin_module
                 error = Massage;
                 return false;
             }
-
             return true;
         }
     }

@@ -61,9 +61,7 @@ namespace WinForm_admin_module
             }
             catch (FormatException)
             {
-
                 return false;
-
             }
         }
 

@@ -34,9 +34,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnSign_IN = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.btnMinBox = new System.Windows.Forms.Button();
             this.btnShowPassword = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.pic3 = new System.Windows.Forms.PictureBox();
             this.pic2 = new System.Windows.Forms.PictureBox();
             this.pic1 = new System.Windows.Forms.PictureBox();
@@ -65,9 +65,6 @@
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(238, 18);
             this.txtUserName.TabIndex = 3;
-            this.txtUserName.Text = "UserName";
-            this.txtUserName.Enter += new System.EventHandler(this.txtUserName_Enter);
-            this.txtUserName.Leave += new System.EventHandler(this.txtUserName_Leave);
             // 
             // panel1
             // 
@@ -95,10 +92,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(238, 18);
             this.txtPassword.TabIndex = 4;
-            this.txtPassword.Text = "Password";
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
-            this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
-            this.txtPassword.Leave += new System.EventHandler(this.txtPassword_Leave);
             // 
             // btnSign_IN
             // 
@@ -115,9 +109,22 @@
             this.btnSign_IN.UseVisualStyleBackColor = false;
             this.btnSign_IN.Click += new System.EventHandler(this.btnSign_IN_Click);
             // 
+            // btnExit
+            // 
+            this.btnExit.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__2_;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Location = new System.Drawing.Point(0, 0);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(38, 37);
+            this.btnExit.TabIndex = 1;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // btnMinBox
             // 
-            this.btnMinBox.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__5_;
+            this.btnMinBox.BackgroundImage = global::WinForm_admin_module.Properties.Resources.file_00000000785071f49870ab9c3cb76de3__1_;
             this.btnMinBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMinBox.FlatAppearance.BorderSize = 0;
             this.btnMinBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -141,22 +148,9 @@
             this.btnShowPassword.UseVisualStyleBackColor = true;
             this.btnShowPassword.Click += new System.EventHandler(this.btnShowPassword_Click);
             // 
-            // btnExit
-            // 
-            this.btnExit.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__2_;
-            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Location = new System.Drawing.Point(0, 0);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(38, 37);
-            this.btnExit.TabIndex = 1;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // pic3
             // 
-            this.pic3.Image = global::WinForm_admin_module.Properties.Resources._4686696;
+            this.pic3.Image = global::WinForm_admin_module.Properties.Resources.file_000000000b4c720aa4c013b126142c3e;
             this.pic3.Location = new System.Drawing.Point(25, 204);
             this.pic3.Name = "pic3";
             this.pic3.Size = new System.Drawing.Size(33, 26);
@@ -208,6 +202,7 @@
             this.Text = "Login";
             this.TopMost = true;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_LogIN_FormClosed);
+            this.Load += new System.EventHandler(this.Form_LogIN_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pic3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic1)).EndInit();

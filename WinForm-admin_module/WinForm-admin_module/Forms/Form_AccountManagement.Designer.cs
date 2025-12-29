@@ -30,7 +30,6 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_AccountManagement));
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnDisable = new System.Windows.Forms.Button();
@@ -123,7 +122,7 @@
             // 
             // btnMinBox
             // 
-            this.btnMinBox.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__5_;
+            this.btnMinBox.BackgroundImage = global::WinForm_admin_module.Properties.Resources.file_00000000785071f49870ab9c3cb76de3__1_;
             this.btnMinBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMinBox.FlatAppearance.BorderSize = 0;
             this.btnMinBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -200,10 +199,7 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(157, 18);
             this.txtSearch.TabIndex = 3;
-            this.txtSearch.Text = "Search";
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
-            this.txtSearch.Enter += new System.EventHandler(this.txtSearch_Enter);
-            this.txtSearch.Leave += new System.EventHandler(this.txtSearch_Leave);
             // 
             // panel3
             // 
@@ -237,10 +233,11 @@
             this.lblUserNotFound.Size = new System.Drawing.Size(226, 29);
             this.lblUserNotFound.TabIndex = 26;
             this.lblUserNotFound.Text = "لا يوجد مستخدم بهذا الأسم";
+            this.lblUserNotFound.Visible = false;
             // 
             // btnSearch
             // 
-            this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
+            this.btnSearch.BackgroundImage = global::WinForm_admin_module.Properties.Resources.file_000000008158724692ac433db54a39d8;
             this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Location = new System.Drawing.Point(8, 220);

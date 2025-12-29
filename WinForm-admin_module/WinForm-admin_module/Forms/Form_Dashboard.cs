@@ -49,5 +49,12 @@ namespace WinForm_admin_module
                 Application.Exit();
             }
         }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            Form_LogIN LogIN = new Form_LogIN();
+            LogIN.Show();
+            this.Close();
+        }
     }
 }

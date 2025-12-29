@@ -1,6 +1,6 @@
 ﻿namespace WinForm_admin_module
 {
-    partial class Form_CreateANDEdit
+    partial class Form_CreateAccount
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnCreate_Edit = new System.Windows.Forms.Button();
+            this.btnCreate = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtConfirm = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -57,20 +57,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic3)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnCreate_Edit
+            // btnCreate
             // 
-            this.btnCreate_Edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.btnCreate_Edit.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnCreate_Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCreate_Edit.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreate_Edit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnCreate_Edit.Location = new System.Drawing.Point(115, 400);
-            this.btnCreate_Edit.Name = "btnCreate_Edit";
-            this.btnCreate_Edit.Size = new System.Drawing.Size(106, 38);
-            this.btnCreate_Edit.TabIndex = 9;
-            this.btnCreate_Edit.Text = "Create";
-            this.btnCreate_Edit.UseVisualStyleBackColor = false;
-            this.btnCreate_Edit.Click += new System.EventHandler(this.btnCreate_Edit_Click);
+            this.btnCreate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.btnCreate.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCreate.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnCreate.Location = new System.Drawing.Point(115, 377);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(106, 38);
+            this.btnCreate.TabIndex = 9;
+            this.btnCreate.Text = "Create";
+            this.btnCreate.UseVisualStyleBackColor = false;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // panel2
             // 
@@ -91,10 +91,7 @@
             this.txtConfirm.Name = "txtConfirm";
             this.txtConfirm.Size = new System.Drawing.Size(238, 18);
             this.txtConfirm.TabIndex = 6;
-            this.txtConfirm.Text = "Confirm Password";
             this.txtConfirm.TextChanged += new System.EventHandler(this.txtConfirm_TextChanged);
-            this.txtConfirm.Enter += new System.EventHandler(this.txtConfirm_Enter);
-            this.txtConfirm.Leave += new System.EventHandler(this.txtConfirm_Leave);
             // 
             // panel1
             // 
@@ -114,9 +111,6 @@
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(238, 18);
             this.txtUserName.TabIndex = 3;
-            this.txtUserName.Text = "UserName";
-            this.txtUserName.Enter += new System.EventHandler(this.txtUserName_Enter);
-            this.txtUserName.Leave += new System.EventHandler(this.txtUserName_Leave);
             // 
             // lbltext
             // 
@@ -147,10 +141,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(238, 18);
             this.txtPassword.TabIndex = 5;
-            this.txtPassword.Text = "Password";
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
-            this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
-            this.txtPassword.Leave += new System.EventHandler(this.txtPassword_Leave);
             // 
             // ComBoxRole
             // 
@@ -161,7 +152,6 @@
             this.ComBoxRole.ForeColor = System.Drawing.Color.Gray;
             this.ComBoxRole.FormattingEnabled = true;
             this.ComBoxRole.Items.AddRange(new object[] {
-            "Select Role ",
             "Admin",
             "Inventory",
             "Sales_man"});
@@ -169,8 +159,6 @@
             this.ComBoxRole.Name = "ComBoxRole";
             this.ComBoxRole.Size = new System.Drawing.Size(236, 26);
             this.ComBoxRole.TabIndex = 8;
-            this.ComBoxRole.Enter += new System.EventHandler(this.ComBoxRole_Enter);
-            this.ComBoxRole.Leave += new System.EventHandler(this.ComBoxRole_Leave);
             // 
             // panel4
             // 
@@ -190,13 +178,10 @@
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Size = new System.Drawing.Size(238, 18);
             this.txtFullName.TabIndex = 4;
-            this.txtFullName.Text = "Full Name";
-            this.txtFullName.Enter += new System.EventHandler(this.txtFullName_Enter);
-            this.txtFullName.Leave += new System.EventHandler(this.txtFullName_Leave);
             // 
             // pic4
             // 
-            this.pic4.Image = global::WinForm_admin_module.Properties.Resources._4686696;
+            this.pic4.Image = global::WinForm_admin_module.Properties.Resources.file_000000000b4c720aa4c013b126142c3e;
             this.pic4.Location = new System.Drawing.Point(26, 243);
             this.pic4.Name = "pic4";
             this.pic4.Size = new System.Drawing.Size(33, 26);
@@ -206,7 +191,7 @@
             // 
             // btnMinBox
             // 
-            this.btnMinBox.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__5_;
+            this.btnMinBox.BackgroundImage = global::WinForm_admin_module.Properties.Resources.file_00000000785071f49870ab9c3cb76de3__1_;
             this.btnMinBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMinBox.FlatAppearance.BorderSize = 0;
             this.btnMinBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -245,7 +230,7 @@
             // 
             // pic5
             // 
-            this.pic5.Image = global::WinForm_admin_module.Properties.Resources._4686696;
+            this.pic5.Image = global::WinForm_admin_module.Properties.Resources.file_000000000b4c720aa4c013b126142c3e;
             this.pic5.Location = new System.Drawing.Point(26, 281);
             this.pic5.Name = "pic5";
             this.pic5.Size = new System.Drawing.Size(33, 26);
@@ -275,7 +260,7 @@
             // 
             // pic6
             // 
-            this.pic6.Image = global::WinForm_admin_module.Properties.Resources.file_000000000b4c720aa4c013b126142c3e;
+            this.pic6.Image = global::WinForm_admin_module.Properties.Resources.تنزيل__7_;
             this.pic6.Location = new System.Drawing.Point(26, 316);
             this.pic6.Name = "pic6";
             this.pic6.Size = new System.Drawing.Size(33, 34);
@@ -301,12 +286,12 @@
             this.panel5.Size = new System.Drawing.Size(276, 1);
             this.panel5.TabIndex = 33;
             // 
-            // Form_CreateANDEdit
+            // Form_CreateAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(359, 450);
+            this.ClientSize = new System.Drawing.Size(359, 428);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.pic3);
             this.Controls.Add(this.pic6);
@@ -319,7 +304,7 @@
             this.Controls.Add(this.btnMinBox);
             this.Controls.Add(this.btnShowPassword);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnCreate_Edit);
+            this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pic5);
             this.Controls.Add(this.txtConfirm);
@@ -329,10 +314,10 @@
             this.Controls.Add(this.lbltext);
             this.Controls.Add(this.pic1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form_CreateANDEdit";
+            this.Name = "Form_CreateAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_CreateANDEdit_FormClosed);
-            this.Load += new System.EventHandler(this.Form_CreateANDEdit_Load);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_CreateAccount_FormClosed);
+            this.Load += new System.EventHandler(this.Form_CreateAccount_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pic4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic2)).EndInit();
@@ -349,7 +334,7 @@
         private System.Windows.Forms.Button btnMinBox;
         private System.Windows.Forms.Button btnShowPassword;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Button btnCreate_Edit;
+        private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pic5;
         private System.Windows.Forms.TextBox txtConfirm;

@@ -17,10 +17,7 @@ namespace WinForm_admin_module
                 u.FullName,
                 Role = u.Role.ToString(),
                 Status = u.IsActive ? "Active" : "Disabled"
-            })
-                .Cast<object>()
-                .ToList();
+            }).Cast<object>().ToList();
         }
     }
 }
-

@@ -30,16 +30,17 @@
         {
             this.btnAccountMang = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnLogOut = new System.Windows.Forms.Button();
             this.btnMinBox = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.labName = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.pic1 = new System.Windows.Forms.PictureBox();
             this.btnChangePass = new System.Windows.Forms.Button();
             this.btnSysInfo = new System.Windows.Forms.Button();
+            this.pic1 = new System.Windows.Forms.PictureBox();
+            this.btnExit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic1)).BeginInit();
             this.SuspendLayout();
@@ -62,6 +63,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.panel1.Controls.Add(this.btnLogOut);
             this.panel1.Controls.Add(this.btnMinBox);
             this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.labName);
@@ -70,9 +72,25 @@
             this.panel1.Size = new System.Drawing.Size(653, 57);
             this.panel1.TabIndex = 3;
             // 
+            // btnLogOut
+            // 
+            this.btnLogOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnLogOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnLogOut.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogOut.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.btnLogOut.Location = new System.Drawing.Point(559, 8);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(81, 46);
+            this.btnLogOut.TabIndex = 8;
+            this.btnLogOut.Text = "Log Out";
+            this.btnLogOut.UseVisualStyleBackColor = false;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
+            // 
             // btnMinBox
             // 
-            this.btnMinBox.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__5_;
+            this.btnMinBox.BackgroundImage = global::WinForm_admin_module.Properties.Resources.file_00000000785071f49870ab9c3cb76de3__1_;
             this.btnMinBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMinBox.FlatAppearance.BorderSize = 0;
             this.btnMinBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -82,19 +100,6 @@
             this.btnMinBox.TabIndex = 2;
             this.btnMinBox.UseVisualStyleBackColor = true;
             this.btnMinBox.Click += new System.EventHandler(this.btnMinBox_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__2_;
-            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Location = new System.Drawing.Point(2, 3);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(38, 37);
-            this.btnExit.TabIndex = 1;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // labName
             // 
@@ -138,20 +143,9 @@
             this.panel5.Size = new System.Drawing.Size(1, 184);
             this.panel5.TabIndex = 0;
             // 
-            // pic1
-            // 
-            this.pic1.Image = global::WinForm_admin_module.Properties.Resources.تنزيل__3_1;
-            this.pic1.Location = new System.Drawing.Point(220, 58);
-            this.pic1.Name = "pic1";
-            this.pic1.Size = new System.Drawing.Size(215, 123);
-            this.pic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pic1.TabIndex = 5;
-            this.pic1.TabStop = false;
-            // 
             // btnChangePass
             // 
             this.btnChangePass.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnChangePass.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__4_;
             this.btnChangePass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnChangePass.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnChangePass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -161,14 +155,13 @@
             this.btnChangePass.Name = "btnChangePass";
             this.btnChangePass.Size = new System.Drawing.Size(195, 116);
             this.btnChangePass.TabIndex = 4;
-            this.btnChangePass.Text = "Change Password";
-            this.btnChangePass.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnChangePass.Text = "              Product                               AND                          " +
+    "     Category              Managment";
             this.btnChangePass.UseVisualStyleBackColor = false;
             // 
             // btnSysInfo
             // 
             this.btnSysInfo.BackColor = System.Drawing.Color.Orange;
-            this.btnSysInfo.BackgroundImage = global::WinForm_admin_module.Properties.Resources.file_000000002b9471f8947f9f27c8abbf72;
             this.btnSysInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSysInfo.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnSysInfo.FlatAppearance.BorderSize = 2;
@@ -182,6 +175,29 @@
             this.btnSysInfo.Text = "System Information";
             this.btnSysInfo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSysInfo.UseVisualStyleBackColor = false;
+            // 
+            // pic1
+            // 
+            this.pic1.Image = global::WinForm_admin_module.Properties.Resources.تنزيل__3_;
+            this.pic1.Location = new System.Drawing.Point(220, 58);
+            this.pic1.Name = "pic1";
+            this.pic1.Size = new System.Drawing.Size(215, 123);
+            this.pic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic1.TabIndex = 5;
+            this.pic1.TabStop = false;
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackgroundImage = global::WinForm_admin_module.Properties.Resources.تنزيل__2_;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Location = new System.Drawing.Point(2, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(38, 37);
+            this.btnExit.TabIndex = 1;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // Form_Dashboard
             // 
@@ -224,5 +240,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button btnLogOut;
     }
 }
