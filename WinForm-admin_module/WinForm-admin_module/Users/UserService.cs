@@ -20,6 +20,7 @@ namespace WinForm_admin_module
 
         public List<Users> GetAllUsers()
         {
+            users = storage.LoadUsers();
             return users.ToList();
         }
 
