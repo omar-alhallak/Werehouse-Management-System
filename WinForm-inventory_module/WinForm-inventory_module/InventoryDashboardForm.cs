@@ -23,13 +23,32 @@ namespace WinForm_inventory_module
 
         private void btnManageCategories_Click_1(object sender, EventArgs e)
         {
-            new CategoryManagementForm().Show();
-
+            CategoryManagementForm product = new CategoryManagementForm();
+            product.Show();
+            this.Close();
         }
 
         private void btnManageProducts_Click_1(object sender, EventArgs e)
         {
-            new ProductManagmentForm().Show();
+            ProductManagmentForm product=new ProductManagmentForm();
+            product.Show();
+            this.Close();
+           
+        }
+
+        private void InventoryDashboardForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (Application.OpenForms.Count == 0)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void btnViewStock_Click(object sender, EventArgs e)
+        {
+            StockViewForm stockViewForm = new StockViewForm();
+            stockViewForm.Show();
+            this.Close();
         }
     }
 }

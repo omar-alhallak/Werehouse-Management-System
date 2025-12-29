@@ -28,10 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnlHeader = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.picHeaderIcon = new System.Windows.Forms.PictureBox();
-            this.lblTitle = new System.Windows.Forms.Label();
             this.splitMain = new System.Windows.Forms.SplitContainer();
             this.grpCategory = new System.Windows.Forms.GroupBox();
             this.btnBack = new System.Windows.Forms.Button();
@@ -45,8 +41,10 @@
             this.lb1Search = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.dgvCategories = new System.Windows.Forms.DataGridView();
-            this.pnlHeader.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picHeaderIcon)).BeginInit();
+            this.picHeaderIcon = new System.Windows.Forms.PictureBox();
+            this.lb1Exit = new System.Windows.Forms.Label();
+            this.pnlHeader = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitMain)).BeginInit();
             this.splitMain.Panel1.SuspendLayout();
             this.splitMain.Panel2.SuspendLayout();
@@ -55,55 +53,9 @@
             this.tblRight.SuspendLayout();
             this.pnlSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategories)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHeaderIcon)).BeginInit();
+            this.pnlHeader.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pnlHeader
-            // 
-            this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.pnlHeader.Controls.Add(this.label1);
-            this.pnlHeader.Controls.Add(this.picHeaderIcon);
-            this.pnlHeader.Controls.Add(this.lblTitle);
-            this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlHeader.Location = new System.Drawing.Point(0, 0);
-            this.pnlHeader.Margin = new System.Windows.Forms.Padding(4);
-            this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(933, 80);
-            this.pnlHeader.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.label1.Image = global::WinForm_inventory_module.Properties.Resources.x_removebg_preview;
-            this.label1.Location = new System.Drawing.Point(-4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 31);
-            this.label1.TabIndex = 10;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // picHeaderIcon
-            // 
-            this.picHeaderIcon.BackColor = System.Drawing.Color.Transparent;
-            this.picHeaderIcon.Image = global::WinForm_inventory_module.Properties.Resources.folder_management;
-            this.picHeaderIcon.Location = new System.Drawing.Point(607, 13);
-            this.picHeaderIcon.Margin = new System.Windows.Forms.Padding(4);
-            this.picHeaderIcon.Name = "picHeaderIcon";
-            this.picHeaderIcon.Size = new System.Drawing.Size(56, 59);
-            this.picHeaderIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picHeaderIcon.TabIndex = 1;
-            this.picHeaderIcon.TabStop = false;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.Black;
-            this.lblTitle.Location = new System.Drawing.Point(0, 0);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(933, 80);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Category Management";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // splitMain
             // 
@@ -297,6 +249,53 @@
             this.dgvCategories.TabIndex = 1;
             this.dgvCategories.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategories_CellClick);
             // 
+            // picHeaderIcon
+            // 
+            this.picHeaderIcon.BackColor = System.Drawing.Color.Transparent;
+            this.picHeaderIcon.Image = global::WinForm_inventory_module.Properties.Resources.folder_management;
+            this.picHeaderIcon.Location = new System.Drawing.Point(607, 13);
+            this.picHeaderIcon.Margin = new System.Windows.Forms.Padding(4);
+            this.picHeaderIcon.Name = "picHeaderIcon";
+            this.picHeaderIcon.Size = new System.Drawing.Size(56, 59);
+            this.picHeaderIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picHeaderIcon.TabIndex = 1;
+            this.picHeaderIcon.TabStop = false;
+            // 
+            // lb1Exit
+            // 
+            this.lb1Exit.Image = global::WinForm_inventory_module.Properties.Resources.x_removebg_preview;
+            this.lb1Exit.Location = new System.Drawing.Point(3, 0);
+            this.lb1Exit.Name = "lb1Exit";
+            this.lb1Exit.Size = new System.Drawing.Size(42, 43);
+            this.lb1Exit.TabIndex = 2;
+            this.lb1Exit.Click += new System.EventHandler(this.lb1Exit_Click);
+            // 
+            // pnlHeader
+            // 
+            this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.pnlHeader.Controls.Add(this.lb1Exit);
+            this.pnlHeader.Controls.Add(this.picHeaderIcon);
+            this.pnlHeader.Controls.Add(this.lblTitle);
+            this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlHeader.Location = new System.Drawing.Point(0, 0);
+            this.pnlHeader.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlHeader.Name = "pnlHeader";
+            this.pnlHeader.Size = new System.Drawing.Size(933, 80);
+            this.pnlHeader.TabIndex = 0;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.Black;
+            this.lblTitle.Location = new System.Drawing.Point(0, 0);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(933, 80);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Category Management";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // CategoryManagementForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -313,9 +312,8 @@
             this.Name = "CategoryManagementForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CategoryManagementForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CategoryManagementForm_FormClosed);
             this.Load += new System.EventHandler(this.CategoryManagementForm_Load);
-            this.pnlHeader.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picHeaderIcon)).EndInit();
             this.splitMain.Panel1.ResumeLayout(false);
             this.splitMain.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitMain)).EndInit();
@@ -326,15 +324,13 @@
             this.pnlSearch.ResumeLayout(false);
             this.pnlSearch.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategories)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHeaderIcon)).EndInit();
+            this.pnlHeader.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel pnlHeader;
-        private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.PictureBox picHeaderIcon;
         private System.Windows.Forms.SplitContainer splitMain;
         private System.Windows.Forms.GroupBox grpCategory;
         private System.Windows.Forms.TextBox txtCategoryName;
@@ -344,10 +340,13 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.TableLayoutPanel tblRight;
-        private System.Windows.Forms.DataGridView dgvCategories;
         private System.Windows.Forms.Panel pnlSearch;
-        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Label lb1Search;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.DataGridView dgvCategories;
+        private System.Windows.Forms.PictureBox picHeaderIcon;
+        private System.Windows.Forms.Label lb1Exit;
+        private System.Windows.Forms.Panel pnlHeader;
+        private System.Windows.Forms.Label lblTitle;
     }
 }

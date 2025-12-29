@@ -14,14 +14,13 @@ namespace WinForm_inventory_module.CategoryManagement
         public string Code { get; set; }
         public decimal UnitPrice { get; set; }
         public int Stock { get; set; }
-        public string Description { get; set; }
 
         public Product()
         {
         }
 
         public Product(int id, string name, string category,
-                       string code, decimal price, int stock, string desc)
+                       string code, decimal price, int stock)
         {
             Id = id;
             Name = name;
@@ -29,7 +28,6 @@ namespace WinForm_inventory_module.CategoryManagement
             Code = code;
             UnitPrice = price;
             Stock = stock;
-            Description = desc;
         }
     }
 }

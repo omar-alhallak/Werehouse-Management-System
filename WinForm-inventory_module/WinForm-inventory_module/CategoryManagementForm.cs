@@ -168,12 +168,27 @@ namespace WinForm_inventory_module
 
         private void btnBack_Click(object sender, EventArgs e)
         {
+            InventoryDashboardForm cate = new InventoryDashboardForm();
+            cate.Show();
             this.Close();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void lbExit(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void lb1Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void CategoryManagementForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (Application.OpenForms.Count == 0)
+            {
+                Application.Exit();
+            }
         }
     }
 }

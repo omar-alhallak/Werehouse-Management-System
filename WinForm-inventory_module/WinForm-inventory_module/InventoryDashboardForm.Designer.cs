@@ -157,6 +157,7 @@
             this.btnViewStock.Text = "View Stock";
             this.btnViewStock.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnViewStock.UseVisualStyleBackColor = false;
+            this.btnViewStock.Click += new System.EventHandler(this.btnViewStock_Click);
             // 
             // btnManageProducts
             // 
@@ -220,6 +221,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inventory Manager Dashboard";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.InventoryDashboardForm_FormClosed);
             this.pnlHeader.ResumeLayout(false);
             this.lblStatus.ResumeLayout(false);
             this.lblStatus.PerformLayout();
