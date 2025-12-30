@@ -1,0 +1,222 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{343AFECD-774F-4F68-BD64-45C805B626C8}|WinForm-sales_module\\WinForm-sales_module.csproj|c:\\users\\hp\\source\\repos\\management-system\\winform-sales_module\\winform-sales_module\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{343AFECD-774F-4F68-BD64-45C805B626C8}|WinForm-sales_module\\WinForm-sales_module.csproj|solutionrelative:winform-sales_module\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{343AFECD-774F-4F68-BD64-45C805B626C8}|WinForm-sales_module\\WinForm-sales_module.csproj|c:\\users\\hp\\source\\repos\\management-system\\winform-sales_module\\winform-sales_module\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{343AFECD-774F-4F68-BD64-45C805B626C8}|WinForm-sales_module\\WinForm-sales_module.csproj|solutionrelative:winform-sales_module\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{343AFECD-774F-4F68-BD64-45C805B626C8}|WinForm-sales_module\\WinForm-sales_module.csproj|c:\\users\\hp\\source\\repos\\management-system\\winform-sales_module\\winform-sales_module\\orderform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{343AFECD-774F-4F68-BD64-45C805B626C8}|WinForm-sales_module\\WinForm-sales_module.csproj|solutionrelative:winform-sales_module\\orderform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{343AFECD-774F-4F68-BD64-45C805B626C8}|WinForm-sales_module\\WinForm-sales_module.csproj|c:\\users\\hp\\source\\repos\\management-system\\winform-sales_module\\winform-sales_module\\invoiceform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{343AFECD-774F-4F68-BD64-45C805B626C8}|WinForm-sales_module\\WinForm-sales_module.csproj|solutionrelative:winform-sales_module\\invoiceform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{343AFECD-774F-4F68-BD64-45C805B626C8}|WinForm-sales_module\\WinForm-sales_module.csproj|C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\winform-sales_module\\cartform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{343AFECD-774F-4F68-BD64-45C805B626C8}|WinForm-sales_module\\WinForm-sales_module.csproj|solutionrelative:winform-sales_module\\cartform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{343AFECD-774F-4F68-BD64-45C805B626C8}|WinForm-sales_module\\WinForm-sales_module.csproj|C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\winform-sales_module\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{343AFECD-774F-4F68-BD64-45C805B626C8}|WinForm-sales_module\\WinForm-sales_module.csproj|solutionrelative:winform-sales_module\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{343AFECD-774F-4F68-BD64-45C805B626C8}|WinForm-sales_module\\WinForm-sales_module.csproj|c:\\users\\hp\\source\\repos\\management-system\\winform-sales_module\\winform-sales_module\\cartform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{343AFECD-774F-4F68-BD64-45C805B626C8}|WinForm-sales_module\\WinForm-sales_module.csproj|solutionrelative:winform-sales_module\\cartform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{343AFECD-774F-4F68-BD64-45C805B626C8}|WinForm-sales_module\\WinForm-sales_module.csproj|c:\\users\\hp\\source\\repos\\management-system\\winform-sales_module\\winform-sales_module\\returnform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{343AFECD-774F-4F68-BD64-45C805B626C8}|WinForm-sales_module\\WinForm-sales_module.csproj|solutionrelative:winform-sales_module\\returnform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{343AFECD-774F-4F68-BD64-45C805B626C8}|WinForm-sales_module\\WinForm-sales_module.csproj|C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\winform-sales_module\\orderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{343AFECD-774F-4F68-BD64-45C805B626C8}|WinForm-sales_module\\WinForm-sales_module.csproj|solutionrelative:winform-sales_module\\orderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{343AFECD-774F-4F68-BD64-45C805B626C8}|WinForm-sales_module\\WinForm-sales_module.csproj|C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\winform-sales_module\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{343AFECD-774F-4F68-BD64-45C805B626C8}|WinForm-sales_module\\WinForm-sales_module.csproj|solutionrelative:winform-sales_module\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{343AFECD-774F-4F68-BD64-45C805B626C8}|WinForm-sales_module\\WinForm-sales_module.csproj|C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\winform-sales_module\\invoiceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{343AFECD-774F-4F68-BD64-45C805B626C8}|WinForm-sales_module\\WinForm-sales_module.csproj|solutionrelative:winform-sales_module\\invoiceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{343AFECD-774F-4F68-BD64-45C805B626C8}|WinForm-sales_module\\WinForm-sales_module.csproj|C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\winform-sales_module\\invoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{343AFECD-774F-4F68-BD64-45C805B626C8}|WinForm-sales_module\\WinForm-sales_module.csproj|solutionrelative:winform-sales_module\\invoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\OrderForm.Designer.cs",
+              "RelativeDocumentMoniker": "WinForm-sales_module\\OrderForm.Designer.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\OrderForm.Designer.cs",
+              "RelativeToolTip": "WinForm-sales_module\\OrderForm.Designer.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAASwGoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T11:20:14.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InvoiceForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\InvoiceForm.Designer.cs",
+              "RelativeDocumentMoniker": "WinForm-sales_module\\InvoiceForm.Designer.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\InvoiceForm.Designer.cs",
+              "RelativeToolTip": "WinForm-sales_module\\InvoiceForm.Designer.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAASwFEAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T11:19:39.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DashboardForm.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\DashboardForm.cs",
+              "RelativeDocumentMoniker": "WinForm-sales_module\\DashboardForm.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\DashboardForm.cs*",
+              "RelativeToolTip": "WinForm-sales_module\\DashboardForm.cs*",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAUwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T11:11:45.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DashboardForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\DashboardForm.cs",
+              "RelativeDocumentMoniker": "WinForm-sales_module\\DashboardForm.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\DashboardForm.cs [Design]*",
+              "RelativeToolTip": "WinForm-sales_module\\DashboardForm.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T11:11:40.385Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CartForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\CartForm.cs",
+              "RelativeDocumentMoniker": "WinForm-sales_module\\CartForm.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\CartForm.cs [Design]",
+              "RelativeToolTip": "WinForm-sales_module\\CartForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T11:11:24.284Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\OrderService.cs",
+              "RelativeDocumentMoniker": "WinForm-sales_module\\OrderService.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\OrderService.cs",
+              "RelativeToolTip": "WinForm-sales_module\\OrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T21:25:53.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CartForm.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\CartForm.cs",
+              "RelativeDocumentMoniker": "WinForm-sales_module\\CartForm.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\CartForm.cs",
+              "RelativeToolTip": "WinForm-sales_module\\CartForm.cs",
+              "ViewState": "AgIAAL8AAAAAAAAAAIAwwBIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T21:25:12.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReturnForm.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\ReturnForm.cs",
+              "RelativeDocumentMoniker": "WinForm-sales_module\\ReturnForm.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\ReturnForm.cs",
+              "RelativeToolTip": "WinForm-sales_module\\ReturnForm.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAIAywBUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T07:08:46.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderForm.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\OrderForm.cs",
+              "RelativeDocumentMoniker": "WinForm-sales_module\\OrderForm.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\OrderForm.cs",
+              "RelativeToolTip": "WinForm-sales_module\\OrderForm.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T21:14:53.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "InvoiceForm.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\InvoiceForm.cs",
+              "RelativeDocumentMoniker": "WinForm-sales_module\\InvoiceForm.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\InvoiceForm.cs",
+              "RelativeToolTip": "WinForm-sales_module\\InvoiceForm.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvxMAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T07:09:06.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\Program.cs",
+              "RelativeDocumentMoniker": "WinForm-sales_module\\Program.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\Program.cs",
+              "RelativeToolTip": "WinForm-sales_module\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T18:08:37.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "InvoiceService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\InvoiceService.cs",
+              "RelativeDocumentMoniker": "WinForm-sales_module\\InvoiceService.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\Management-System\\WinForm-sales_module\\WinForm-sales_module\\InvoiceService.cs",
+              "RelativeToolTip": "WinForm-sales_module\\InvoiceService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAcwBMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T20:45:26.986Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
