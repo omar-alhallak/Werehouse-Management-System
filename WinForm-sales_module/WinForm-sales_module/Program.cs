@@ -8,15 +8,17 @@ namespace WinForm_sales_module
 {
     static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
+        public static IOrderService OrderService = new OrderService();
+        public static IInvoiceService InvoiceService = new InvoiceService();
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            DashboardForm dash = new DashboardForm();
+            dash.Show();
+            Application.Run();
+
         }
     }
 }
