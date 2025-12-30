@@ -1,0 +1,18 @@
+[
+  {
+    "Id": 100,
+    "UserName": "Omar_alhallak",
+    "PasswordHash": "100000.YwOZZk6AgtlVtTLP1twRBg==.M9bW+U7L/lSy5RPj5LBCTP73uIVvVtQYZKuv4UGz7ns=",
+    "FullName": "Omar alhallak",
+    "Role": 0,
+    "IsActive": true
+  },
+  {
+    "Id": 101,
+    "UserName": "Ahmad223",
+    "PasswordHash": "100000.mpnYXiAGJDbeqyGe5w8iNA==.OhsrarM1ZQN2CwvneciaLLQhbyWt9ZAIKRX6DTA+408=",
+    "FullName": "Ahmad abo alsher",
+    "Role": 2,
+    "IsActive": true
+  }
+]

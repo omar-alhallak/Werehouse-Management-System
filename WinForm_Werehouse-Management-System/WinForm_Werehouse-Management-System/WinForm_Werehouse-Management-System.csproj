@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3BB35BC1-9522-41F5-9ED9-AA036B7CDC9A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WinForm_Werehouse_Management_System</RootNamespace>
+    <AssemblyName>WinForm_Werehouse-Management-System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ahmad\FormSales\CartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ahmad\FormSales\CartForm.Designer.cs">
+      <DependentUpon>CartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ahmad\FormSales\Form_DashboardSalse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ahmad\FormSales\Form_DashboardSalse.Designer.cs">
+      <DependentUpon>Form_DashboardSalse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ahmad\FormSales\InvoiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ahmad\FormSales\InvoiceForm.Designer.cs">
+      <DependentUpon>InvoiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ahmad\FormSales\OrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ahmad\FormSales\OrderForm.Designer.cs">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ahmad\FormSales\ReturnForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ahmad\FormSales\ReturnForm.Designer.cs">
+      <DependentUpon>ReturnForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ahmad\Modules\module_CartItem.cs" />
+    <Compile Include="Ahmad\Modules\module_Invoice.cs" />
+    <Compile Include="Ahmad\Modules\module_Order.cs" />
+    <Compile Include="Ahmad\product.cs" />
+    <Compile Include="Ahmad\Services\InvoiceService.cs" />
+    <Compile Include="Ahmad\Services\OrderService.cs" />
+    <Compile Include="Ahmad\Services\ShoppingCart.cs" />
+    <Compile Include="Omar\Excptions\AcountDisableException.cs" />
+    <Compile Include="Omar\Excptions\FatherExceptions.cs" />
+    <Compile Include="Omar\Excptions\UserNameAlreadyExiste.cs" />
+    <Compile Include="Omar\Excptions\UserNameORPasswordEmptyException.cs" />
+    <Compile Include="Omar\Excptions\UserNotFoundException.cs" />
+    <Compile Include="Omar\Forms Admin\Form_AccountManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Omar\Forms Admin\Form_AccountManagement.Designer.cs">
+      <DependentUpon>Form_AccountManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Omar\Forms Admin\Form_CreateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Omar\Forms Admin\Form_CreateAccount.Designer.cs">
+      <DependentUpon>Form_CreateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Omar\Forms Admin\Form_DashboardAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Omar\Forms Admin\Form_DashboardAdmin.Designer.cs">
+      <DependentUpon>Form_DashboardAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Omar\Forms Admin\Form_EditAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Omar\Forms Admin\Form_EditAccount.Designer.cs">
+      <DependentUpon>Form_EditAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Omar\Forms Admin\Form_LogIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Omar\Forms Admin\Form_LogIN.Designer.cs">
+      <DependentUpon>Form_LogIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Omar\JsonFileStorage.cs" />
+    <Compile Include="Omar\Users\LoadUserGrid.cs" />
+    <Compile Include="Omar\Users\UserRole___Permissions.cs" />
+    <Compile Include="Omar\Users\Users.cs" />
+    <Compile Include="Omar\Users\UserService.cs" />
+    <Compile Include="Omar\Users\User_AuthService.cs" />
+    <Compile Include="Omar\Validation &amp; Regex\HashingFromPassword.cs" />
+    <Compile Include="Omar\Validation &amp; Regex\PasswordHelper.cs" />
+    <Compile Include="Omar\Validation &amp; Regex\PlaceholderHelper.cs" />
+    <Compile Include="Omar\Validation &amp; Regex\Regex.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Ahmad\FormSales\CartForm.resx">
+      <DependentUpon>CartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ahmad\FormSales\Form_DashboardSalse.resx">
+      <DependentUpon>Form_DashboardSalse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ahmad\FormSales\InvoiceForm.resx">
+      <DependentUpon>InvoiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ahmad\FormSales\OrderForm.resx">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ahmad\FormSales\ReturnForm.resx">
+      <DependentUpon>ReturnForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Omar\Forms Admin\Form_AccountManagement.resx">
+      <DependentUpon>Form_AccountManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Omar\Forms Admin\Form_CreateAccount.resx">
+      <DependentUpon>Form_CreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Omar\Forms Admin\Form_DashboardAdmin.resx">
+      <DependentUpon>Form_DashboardAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Omar\Forms Admin\Form_EditAccount.resx">
+      <DependentUpon>Form_EditAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Omar\Forms Admin\Form_LogIN.resx">
+      <DependentUpon>Form_LogIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7153150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11284777.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\date-Order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000000b4c720aa4c013b126142c3e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000006f407246adfaa8911ddcdc7f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_00000000785071f49870ab9c3cb76de3 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_000000008158724692ac433db54a39d8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sersh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\تنزيل %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\تنزيل %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\تنزيل %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\تنزيل %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\تنزيل.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\Users.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
