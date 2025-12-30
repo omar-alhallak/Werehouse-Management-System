@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using WinForm_inventory_module.Exceptions;
 
-namespace WinForm_inventory_module.CategoryManagement
+namespace WinForm_inventory_module
 {
     public static class ProductValidation
     {
@@ -15,31 +16,31 @@ namespace WinForm_inventory_module.CategoryManagement
 
         // Regex لكود المنتج (مثل TEA001 — COF10 — A123)
         private static readonly Regex CodeRegex =
-            new Regex(@"^[A-Z0-9]{3,15}$");
+            new Regex(@"^[A-Z0-9]{3,30}$");
 
         // التحقق قبل إضافة منتج جديد
         public static void ValidateForAdd(Product product, List<Product> products)
         {
             if (product == null)
-                throw new CategoryException("Product data is missing.");
+                throw new ProductException("الرجاء ادخال البيانات المطلوبة ");
 
             // 1) الاسم
             if (string.IsNullOrWhiteSpace(product.Name))
-                throw new CategoryException("Product name is required.");
+                throw new ProductException("الرجاء ادخال اسم المنتج .");
 
             if (!NameRegex.IsMatch(product.Name.Trim()))
-                throw new CategoryException("Invalid product name.");
+                throw new ProductException("   اسم المنتج خاطئ , يجب ان يكون من 2 الى 40 حرف ويحتوي على حروف وارقام وشرطات   ");
 
             // 2) التصنيف
             if (string.IsNullOrWhiteSpace(product.CategoryName))
-                throw new CategoryException("Category is required.");
+                throw new ProductException("الرجاء تحديد التصنيف ");
 
             // 3) كود المنتج
             if (string.IsNullOrWhiteSpace(product.Code))
-                throw new CategoryException("Product code is required.");
+                throw new ProductException("الرجاء ادخال كود المنتج");
 
             if (!CodeRegex.IsMatch(product.Code.Trim()))
-                throw new CategoryException("Invalid product code format.");
+                throw new ProductException("تنسيق الكود خاطئ , يجب ان يحتوي على احرف كبيرة وارقام وان يكون من 3 الى 30 محرف");
 
             // منع التكرار
             foreach (var p in products)
@@ -47,17 +48,17 @@ namespace WinForm_inventory_module.CategoryManagement
                 if (p.Id != product.Id &&
                     string.Equals(p.Code, product.Code, StringComparison.OrdinalIgnoreCase))
                 {
-                    throw new CategoryException("Another product already uses this code.");
+                    throw new ProductException("منتج اخر يستخدم نفس الكود .");
                 }
             }
 
             // 4) السعر
             if (product.UnitPrice < 0)
-                throw new CategoryException("Price cannot be negative.");
+                throw new ProductException("السعر خاطئ");
 
             // 5) الكمية
             if (product.Stock < 0)
-                throw new CategoryException("Stock cannot be negative.");
+                throw new ProductException("لا يمكن ان يكون التخزين سالب");
         }
 
         // التحقق قبل التعديل
@@ -72,7 +73,7 @@ namespace WinForm_inventory_module.CategoryManagement
                     string.Equals(p.Code, product.Code,
                         StringComparison.OrdinalIgnoreCase))
                 {
-                    throw new CategoryException("Another product already uses this code.");
+                    throw new ProductException("منتج اخر يستخدم نفس الكود .");
                 }
             }
         }

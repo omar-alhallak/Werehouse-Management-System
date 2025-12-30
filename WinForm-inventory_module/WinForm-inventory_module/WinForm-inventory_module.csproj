@@ -49,48 +49,49 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CategoryManagementForm.cs">
+    <Compile Include="AllForms\CategoryManagementForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CategoryManagementForm.Designer.cs">
+    <Compile Include="AllForms\CategoryManagementForm.Designer.cs">
       <DependentUpon>CategoryManagementForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CategoryManagement\Category.cs" />
-    <Compile Include="CategoryManagement\CategoryException.cs" />
-    <Compile Include="CategoryManagement\CategoryManager.cs" />
-    <Compile Include="CategoryManagement\CategoryValidation.cs" />
-    <Compile Include="CategoryManagement\CategoryStorage.cs" />
-    <Compile Include="CategoryManagement\Product.cs" />
-    <Compile Include="CategoryManagement\ProductMannger.cs" />
-    <Compile Include="CategoryManagement\ProductStorage.cs" />
-    <Compile Include="CategoryManagement\ProductValidation.cs" />
-    <Compile Include="InventoryDashboardForm.cs">
+    <Compile Include="Management\Category.cs" />
+    <Compile Include="Exceptions\CategoryException.cs" />
+    <Compile Include="Management\CategoryManager.cs" />
+    <Compile Include="ValidationAndRegex\CategoryValidation.cs" />
+    <Compile Include="Management\CategoryStorage.cs" />
+    <Compile Include="Management\Product.cs" />
+    <Compile Include="Management\ProductMannger.cs" />
+    <Compile Include="Management\ProductStorage.cs" />
+    <Compile Include="ValidationAndRegex\ProductValidation.cs" />
+    <Compile Include="Exceptions\ProductException.cs" />
+    <Compile Include="AllForms\InventoryDashboardForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InventoryDashboardForm.Designer.cs">
+    <Compile Include="AllForms\InventoryDashboardForm.Designer.cs">
       <DependentUpon>InventoryDashboardForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProductManagmentForm.cs">
+    <Compile Include="AllForms\ProductManagmentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ProductManagmentForm.Designer.cs">
+    <Compile Include="AllForms\ProductManagmentForm.Designer.cs">
       <DependentUpon>ProductManagmentForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StockViewForm.cs">
+    <Compile Include="AllForms\StockViewForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StockViewForm.Designer.cs">
+    <Compile Include="AllForms\StockViewForm.Designer.cs">
       <DependentUpon>StockViewForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CategoryManagementForm.resx">
+    <EmbeddedResource Include="AllForms\CategoryManagementForm.resx">
       <DependentUpon>CategoryManagementForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InventoryDashboardForm.resx">
+    <EmbeddedResource Include="AllForms\InventoryDashboardForm.resx">
       <DependentUpon>InventoryDashboardForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProductManagmentForm.resx">
+    <EmbeddedResource Include="AllForms\ProductManagmentForm.resx">
       <DependentUpon>ProductManagmentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -103,7 +104,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="StockViewForm.resx">
+    <EmbeddedResource Include="AllForms\StockViewForm.resx">
       <DependentUpon>StockViewForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -132,5 +133,6 @@
   <ItemGroup>
     <None Include="Resources\x-removebg-preview.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -43,7 +43,7 @@
             this.panelRight = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvProducts = new System.Windows.Forms.DataGridView();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtProductSearch = new System.Windows.Forms.TextBox();
             this.btnAddProduct = new System.Windows.Forms.Button();
             this.btnUpdateProduct = new System.Windows.Forms.Button();
             this.btnDeleteProduct = new System.Windows.Forms.Button();
@@ -184,7 +184,7 @@
             this.panelRight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelRight.Controls.Add(this.label2);
             this.panelRight.Controls.Add(this.dgvProducts);
-            this.panelRight.Controls.Add(this.textBox5);
+            this.panelRight.Controls.Add(this.txtProductSearch);
             this.panelRight.Location = new System.Drawing.Point(395, 84);
             this.panelRight.Name = "panelRight";
             this.panelRight.Size = new System.Drawing.Size(520, 419);
@@ -219,13 +219,14 @@
             this.dgvProducts.TabIndex = 0;
             this.dgvProducts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProducts_CellClick);
             // 
-            // textBox5
+            // txtProductSearch
             // 
-            this.textBox5.Location = new System.Drawing.Point(344, 15);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(171, 24);
-            this.textBox5.TabIndex = 2;
+            this.txtProductSearch.Location = new System.Drawing.Point(344, 15);
+            this.txtProductSearch.Multiline = true;
+            this.txtProductSearch.Name = "txtProductSearch";
+            this.txtProductSearch.Size = new System.Drawing.Size(171, 24);
+            this.txtProductSearch.TabIndex = 2;
+            this.txtProductSearch.TextChanged += new System.EventHandler(this.txtProductSearch_TextChanged);
             // 
             // btnAddProduct
             // 
@@ -314,6 +315,7 @@
             this.lbExit.Name = "lbExit";
             this.lbExit.Size = new System.Drawing.Size(40, 54);
             this.lbExit.TabIndex = 11;
+            this.lbExit.Click += new System.EventHandler(this.lbExit_Click);
             // 
             // ProductManagmentForm
             // 
@@ -366,7 +368,7 @@
         private System.Windows.Forms.TextBox txtProductName;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dgvProducts;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtProductSearch;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAddProduct;
         private System.Windows.Forms.Button btnUpdateProduct;

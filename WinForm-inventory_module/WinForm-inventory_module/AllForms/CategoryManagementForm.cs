@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
-using WinForm_inventory_module.CategoryManagement;
 
 namespace WinForm_inventory_module
 {
@@ -83,7 +82,7 @@ namespace WinForm_inventory_module
             }
             catch (CategoryException ex)
             {
-                MessageBox.Show(ex.Message, "Add Category",
+                MessageBox.Show(ex.Message, "إضافة تصنيف",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
@@ -103,7 +102,7 @@ namespace WinForm_inventory_module
             // 1) لازم المستخدم يختار صف من الجدول
             if (dgvCategories.SelectedRows.Count == 0)
             {
-                MessageBox.Show("Please select a category first.", "Update Category",
+                MessageBox.Show("الرجاء اختيار التصنيف اولا", "تعديل التصنيف",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
@@ -126,7 +125,7 @@ namespace WinForm_inventory_module
             }
             catch (CategoryException ex)
             {
-                MessageBox.Show(ex.Message, "Update Category",
+                MessageBox.Show(ex.Message, "تعديل التصنيف",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
@@ -135,7 +134,7 @@ namespace WinForm_inventory_module
         {
             if (dgvCategories.SelectedRows.Count == 0)
             {
-                MessageBox.Show("Please select a category first.", "Delete Category",
+                MessageBox.Show("الرجاء اختيار التصنيف اولا", "حذف تصنيف",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
@@ -143,8 +142,8 @@ namespace WinForm_inventory_module
             int id = Convert.ToInt32(dgvCategories.SelectedRows[0].Cells[0].Value);
 
             DialogResult res = MessageBox.Show(
-                "Are you sure you want to delete this category?",
-                "Confirm Delete",
+                "هل انت متأكد ؟",
+                "تأكيد الحذف",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Warning);
 
@@ -161,7 +160,7 @@ namespace WinForm_inventory_module
             }
             catch (CategoryException ex)
             {
-                MessageBox.Show(ex.Message, "Delete Category",
+                MessageBox.Show(ex.Message, "حذف تصنيف",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
@@ -171,6 +170,26 @@ namespace WinForm_inventory_module
             InventoryDashboardForm cate = new InventoryDashboardForm();
             cate.Show();
             this.Close();
+        }
+
+        //
+        private void FillCategoryGrid(List<Category> data)
+        {
+            dgvCategories.Rows.Clear();
+
+            foreach (var c in data)
+            {
+                dgvCategories.Rows.Add(c.Id, c.Name);
+            }
+
+            dgvCategories.ClearSelection();
+        }
+        //
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            string text = txtSearch.Text;
+            var result = Manager.Search(text);
+            FillCategoryGrid(result);
         }
 
         private void lbExit(object sender, EventArgs e)
@@ -190,6 +209,7 @@ namespace WinForm_inventory_module
                 Application.Exit();
             }
         }
+
     }
 }
 

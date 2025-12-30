@@ -3,36 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\winform-inventory_module\\inventorydashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|solutionrelative:winform-inventory_module\\inventorydashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|c:\\users\\pc\\source\\repos\\management-system\\winform-inventory_module\\winform-inventory_module\\allforms\\stockviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|solutionrelative:winform-inventory_module\\allforms\\stockviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\winform-inventory_module\\inventorydashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|solutionrelative:winform-inventory_module\\inventorydashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|c:\\users\\pc\\source\\repos\\management-system\\winform-inventory_module\\winform-inventory_module\\allforms\\stockviewform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|solutionrelative:winform-inventory_module\\allforms\\stockviewform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\winform-inventory_module\\stockviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|solutionrelative:winform-inventory_module\\stockviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|c:\\users\\pc\\source\\repos\\management-system\\winform-inventory_module\\winform-inventory_module\\allforms\\stockviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|solutionrelative:winform-inventory_module\\allforms\\stockviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\winform-inventory_module\\stockviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|solutionrelative:winform-inventory_module\\stockviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|c:\\users\\pc\\source\\repos\\management-system\\winform-inventory_module\\winform-inventory_module\\allforms\\categorymanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|solutionrelative:winform-inventory_module\\allforms\\categorymanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|c:\\users\\pc\\source\\repos\\management-system\\winform-inventory_module\\winform-inventory_module\\stockviewform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|solutionrelative:winform-inventory_module\\stockviewform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|c:\\users\\pc\\source\\repos\\management-system\\winform-inventory_module\\winform-inventory_module\\allforms\\categorymanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|solutionrelative:winform-inventory_module\\allforms\\categorymanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\winform-inventory_module\\categorymanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|solutionrelative:winform-inventory_module\\categorymanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|c:\\users\\pc\\source\\repos\\management-system\\winform-inventory_module\\winform-inventory_module\\allforms\\productmanagmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|solutionrelative:winform-inventory_module\\allforms\\productmanagmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\winform-inventory_module\\categorymanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|solutionrelative:winform-inventory_module\\categorymanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|c:\\users\\pc\\source\\repos\\management-system\\winform-inventory_module\\winform-inventory_module\\allforms\\productmanagmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|solutionrelative:winform-inventory_module\\allforms\\productmanagmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\winform-inventory_module\\productmanagmentform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|solutionrelative:winform-inventory_module\\productmanagmentform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|c:\\users\\pc\\source\\repos\\management-system\\winform-inventory_module\\winform-inventory_module\\management\\productmannger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|solutionrelative:winform-inventory_module\\management\\productmannger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|c:\\users\\pc\\source\\repos\\management-system\\winform-inventory_module\\winform-inventory_module\\management\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|solutionrelative:winform-inventory_module\\management\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|c:\\users\\pc\\source\\repos\\management-system\\winform-inventory_module\\winform-inventory_module\\management\\categorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|solutionrelative:winform-inventory_module\\management\\categorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|c:\\users\\pc\\source\\repos\\management-system\\winform-inventory_module\\winform-inventory_module\\allforms\\inventorydashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|solutionrelative:winform-inventory_module\\allforms\\inventorydashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|c:\\users\\pc\\source\\repos\\management-system\\winform-inventory_module\\winform-inventory_module\\validationandregex\\categoryvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|solutionrelative:winform-inventory_module\\validationandregex\\categoryvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|c:\\users\\pc\\source\\repos\\management-system\\winform-inventory_module\\winform-inventory_module\\validationandregex\\productvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|solutionrelative:winform-inventory_module\\validationandregex\\productvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|c:\\users\\pc\\source\\repos\\management-system\\winform-inventory_module\\winform-inventory_module\\management\\productstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|solutionrelative:winform-inventory_module\\management\\productstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|c:\\users\\pc\\source\\repos\\management-system\\winform-inventory_module\\winform-inventory_module\\management\\categorystorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|solutionrelative:winform-inventory_module\\management\\categorystorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|c:\\users\\pc\\source\\repos\\management-system\\winform-inventory_module\\winform-inventory_module\\management\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF93D36E-8FD6-4606-8430-674C8E57FF4B}|WinForm-inventory_module\\WinForm-inventory_module.csproj|solutionrelative:winform-inventory_module\\management\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,105 +74,211 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "InventoryDashboardForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\InventoryDashboardForm.cs",
-              "RelativeDocumentMoniker": "WinForm-inventory_module\\InventoryDashboardForm.cs",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\InventoryDashboardForm.cs [Design]",
-              "RelativeToolTip": "WinForm-inventory_module\\InventoryDashboardForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T21:54:18.632Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "StockViewForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\StockViewForm.cs",
-              "RelativeDocumentMoniker": "WinForm-inventory_module\\StockViewForm.cs",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\StockViewForm.cs [Design]",
-              "RelativeToolTip": "WinForm-inventory_module\\StockViewForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T20:55:05.27Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StockViewForm.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\StockViewForm.cs",
-              "RelativeDocumentMoniker": "WinForm-inventory_module\\StockViewForm.cs",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\StockViewForm.cs",
-              "RelativeToolTip": "WinForm-inventory_module\\StockViewForm.cs",
-              "ViewState": "AgIAAK8AAAAAAAAAAAAEwMQAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T21:54:13.36Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "StockViewForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\StockViewForm.Designer.cs",
-              "RelativeDocumentMoniker": "WinForm-inventory_module\\StockViewForm.Designer.cs",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\StockViewForm.Designer.cs",
-              "RelativeToolTip": "WinForm-inventory_module\\StockViewForm.Designer.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAwwMMAAAAoAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\AllForms\\StockViewForm.Designer.cs",
+              "RelativeDocumentMoniker": "WinForm-inventory_module\\AllForms\\StockViewForm.Designer.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\AllForms\\StockViewForm.Designer.cs*",
+              "RelativeToolTip": "WinForm-inventory_module\\AllForms\\StockViewForm.Designer.cs*",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAuwMMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T21:56:13.686Z",
+              "WhenOpened": "2025-12-30T23:29:34.751Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "InventoryDashboardForm.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\InventoryDashboardForm.cs",
-              "RelativeDocumentMoniker": "WinForm-inventory_module\\InventoryDashboardForm.cs",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\InventoryDashboardForm.cs",
-              "RelativeToolTip": "WinForm-inventory_module\\InventoryDashboardForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAMAAAAAAAAAA==",
+              "Title": "StockViewForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\AllForms\\StockViewForm.cs",
+              "RelativeDocumentMoniker": "WinForm-inventory_module\\AllForms\\StockViewForm.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\AllForms\\StockViewForm.cs [Design]*",
+              "RelativeToolTip": "WinForm-inventory_module\\AllForms\\StockViewForm.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T22:08:18.847Z",
+              "WhenOpened": "2025-12-30T23:27:05.701Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductManagmentForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\AllForms\\ProductManagmentForm.cs",
+              "RelativeDocumentMoniker": "WinForm-inventory_module\\AllForms\\ProductManagmentForm.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\AllForms\\ProductManagmentForm.cs [Design]",
+              "RelativeToolTip": "WinForm-inventory_module\\AllForms\\ProductManagmentForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T09:50:06.754Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductMannger.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\Management\\ProductMannger.cs",
+              "RelativeDocumentMoniker": "WinForm-inventory_module\\Management\\ProductMannger.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\Management\\ProductMannger.cs",
+              "RelativeToolTip": "WinForm-inventory_module\\Management\\ProductMannger.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAmwGgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T22:19:41.86Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "CategoryManagementForm.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\CategoryManagementForm.cs",
-              "RelativeDocumentMoniker": "WinForm-inventory_module\\CategoryManagementForm.cs",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\CategoryManagementForm.cs",
-              "RelativeToolTip": "WinForm-inventory_module\\CategoryManagementForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKoAAAAMAAAAAAAAAA==",
+              "Title": "ProductManagmentForm.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\AllForms\\ProductManagmentForm.cs",
+              "RelativeDocumentMoniker": "WinForm-inventory_module\\AllForms\\ProductManagmentForm.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\AllForms\\ProductManagmentForm.cs",
+              "RelativeToolTip": "WinForm-inventory_module\\AllForms\\ProductManagmentForm.cs",
+              "ViewState": "AgIAAAcBAAAAAAAAAAAYwFcBAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T22:06:40.141Z"
+              "WhenOpened": "2025-12-30T21:29:38.544Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
+              "Title": "StockViewForm.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\AllForms\\StockViewForm.cs",
+              "RelativeDocumentMoniker": "WinForm-inventory_module\\AllForms\\StockViewForm.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\AllForms\\StockViewForm.cs*",
+              "RelativeToolTip": "WinForm-inventory_module\\AllForms\\StockViewForm.cs*",
+              "ViewState": "AgIAAK0AAAAAAAAAAAAgwL4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T22:58:06.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CategoryManagementForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\CategoryManagementForm.cs",
-              "RelativeDocumentMoniker": "WinForm-inventory_module\\CategoryManagementForm.cs",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\CategoryManagementForm.cs [Design]",
-              "RelativeToolTip": "WinForm-inventory_module\\CategoryManagementForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\AllForms\\CategoryManagementForm.cs",
+              "RelativeDocumentMoniker": "WinForm-inventory_module\\AllForms\\CategoryManagementForm.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\AllForms\\CategoryManagementForm.cs [Design]",
+              "RelativeToolTip": "WinForm-inventory_module\\AllForms\\CategoryManagementForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T22:06:38.748Z"
+              "WhenOpened": "2025-12-30T09:50:03.033Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProductManagmentForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\ProductManagmentForm.Designer.cs",
-              "RelativeDocumentMoniker": "WinForm-inventory_module\\ProductManagmentForm.Designer.cs",
-              "ToolTip": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\ProductManagmentForm.Designer.cs",
-              "RelativeToolTip": "WinForm-inventory_module\\ProductManagmentForm.Designer.cs",
-              "ViewState": "AgIAAC8BAAAAAAAAAAAhwDsBAAAmAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\Management\\Product.cs",
+              "RelativeDocumentMoniker": "WinForm-inventory_module\\Management\\Product.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\Management\\Product.cs",
+              "RelativeToolTip": "WinForm-inventory_module\\Management\\Product.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T19:23:05.261Z"
+              "WhenOpened": "2025-12-30T20:26:15.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CategoryManagementForm.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\AllForms\\CategoryManagementForm.cs",
+              "RelativeDocumentMoniker": "WinForm-inventory_module\\AllForms\\CategoryManagementForm.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\AllForms\\CategoryManagementForm.cs",
+              "RelativeToolTip": "WinForm-inventory_module\\AllForms\\CategoryManagementForm.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAADwv7oAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T22:45:45.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CategoryManager.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\Management\\CategoryManager.cs",
+              "RelativeDocumentMoniker": "WinForm-inventory_module\\Management\\CategoryManager.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\Management\\CategoryManager.cs",
+              "RelativeToolTip": "WinForm-inventory_module\\Management\\CategoryManager.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAmwGcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T20:19:29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CategoryValidation.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\ValidationAndRegex\\CategoryValidation.cs",
+              "RelativeDocumentMoniker": "WinForm-inventory_module\\ValidationAndRegex\\CategoryValidation.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\ValidationAndRegex\\CategoryValidation.cs",
+              "RelativeToolTip": "WinForm-inventory_module\\ValidationAndRegex\\CategoryValidation.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T22:30:25.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProductValidation.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\ValidationAndRegex\\ProductValidation.cs",
+              "RelativeDocumentMoniker": "WinForm-inventory_module\\ValidationAndRegex\\ProductValidation.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\ValidationAndRegex\\ProductValidation.cs",
+              "RelativeToolTip": "WinForm-inventory_module\\ValidationAndRegex\\ProductValidation.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T22:35:45.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "InventoryDashboardForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\AllForms\\InventoryDashboardForm.cs",
+              "RelativeDocumentMoniker": "WinForm-inventory_module\\AllForms\\InventoryDashboardForm.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\AllForms\\InventoryDashboardForm.cs [Design]",
+              "RelativeToolTip": "WinForm-inventory_module\\AllForms\\InventoryDashboardForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T22:50:44.03Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProductStorage.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\Management\\ProductStorage.cs",
+              "RelativeDocumentMoniker": "WinForm-inventory_module\\Management\\ProductStorage.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\Management\\ProductStorage.cs",
+              "RelativeToolTip": "WinForm-inventory_module\\Management\\ProductStorage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T22:30:03.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CategoryStorage.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\Management\\CategoryStorage.cs",
+              "RelativeDocumentMoniker": "WinForm-inventory_module\\Management\\CategoryStorage.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\Management\\CategoryStorage.cs",
+              "RelativeToolTip": "WinForm-inventory_module\\Management\\CategoryStorage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T20:41:30.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\Management\\Category.cs",
+              "RelativeDocumentMoniker": "WinForm-inventory_module\\Management\\Category.cs",
+              "ToolTip": "C:\\Users\\pc\\source\\repos\\Management-System\\WinForm-inventory_module\\WinForm-inventory_module\\Management\\Category.cs",
+              "RelativeToolTip": "WinForm-inventory_module\\Management\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T20:38:57.422Z",
+              "EditorCaption": ""
             }
           ]
         },

@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WinForm_inventory_module.CategoryManagement;
 
 namespace WinForm_inventory_module
 {
@@ -157,17 +156,17 @@ namespace WinForm_inventory_module
                 ClearProductInputs();
                 RefreshProductGrid();
 
-                MessageBox.Show("Product added successfully.", "Add Product",
+                MessageBox.Show("تم إضافة المنتج بنجاح.", "لإضافة منتج",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (CategoryException ex)
             {
-                MessageBox.Show(ex.Message, "Validation Error",
+                MessageBox.Show(ex.Message, "خطأ بالتحقق",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Unexpected error: " + ex.Message);
+                MessageBox.Show("خطأ غير متوقع " + ex.Message);
             }
         }
 
@@ -230,7 +229,7 @@ namespace WinForm_inventory_module
             {
                 if (selectedProductId == 0)
                 {
-                    MessageBox.Show("Please select a product first.", "Update",
+                    MessageBox.Show("الرجاء اختيار المنتج اولا", "تعديل",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
@@ -242,7 +241,7 @@ namespace WinForm_inventory_module
 
                 RefreshProductGrid();
 
-                MessageBox.Show("Product updated successfully.", "Update",
+                MessageBox.Show("تم تعديل المنتج بنجاح", "تعديل",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (CategoryException ex)
@@ -252,7 +251,7 @@ namespace WinForm_inventory_module
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Unexpected error: " + ex.Message);
+                MessageBox.Show("خطأ غير متوقع :" + ex.Message);
             }
         }
 
@@ -269,14 +268,14 @@ namespace WinForm_inventory_module
             {
                 if (selectedProductId == 0)
                 {
-                    MessageBox.Show("Please select a product first.", "Delete",
+                    MessageBox.Show("الرجاء اختيار المنتج اولا", "Delete",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
 
                 var result = MessageBox.Show(
-                    "Are you sure you want to delete this product?",
-                    "Confirm Delete",
+                    "هل انت متأكد من حذف هذا المنتج ",
+                    "تأكيد الحذف",
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Question);
 
@@ -290,19 +289,40 @@ namespace WinForm_inventory_module
 
                 RefreshProductGrid();
 
-                MessageBox.Show("Product deleted successfully.", "Delete",
+                MessageBox.Show("تم الحذف بنجاح", "حذف",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (CategoryException ex)
             {
-                MessageBox.Show(ex.Message, "Delete Error",
+                MessageBox.Show(ex.Message, "خطأ بالحذف",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Unexpected error: " + ex.Message);
+                MessageBox.Show("خطأ غير متوقع" + ex.Message);
             }
         }
+
+        //// 
+        private void FillProductGrid(List<Product> data)
+        {
+            dgvProducts.Rows.Clear();
+
+            foreach (var p in data)
+            {
+                dgvProducts.Rows.Add(
+                    p.Id,
+                    p.Name,
+                    p.CategoryName,
+                    p.Code,
+                    p.UnitPrice,
+                    p.Stock
+                );
+            }
+
+            dgvProducts.ClearSelection();
+        }
+
 
         private void ProductManagmentForm_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -310,6 +330,18 @@ namespace WinForm_inventory_module
             {
                 Application.Exit();
             }
+        }
+
+        private void lbExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void txtProductSearch_TextChanged(object sender, EventArgs e)
+        {
+            string text = txtProductSearch.Text;
+            var result = productManager.Search(text);
+            FillProductGrid(result);
         }
     }
 }

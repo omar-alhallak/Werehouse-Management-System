@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WinForm_inventory_module.CategoryManagement;
 
 namespace WinForm_inventory_module
 {
@@ -168,9 +167,6 @@ namespace WinForm_inventory_module
 
         private void btnApplyFilter_Click(object sender, EventArgs e)
         {
-            //لو حاب، ممكن نحدّث allProducts من الملف كل مرة:
-            //allProducts = productManager.GetAll();
-
             ApplyFilterAndRefreshGrid();
         }
 
@@ -178,10 +174,6 @@ namespace WinForm_inventory_module
         {
             cmbCategoryFilter.SelectedIndex = 0;
             txtSearch.Text = "";
-
-            // تحديث القائمة من المصدر إذا حاب
-            // allProducts = productManager.GetAll();
-
             ApplyFilterAndRefreshGrid();
         }
 
@@ -196,5 +188,6 @@ namespace WinForm_inventory_module
         {
             Application.Exit();
         }
+
     }
 }

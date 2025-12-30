@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WinForm_inventory_module.CategoryManagement
+namespace WinForm_inventory_module
 {
     public class Product
     {

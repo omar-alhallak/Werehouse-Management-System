@@ -4,30 +4,27 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
-namespace WinForm_inventory_module.CategoryManagement
+namespace WinForm_inventory_module
 {
-    public class ProductStorage
+    public class CategoryStorage
     {
         private readonly string DataFolder;
         private readonly string FilePath;
 
-        public ProductStorage()
+        public CategoryStorage()
         {
-            DataFolder = Path.Combine(
-                AppDomain.CurrentDomain.BaseDirectory,
-                "Data"
-            );
-
-            FilePath = Path.Combine(DataFolder, "Products.txt");
+            DataFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"Data");
+            FilePath = Path.Combine(DataFolder, "Categories.txt");
         }
 
-        // تحميل المنتجات من الملف
-        public List<Product> Load()
+        // قراءة التصنيفات من ملف نصي
+        public List<Category> Load()
         {
             EnsureFileExists();
 
-            var list = new List<Product>();
+            var list = new List<Category>();
 
             foreach (var line in File.ReadAllLines(FilePath))
             {
@@ -35,48 +32,50 @@ namespace WinForm_inventory_module.CategoryManagement
                     continue;
 
                 var parts = line.Split('|');
-                if (parts.Length < 6)
+                if (parts.Length < 2)
                     continue;
 
-                int id = Convert.ToInt32(parts[0]);
+                // Id
+                if (!int.TryParse(parts[0], out int id))
+                    continue;
+                // Name
                 string name = parts[1];
-                string category = parts[2];
-                string code = parts[3];
-                decimal price = Convert.ToDecimal(parts[4]);
-                int stock = Convert.ToInt32(parts[5]);
 
-                list.Add(new Product(id,name,category,code,price,stock));
+                var c = new Category{Id = id,Name = name};
+
+                list.Add(c);
             }
 
             return list;
         }
 
-        
-
-
-        // حفظ المنتجات في الملف
-        public void Save(List<Product> products)
+        // حفظ التصنيفات في ملف نصي
+        public void Save(List<Category> categories)
         {
             EnsureDirectoryExists();
 
+            if (categories == null)
+                categories = new List<Category>();
+
             var lines = new List<string>();
 
-            foreach (var p in products)
+            foreach (var c in categories)
             {
-                lines.Add(
-                    $"{p.Id}|{p.Name}|{p.CategoryName}|{p.Code}|{p.UnitPrice}|{p.Stock}"
-                );
+                string line = $"{c.Id}|{c.Name}";
+                lines.Add(line);
             }
 
             File.WriteAllLines(FilePath, lines);
         }
 
+        // يتأكد أن مجلد Data موجود
         private void EnsureDirectoryExists()
         {
             if (!Directory.Exists(DataFolder))
                 Directory.CreateDirectory(DataFolder);
         }
 
+        // يتأكد أن ملف Categories.txt موجود
         private void EnsureFileExists()
         {
             EnsureDirectoryExists();
