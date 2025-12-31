@@ -12,8 +12,13 @@ namespace WinForm_inventory_module
 {
     public partial class ProductManagmentForm : Form
     {
+        public ProductManagmentForm()
+        {
+            InitializeComponent();
+        }
         private CategoryManager categoryManager;
         private ProductManager productManager;
+        
         private void ProductManagmentForm_Load(object sender, EventArgs e)
         {
             categoryManager = new CategoryManager();
