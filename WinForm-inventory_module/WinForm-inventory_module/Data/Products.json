@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "Name": "sadf",
+    "CategoryName": "Food",
+    "Code": "AAA",
+    "UnitPrice": 10.0,
+    "Stock": 10
+  },
+  {
+    "Id": 2,
+    "Name": "SDSDSD",
+    "CategoryName": "dsfsadf",
+    "Code": "SAS",
+    "UnitPrice": 100.0,
+    "Stock": 100
+  },
+  {
+    "Id": 3,
+    "Name": "ASDF",
+    "CategoryName": "fdsasadf",
+    "Code": "ASD12",
+    "UnitPrice": 50.0,
+    "Stock": 50
+  }
+]
