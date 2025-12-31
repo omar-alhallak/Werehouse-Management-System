@@ -9,13 +9,13 @@ namespace WinForm_inventory_module
     public class CategoryManager
     {
         //تخزين و تحميل التصنيفات
-        private readonly CategoryStorage Storage;
+        private readonly JsonFileStorage<Category> storage;
         private List<Category> Categories;
 
         public CategoryManager()
         {
-            Storage =new CategoryStorage();
-            Categories = Storage.Load();
+            storage = new JsonFileStorage<Category>("Categories.json");
+            Categories = storage.Load();
         }
 
         // منشان نرجع كل التصنيفات
@@ -45,7 +45,7 @@ namespace WinForm_inventory_module
             Categories.Add(new Category(newId, name.Trim()));
 
             //  نحفظ التعديلات في الملف
-            Storage.Save(Categories);
+            storage.Save(Categories);
         }
 
         // تعديل تصنيف
@@ -58,7 +58,7 @@ namespace WinForm_inventory_module
                 if (Categories[i].Id == id)
                 {
                     Categories[i] = new Category(id, name.Trim());
-                    Storage.Save(Categories);
+                    storage.Save(Categories);
                     return;
                 }
             }
@@ -98,7 +98,7 @@ namespace WinForm_inventory_module
             }
 
             // 5) حفظ بعد إعادة الترتيب
-            Storage.Save(Categories);
+            storage.Save(Categories);
         }
 
         //

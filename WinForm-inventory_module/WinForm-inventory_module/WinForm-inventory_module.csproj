@@ -55,14 +55,13 @@
     <Compile Include="AllForms\CategoryManagementForm.Designer.cs">
       <DependentUpon>CategoryManagementForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="JsonFileStorge.cs" />
     <Compile Include="Management\Category.cs" />
     <Compile Include="Exceptions\CategoryException.cs" />
     <Compile Include="Management\CategoryManager.cs" />
     <Compile Include="ValidationAndRegex\CategoryValidation.cs" />
-    <Compile Include="Management\CategoryStorage.cs" />
     <Compile Include="Management\Product.cs" />
     <Compile Include="Management\ProductMannger.cs" />
-    <Compile Include="Management\ProductStorage.cs" />
     <Compile Include="ValidationAndRegex\ProductValidation.cs" />
     <Compile Include="Exceptions\ProductException.cs" />
     <Compile Include="AllForms\InventoryDashboardForm.cs">

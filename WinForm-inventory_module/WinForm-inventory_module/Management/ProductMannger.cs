@@ -9,12 +9,12 @@ namespace WinForm_inventory_module
 {
     public class ProductManager
     {
-        private readonly ProductStorage storage;
+        private readonly JsonFileStorage<Product> storage;
         private List<Product> products;
 
         public ProductManager()
         {
-            storage = new ProductStorage();
+            storage = new JsonFileStorage<Product>("Products.json");
             products = storage.Load();
         }
 
@@ -146,5 +146,6 @@ namespace WinForm_inventory_module
         {
             storage.Save(products);
         }
+
     }
 }
