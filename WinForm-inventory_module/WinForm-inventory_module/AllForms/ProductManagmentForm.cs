@@ -14,11 +14,6 @@ namespace WinForm_inventory_module
     {
         private CategoryManager categoryManager;
         private ProductManager productManager;
-        public ProductManagmentForm()
-        {
-            InitializeComponent();
-        }
-
         private void ProductManagmentForm_Load(object sender, EventArgs e)
         {
             categoryManager = new CategoryManager();
@@ -175,20 +170,20 @@ namespace WinForm_inventory_module
         {
           
         
-            // 1) إذا كبسنا على الهيدر (العناوين فوق) ما نعمل شي
+            // 1 إذا كبسنا على الهيدر (العناوين فوق) ما نعمل شي
             if (e.RowIndex < 0)
                 return;
 
-            // 2) نحصل على الصف الذي نقرنا عليه
+            // نحصل على الصف الذي نقرنا عليه
             var row = dgvProducts.Rows[e.RowIndex];
 
             if (row.Cells["colId"].Value == null)
                 return;
 
-            // 3) نقرأ الـ Id ونحفظه في selectedProductId
+            // نقرأ  Id ونحفظه في selectedProductId
             selectedProductId = Convert.ToInt32(row.Cells["colId"].Value);
 
-            // 4) تعبئة الحقول من الجدول
+            //  تعبئة الحقول من الجدول
             txtProductName.Text = row.Cells["colName"].Value?.ToString();
             txtPrice.Text = row.Cells["colPrice"].Value?.ToString();
             txtQuantity.Text = row.Cells["colStock"].Value?.ToString();
@@ -203,9 +198,10 @@ namespace WinForm_inventory_module
                 cmbCategory.SelectedIndex = -1;
             }
 
-            // 5) جلب باقي البيانات (الكود + الوصف) من القائمة في ProductManager
-            Product selectedProduct = null;
+            // تعبئة كود المنتج
 
+            Product selectedProduct = null;
+            
             foreach (var p in productManager.GetAll())
             {
                 if (p.Id == selectedProductId)
@@ -246,12 +242,12 @@ namespace WinForm_inventory_module
             }
             catch (CategoryException ex)
             {
-                MessageBox.Show(ex.Message, "Validation Error",
+                MessageBox.Show(ex.Message, "خطأ",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("خطأ غير متوقع :" + ex.Message);
+                MessageBox.Show("خطأ :" + ex.Message);
             }
         }
 
@@ -303,7 +299,7 @@ namespace WinForm_inventory_module
             }
         }
 
-        //// 
+        // لملئ الجدول بالبيانات
         private void FillProductGrid(List<Product> data)
         {
             dgvProducts.Rows.Clear();

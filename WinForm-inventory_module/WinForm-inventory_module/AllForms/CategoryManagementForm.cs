@@ -172,7 +172,7 @@ namespace WinForm_inventory_module
             this.Close();
         }
 
-        //
+        // بحث وتصفيه
         private void FillCategoryGrid(List<Category> data)
         {
             dgvCategories.Rows.Clear();
@@ -184,7 +184,7 @@ namespace WinForm_inventory_module
 
             dgvCategories.ClearSelection();
         }
-        //
+        // حدث تغير النص في مربع البحث
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
             string text = txtSearch.Text;
