@@ -9,6 +9,7 @@ namespace WinForm_Werehouse_Management_System
     // تجريبية لمنتج
     public class Product
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public decimal Price { get; set; }
         public decimal Cost { get; set; }

@@ -104,6 +104,7 @@
             this.rtbResult.Size = new System.Drawing.Size(526, 244);
             this.rtbResult.TabIndex = 12;
             this.rtbResult.Text = "";
+            this.rtbResult.TextChanged += new System.EventHandler(this.rtbResult_TextChanged);
             // 
             // panel3
             // 

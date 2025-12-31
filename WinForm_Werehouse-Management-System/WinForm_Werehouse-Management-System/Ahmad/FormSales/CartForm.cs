@@ -7,13 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace WinForm_Werehouse_Management_System
 {
     public partial class CartForm: Form
     {
         private readonly IOrderService orderService = new OrderService();
-      //  private readonly IInvoiceService invoiceService = new InvoiceService();
+        private readonly IInvoiceService invoiceService = new InvoiceService();
 
         List<ShoppingCart> carts = new List<ShoppingCart>();
         int currentIndex = 0;
@@ -40,16 +41,17 @@ namespace WinForm_Werehouse_Management_System
             // عرض محتويات السلة الأولى
             RefreshCartUI();
             textBox1.Text = carts[currentIndex].GetTotal().ToString("C0");
+
         }
         // لعرض تفاصيل منتج
         private void button1_Click(object sender, EventArgs e)
         {
             try
             {
-                string name = txtsersh.Text;
+                 string Name = txtsersh.Text;
 
                 //  جلب المنتج من قائمة المنتجات
-                Product product = ProductService.GetProductByName(name);
+                Product product = ProductService.GetProductByName(Name);
 
                 if (product == null)
                 {
@@ -69,11 +71,11 @@ namespace WinForm_Werehouse_Management_System
         {
             try
             {
-                string name = txtsersh.Text;
+                string Name = txtsersh.Text;
                 int qty = (int)comQuantity.Value;
 
                 //  جلب المنتج من قائمة المنتجات
-                Product product = ProductService.GetProductByName(name);
+                Product product = ProductService.GetProductByName(Name);
 
                 if (product == null)
                 {
@@ -96,8 +98,16 @@ namespace WinForm_Werehouse_Management_System
         {
             try
             {
-                string name = txtsersh.Text;
-                carts[currentIndex].RemoveProduct(name);
+                string Name = txtsersh.Text;
+                Product product = ProductService.GetProductByName(Name);
+
+                if (product == null)
+                {
+                    MessageBox.Show("المنتج غير موجود");
+                    return;
+                }
+
+                carts[currentIndex].RemoveProduct(product.Id);
                 RefreshCartUI();
             }
             catch (Exception ex)
@@ -198,7 +208,7 @@ namespace WinForm_Werehouse_Management_System
                 // حفظ الطلب
                 orderService.Add(order);
                 // حفظ الفاتورة 
-               // invoiceService.Add(invoice);
+                invoiceService.Add(invoice);
 
                 // مسح السلة بعد البيع (بدون إعادة للمخزون)
                 currentCart.Items.Clear();

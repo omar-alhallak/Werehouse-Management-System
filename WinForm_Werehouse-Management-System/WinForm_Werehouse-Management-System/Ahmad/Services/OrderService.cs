@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WinForm_Werehouse_Management_System.Omar;
 
 namespace WinForm_Werehouse_Management_System
 {
@@ -21,18 +22,20 @@ namespace WinForm_Werehouse_Management_System
 
     public class OrderService : IOrderService
     {
- 
+        private readonly JsonFileStorage<Order> storage;
         private List<Order> Orders;
+
 
         public OrderService()
         {
-           // Orders = ExternalStorage.Load<List<Order>>("Orders.json");
+            storage = new JsonFileStorage<Order>("orders.json");
+            Orders = storage.Load();
         }
 
         public void Add(Order order)
         {
             Orders.Add(order);
-            //ExternalStorage.Save("orders.json", Orders);
+            storage.Save(Orders);
         }
 
         // ميثود تبحث عن جميع الفواتير الخاصة بزبون محدد
@@ -86,12 +89,12 @@ namespace WinForm_Werehouse_Management_System
             // إعادة الكميات إلى المخزون
             foreach (var item in order.Items)
             {
-                ProductService.IncreaseQuantity(item.Product.Name, item.Quantity);
+                ProductService.IncreaseQuantity(item.Product.Id, item.Quantity);
             }
 
             // حذف الطلب من السجل
             Orders.Remove(order);
-            //ExternalStorage.Save("orders.json", Orders);
+            storage.Save(Orders);
             return true;
         }
   

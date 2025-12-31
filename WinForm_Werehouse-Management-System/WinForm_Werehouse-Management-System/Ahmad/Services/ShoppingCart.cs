@@ -10,7 +10,7 @@ namespace WinForm_Werehouse_Management_System
     public class ShoppingCart
     {
         // Items مصفوفة منتجات السلة
-        public List<CartItem> Items  = new List<CartItem>();
+        public List<CartItem> Items { get; private set; } = new List<CartItem>();
 
 
         // ميثود تضيف منتج إلى السلة
@@ -22,7 +22,8 @@ namespace WinForm_Werehouse_Management_System
             if (quantity > product.QuantityInStock)
                 throw new Exception("الكمية غير متوفرة بالمستودع");
             // يبحث عن المنتج 
-            var existing = Items.FirstOrDefault(i => i.Product.Name == product.Name);
+            var existing = Items.FirstOrDefault(i => i.Product.Id == product.Id);
+
             // فس حال كان المنتج موجود مسبقان
             if (existing != null)
                 existing.Quantity += quantity;
@@ -30,20 +31,21 @@ namespace WinForm_Werehouse_Management_System
                 Items.Add(new CartItem { Product = product, Quantity = quantity });
 
             // تقليل المخزون بعد الإضافة
-            ProductService.ReduceQuantity(product.Name, quantity);
+            ProductService.ReduceQuantity(product.Id, quantity);
+
 
         }
 
-        public void RemoveProduct(string productName)
+        public void RemoveProduct(int productId)
         {
             //جلب العنصر المراد حذفه
-            var item = Items.FirstOrDefault(i => i.Product.Name == productName);
+            var item = Items.FirstOrDefault(i => i.Product.Id == productId);
 
             if (item == null)
                 throw new Exception("المنتج غير موجود في السلة");
 
             // إعادة الكمية إلى المخزون
-            ProductService.IncreaseQuantity(productName, item.Quantity);
+            ProductService.IncreaseQuantity(productId, item.Quantity);
 
             Items.Remove(item);
         }
@@ -63,7 +65,7 @@ namespace WinForm_Werehouse_Management_System
         {
             foreach (var item in Items)
             {
-                ProductService.IncreaseQuantity(item.Product.Name, item.Quantity);
+                ProductService.IncreaseQuantity(item.Product.Id, item.Quantity);
             }
 
             Items.Clear();

@@ -57,6 +57,11 @@ namespace WinForm_Werehouse_Management_System
             }
         }
 
+        private void DashboardForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
             Form_LogIN LogIN = new Form_LogIN();

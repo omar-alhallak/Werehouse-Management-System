@@ -1,0 +1,14 @@
+[
+  {
+    "Id": "111704a677",
+    "CustomerName": "Ahmad",
+    "InvoiceDate": "2025-12-31T13:17:36.5812917+03:00",
+    "TotalAmount": 620000.0
+  },
+  {
+    "Id": "db1a0fd565",
+    "CustomerName": "Ahmad",
+    "InvoiceDate": "2025-12-31T13:18:32.2523002+03:00",
+    "TotalAmount": 144000.0
+  }
+]

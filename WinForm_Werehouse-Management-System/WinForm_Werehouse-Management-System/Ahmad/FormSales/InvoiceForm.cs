@@ -13,11 +13,11 @@ namespace WinForm_Werehouse_Management_System
 {
     public partial class InvoiceForm: Form
     {
-      //  private readonly IInvoiceService _invoiceService;
+        private readonly IInvoiceService _invoiceService;
         public InvoiceForm()
         {
             InitializeComponent();
-          //  _invoiceService = new InvoiceService();
+            _invoiceService = new InvoiceService();
         }
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -40,7 +40,7 @@ namespace WinForm_Werehouse_Management_System
                 return;
             }
             // البحث عن الفواتير الخاصة بالزبون وعرضها في مربع النص
-           // rtbResult.Text = _invoiceService.GetInvoicesByCustomerName(customerName);
+            rtbResult.Text = _invoiceService.GetInvoicesByCustomerName(customerName);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -61,6 +61,11 @@ namespace WinForm_Werehouse_Management_System
             {
                 Application.Exit();
             }
+        }
+
+        private void rtbResult_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
