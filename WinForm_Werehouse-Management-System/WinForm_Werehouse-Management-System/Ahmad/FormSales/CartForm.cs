@@ -59,7 +59,7 @@ namespace WinForm_Werehouse_Management_System
                     return;
                 }
                 textBox3.Text = product.Name;
-                textBox2.Text = product.Price.ToString("c0");
+                textBox2.Text = product.UnitPrice.ToString("c0");
             }
             catch (Exception ex)
             {

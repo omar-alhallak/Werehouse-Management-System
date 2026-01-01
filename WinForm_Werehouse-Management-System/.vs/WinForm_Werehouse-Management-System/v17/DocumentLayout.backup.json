@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Omar alhallak\\source\\repos\\Werehouse-Management-System\\WinForm_Werehouse-Management-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3BB35BC1-9522-41F5-9ED9-AA036B7CDC9A}|WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System.csproj|C:\\Users\\Omar alhallak\\source\\repos\\Werehouse-Management-System\\WinForm_Werehouse-Management-System\\winform_werehouse-management-system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BB35BC1-9522-41F5-9ED9-AA036B7CDC9A}|WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System.csproj|solutionrelative:winform_werehouse-management-system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3BB35BC1-9522-41F5-9ED9-AA036B7CDC9A}|WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System.csproj|c:\\users\\omar alhallak\\source\\repos\\werehouse-management-system\\winform_werehouse-management-system\\winform_werehouse-management-system\\bilal\\form inventory\\productmanagmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BB35BC1-9522-41F5-9ED9-AA036B7CDC9A}|WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System.csproj|solutionrelative:winform_werehouse-management-system\\bilal\\form inventory\\productmanagmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BB35BC1-9522-41F5-9ED9-AA036B7CDC9A}|WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System.csproj|c:\\users\\omar alhallak\\source\\repos\\werehouse-management-system\\winform_werehouse-management-system\\winform_werehouse-management-system\\bilal\\form inventory\\productmanagmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3BB35BC1-9522-41F5-9ED9-AA036B7CDC9A}|WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System.csproj|solutionrelative:winform_werehouse-management-system\\bilal\\form inventory\\productmanagmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BB35BC1-9522-41F5-9ED9-AA036B7CDC9A}|WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System.csproj|c:\\users\\omar alhallak\\source\\repos\\werehouse-management-system\\winform_werehouse-management-system\\winform_werehouse-management-system\\omar\\forms admin\\form_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3BB35BC1-9522-41F5-9ED9-AA036B7CDC9A}|WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System.csproj|solutionrelative:winform_werehouse-management-system\\omar\\forms admin\\form_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,15 +31,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Omar alhallak\\source\\repos\\Werehouse-Management-System\\WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System\\Program.cs",
-              "RelativeDocumentMoniker": "WinForm_Werehouse-Management-System\\Program.cs",
-              "ToolTip": "C:\\Users\\Omar alhallak\\source\\repos\\Werehouse-Management-System\\WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System\\Program.cs",
-              "RelativeToolTip": "WinForm_Werehouse-Management-System\\Program.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAwBUAAABBAAAAAAAAAA==",
+              "Title": "ProductManagmentForm.cs",
+              "DocumentMoniker": "C:\\Users\\Omar alhallak\\source\\repos\\Werehouse-Management-System\\WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System\\Bilal\\Form Inventory\\ProductManagmentForm.cs",
+              "RelativeDocumentMoniker": "WinForm_Werehouse-Management-System\\Bilal\\Form Inventory\\ProductManagmentForm.cs",
+              "ToolTip": "C:\\Users\\Omar alhallak\\source\\repos\\Werehouse-Management-System\\WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System\\Bilal\\Form Inventory\\ProductManagmentForm.cs*",
+              "RelativeToolTip": "WinForm_Werehouse-Management-System\\Bilal\\Form Inventory\\ProductManagmentForm.cs*",
+              "ViewState": "AgIAALUAAAAAAAAAAAAowMMAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T20:42:17.146Z",
+              "WhenOpened": "2026-01-01T21:40:34.716Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductManagmentForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Omar alhallak\\source\\repos\\Werehouse-Management-System\\WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System\\Bilal\\Form Inventory\\ProductManagmentForm.cs",
+              "RelativeDocumentMoniker": "WinForm_Werehouse-Management-System\\Bilal\\Form Inventory\\ProductManagmentForm.cs",
+              "ToolTip": "C:\\Users\\Omar alhallak\\source\\repos\\Werehouse-Management-System\\WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System\\Bilal\\Form Inventory\\ProductManagmentForm.cs [Design]*",
+              "RelativeToolTip": "WinForm_Werehouse-Management-System\\Bilal\\Form Inventory\\ProductManagmentForm.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T21:40:18.921Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form_LogIN.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Omar alhallak\\source\\repos\\Werehouse-Management-System\\WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System\\Omar\\Forms Admin\\Form_LogIN.cs",
+              "RelativeDocumentMoniker": "WinForm_Werehouse-Management-System\\Omar\\Forms Admin\\Form_LogIN.cs",
+              "ToolTip": "C:\\Users\\Omar alhallak\\source\\repos\\Werehouse-Management-System\\WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System\\Omar\\Forms Admin\\Form_LogIN.cs [Design]",
+              "RelativeToolTip": "WinForm_Werehouse-Management-System\\Omar\\Forms Admin\\Form_LogIN.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T19:41:03.469Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

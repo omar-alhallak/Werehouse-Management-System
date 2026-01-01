@@ -38,6 +38,7 @@
             this.btnOrder = new System.Windows.Forms.Button();
             this.btnSales = new System.Windows.Forms.Button();
             this.btnReturn = new System.Windows.Forms.Button();
+            this.btnBack1 = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -100,9 +101,8 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(207, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(176, 22);
+            this.label1.Size = new System.Drawing.Size(0, 22);
             this.label1.TabIndex = 11;
-            this.label1.Text = "Ahmad Abo Shear";
             // 
             // btnInvoice
             // 
@@ -163,12 +163,27 @@
             this.btnReturn.UseVisualStyleBackColor = true;
             this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
+            // btnBack1
+            // 
+            this.btnBack1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.btnBack1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnBack1.Location = new System.Drawing.Point(261, 400);
+            this.btnBack1.Name = "btnBack1";
+            this.btnBack1.Size = new System.Drawing.Size(75, 51);
+            this.btnBack1.TabIndex = 16;
+            this.btnBack1.Text = "Back";
+            this.btnBack1.UseVisualStyleBackColor = false;
+            this.btnBack1.Click += new System.EventHandler(this.btnBack1_Click);
+            // 
             // Form_DashboardSalse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(609, 450);
+            this.Controls.Add(this.btnBack1);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.btnInvoice);
             this.Controls.Add(this.btnOrder);
@@ -182,7 +197,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form4";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DashboardForm_FormClosed);
-            this.Load += new System.EventHandler(this.DashboardForm_Load);
+            this.Load += new System.EventHandler(this.Form_DashboardSalse_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -201,5 +216,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnReturn;
         private System.Windows.Forms.Button button2;
+        public System.Windows.Forms.Button btnBack1;
     }
 }

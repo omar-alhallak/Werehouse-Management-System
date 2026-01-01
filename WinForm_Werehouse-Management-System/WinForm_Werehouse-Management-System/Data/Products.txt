@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "Name": "iPhone 15 pro",
+    "CategoryName": "Electronec",
+    "Cost": 1000.0,
+    "UnitPrice": 1200.0,
+    "Stock": 19
+  },
+  {
+    "Id": 2,
+    "Name": "iPhone 16 pro",
+    "CategoryName": "Electronec",
+    "Cost": 1200.0,
+    "UnitPrice": 1500.0,
+    "Stock": 9
+  },
+  {
+    "Id": 3,
+    "Name": "Suger",
+    "CategoryName": "FoodStuffs",
+    "Cost": 1.0,
+    "UnitPrice": 1.5,
+    "Stock": 90
+  }
+]

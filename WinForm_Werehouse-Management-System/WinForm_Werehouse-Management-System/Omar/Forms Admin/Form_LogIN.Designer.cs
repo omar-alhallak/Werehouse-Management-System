@@ -34,9 +34,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnSign_IN = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.btnMinBox = new System.Windows.Forms.Button();
             this.btnShowPassword = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.pic3 = new System.Windows.Forms.PictureBox();
             this.pic2 = new System.Windows.Forms.PictureBox();
             this.pic1 = new System.Windows.Forms.PictureBox();
@@ -109,19 +109,6 @@
             this.btnSign_IN.UseVisualStyleBackColor = false;
             this.btnSign_IN.Click += new System.EventHandler(this.btnSign_IN_Click);
             // 
-            // btnExit
-            // 
-            this.btnExit.BackgroundImage = global::WinForm_Werehouse_Management_System.Properties.Resources.تنزيل__2_;
-            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Location = new System.Drawing.Point(0, 0);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(38, 37);
-            this.btnExit.TabIndex = 1;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // btnMinBox
             // 
             this.btnMinBox.BackgroundImage = global::WinForm_Werehouse_Management_System.Properties.Resources.file_00000000785071f49870ab9c3cb76de3__1_;
@@ -147,6 +134,19 @@
             this.btnShowPassword.TabIndex = 5;
             this.btnShowPassword.UseVisualStyleBackColor = true;
             this.btnShowPassword.Click += new System.EventHandler(this.btnShowPassword_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackgroundImage = global::WinForm_Werehouse_Management_System.Properties.Resources.تنزيل__2_;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Location = new System.Drawing.Point(0, 0);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(38, 37);
+            this.btnExit.TabIndex = 1;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // pic3
             // 

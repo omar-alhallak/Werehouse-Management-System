@@ -7,35 +7,137 @@
         "Product": {
           "Id": 2,
           "Name": "رز",
-          "Price": 10000.0,
+          "CategoryName": null,
           "Cost": 8000.0,
-          "QuantityInStock": 68
+          "UnitPrice": 0.0,
+          "Stock": 0
         },
         "Quantity": 12,
-        "Price": 10000.0,
+        "Price": 0.0,
         "Cost": 8000.0,
         "ProductName": "رز",
-        "Total": 120000.0,
-        "Profit": 24000.0
+        "Total": 0.0,
+        "Profit": -96000.0
       },
       {
         "Product": {
           "Id": 1,
           "Name": "سكر",
-          "Price": 5000.0,
+          "CategoryName": null,
           "Cost": 4000.0,
-          "QuantityInStock": 0
+          "UnitPrice": 0.0,
+          "Stock": 0
         },
         "Quantity": 100,
-        "Price": 5000.0,
+        "Price": 0.0,
         "Cost": 4000.0,
         "ProductName": "سكر",
-        "Total": 500000.0,
-        "Profit": 100000.0
+        "Total": 0.0,
+        "Profit": -400000.0
       }
     ],
     "Date": "2025-12-31T13:17:36.5500444+03:00",
     "Total": 620000.0,
     "profitable": 124000.0
+  },
+  {
+    "Id": "34d1f6d37b",
+    "CustomerName": "ahmad",
+    "Items": [
+      {
+        "Product": {
+          "Id": 3,
+          "Name": "A21s",
+          "CategoryName": "Phones",
+          "Cost": 100.0,
+          "UnitPrice": 1500.0,
+          "Stock": 10
+        },
+        "Quantity": 10,
+        "Price": 1500.0,
+        "Cost": 100.0,
+        "ProductName": "A21s",
+        "Total": 15000.0,
+        "Profit": 14000.0
+      }
+    ],
+    "Date": "2025-12-31T17:38:56.0212411+03:00",
+    "Total": 15000.0,
+    "profitable": 14000.0
+  },
+  {
+    "Id": "148e11cca2",
+    "CustomerName": "Omar",
+    "Items": [
+      {
+        "Product": {
+          "Id": 3,
+          "Name": "Suger",
+          "CategoryName": "FoodStuffs",
+          "Cost": 1.0,
+          "UnitPrice": 1.5,
+          "Stock": 100
+        },
+        "Quantity": 7,
+        "Price": 1.5,
+        "Cost": 1.0,
+        "ProductName": "Suger",
+        "Total": 10.5,
+        "Profit": 3.5
+      }
+    ],
+    "Date": "2026-01-02T00:05:14.1590772+03:00",
+    "Total": 10.5,
+    "profitable": 3.5
+  },
+  {
+    "Id": "592c1fc074",
+    "CustomerName": "Omar",
+    "Items": [
+      {
+        "Product": {
+          "Id": 1,
+          "Name": "iPhone 15 pro",
+          "CategoryName": "Electronec",
+          "Cost": 0.0,
+          "UnitPrice": 1200.0,
+          "Stock": 20
+        },
+        "Quantity": 1,
+        "Price": 1200.0,
+        "Cost": 0.0,
+        "ProductName": "iPhone 15 pro",
+        "Total": 1200.0,
+        "Profit": 1200.0
+      }
+    ],
+    "Date": "2026-01-02T00:28:03.6152701+03:00",
+    "Total": 1200.0,
+    "profitable": 1200.0
+  },
+  {
+    "Id": "1d4f88fa66",
+    "CustomerName": "Omar",
+    "Items": [
+      {
+        "Product": {
+          "Id": 3,
+          "Name": "Suger",
+          "CategoryName": "FoodStuffs",
+          "Cost": 1.0,
+          "UnitPrice": 1.5,
+          "Stock": 93
+        },
+        "Quantity": 3,
+        "Price": 1.5,
+        "Cost": 1.0,
+        "ProductName": "Suger",
+        "Total": 4.5,
+        "Profit": 1.5
+      }
+    ],
+    "Date": "2026-01-02T00:30:23.1991073+03:00",
+    "Total": 4.5,
+    "profitable": 1.5
   }
 ]

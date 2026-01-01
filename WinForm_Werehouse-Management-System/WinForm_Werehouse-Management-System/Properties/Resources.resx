@@ -118,11 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="7153150" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\7153150.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="تنزيل (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\تنزيل (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="11284777" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\11284777.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,17 +130,17 @@
   <data name="date-Order" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\date-Order.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="file_000000000b4c720aa4c013b126142c3e" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\file_000000000b4c720aa4c013b126142c3e.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="file_000000006f407246adfaa8911ddcdc7f" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\file_000000006f407246adfaa8911ddcdc7f.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="تنزيل (7)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\تنزيل (7).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="file_00000000785071f49870ab9c3cb76de3 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\file_00000000785071f49870ab9c3cb76de3 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="file_000000008158724692ac433db54a39d8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\file_000000008158724692ac433db54a39d8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sersh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sersh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="file_000000000b4c720aa4c013b126142c3e" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\file_000000000b4c720aa4c013b126142c3e.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="invose" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\invose.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,22 +148,46 @@
   <data name="order" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\order.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sersh" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sersh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="x-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\x-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7153150" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7153150.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="file_000000006f407246adfaa8911ddcdc7f" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\file_000000006f407246adfaa8911ddcdc7f.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inventory1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\inventory1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="تنزيل" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\تنزيل.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="11284777" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\11284777.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="viewstock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\viewstock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder-management" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folder-management.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="file_000000008158724692ac433db54a39d8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\file_000000008158724692ac433db54a39d8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="تنزيل (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\تنزيل (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="تنزيل (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\تنزيل (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="product-chain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\product-chain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="تنزيل (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\تنزيل (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="تنزيل (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\تنزيل (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="تنزيل (7)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\تنزيل (7).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="تنزيل" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\تنزيل.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="تنزيل1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\تنزيل1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

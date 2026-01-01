@@ -14,7 +14,7 @@ namespace WinForm_Werehouse_Management_System
     {
         public Form_DashboardSalse()
         {
-            InitializeComponent();
+            InitializeComponent();      
         }
 
         private void btnSales_Click(object sender, EventArgs e)
@@ -57,16 +57,27 @@ namespace WinForm_Werehouse_Management_System
             }
         }
 
-        private void DashboardForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             Form_LogIN LogIN = new Form_LogIN();
             LogIN.Show();
             this.Close();
+        }
+
+        private void btnBack1_Click(object sender, EventArgs e)
+        {
+            Form_DashboardAdmin DashboardAdmin = new Form_DashboardAdmin();
+            DashboardAdmin.Show();
+            this.Close();
+        }
+
+        private void Form_DashboardSalse_Load(object sender, EventArgs e)
+        {
+            btnBack1.Visible = Program.LogedINUser != null && Program.LogedINUser.Role == UserRole.Admin;
+            if (Program.LogedINUser != null)
+            {
+                label1.Text = "Welcoom " + Program.LogedINUser.FullName;
+            }
         }
     }
 }

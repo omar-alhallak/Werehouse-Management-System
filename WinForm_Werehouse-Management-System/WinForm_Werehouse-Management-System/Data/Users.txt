@@ -14,5 +14,21 @@
     "FullName": "Ahmad abo alsher",
     "Role": 2,
     "IsActive": true
+  },
+  {
+    "Id": 102,
+    "UserName": "Bilal223",
+    "PasswordHash": "100000.ouH/DYwIWkUeNElZiVTb4Q==.j97/e3nEJkD62ddoSIh2l02h7psGa1AORHma2SJAaB8=",
+    "FullName": "Bilal abdalnaby",
+    "Role": 1,
+    "IsActive": true
+  },
+  {
+    "Id": 103,
+    "UserName": "Ahmad1",
+    "PasswordHash": "100000.XPIEAdouTwL6AMM+wu4Xhg==.1YRtGId38k5WwpuxpKXhTIzAX1dVIzixQoQz+yduCLg=",
+    "FullName": "Ahmad az adeen",
+    "Role": 1,
+    "IsActive": false
   }
 ]

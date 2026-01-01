@@ -57,10 +57,19 @@ namespace WinForm_Werehouse_Management_System
             this.Close();
         }
 
-        private void btnSysInfo_Click(object sender, EventArgs e)
+        private void btnsales_man_Click(object sender, EventArgs e)
         {
             Form_DashboardSalse DashboardSalse = new Form_DashboardSalse();
             DashboardSalse.Show();
+            DashboardSalse.btnBack1.Visible = true;
+            this.Close();
+        }
+
+        private void btnInventory_Click(object sender, EventArgs e)
+        {
+            InventoryDashboardForm InventoryDashboard = new InventoryDashboardForm();
+            InventoryDashboard.Show();
+            InventoryDashboard.btnBack2.Visible = true;
             this.Close();
         }
     }

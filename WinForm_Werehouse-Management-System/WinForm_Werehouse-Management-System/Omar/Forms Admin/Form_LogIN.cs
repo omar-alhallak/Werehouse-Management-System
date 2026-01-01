@@ -41,9 +41,9 @@ namespace WinForm_Werehouse_Management_System
                         nextForm = new Form_DashboardSalse();
                         break;
 
-                    //case UserRole.Inventory:
-                    //    nextForm = new Form_DashboardInventory();
-                    //    break;
+                    case UserRole.Inventory:
+                        nextForm = new InventoryDashboardForm();
+                        break;
                 }
 
                 nextForm.Show();

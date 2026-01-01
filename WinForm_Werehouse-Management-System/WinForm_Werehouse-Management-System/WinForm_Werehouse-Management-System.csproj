@@ -82,10 +82,42 @@
     <Compile Include="Ahmad\Modules\module_CartItem.cs" />
     <Compile Include="Ahmad\Modules\module_Invoice.cs" />
     <Compile Include="Ahmad\Modules\module_Order.cs" />
-    <Compile Include="Ahmad\product.cs" />
+    <Compile Include="Ahmad\productService.cs" />
     <Compile Include="Ahmad\Services\InvoiceService.cs" />
     <Compile Include="Ahmad\Services\OrderService.cs" />
     <Compile Include="Ahmad\Services\ShoppingCart.cs" />
+    <Compile Include="Bilal\Exceptions\CategoryException.cs" />
+    <Compile Include="Bilal\Exceptions\ProductException.cs" />
+    <Compile Include="Bilal\Form Inventory\CategoryManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bilal\Form Inventory\CategoryManagementForm.Designer.cs">
+      <DependentUpon>CategoryManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bilal\Form Inventory\InventoryDashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bilal\Form Inventory\InventoryDashboardForm.Designer.cs">
+      <DependentUpon>InventoryDashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bilal\Form Inventory\ProductManagmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bilal\Form Inventory\ProductManagmentForm.Designer.cs">
+      <DependentUpon>ProductManagmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bilal\Form Inventory\StockViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bilal\Form Inventory\StockViewForm.Designer.cs">
+      <DependentUpon>StockViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bilal\Management\Category.cs" />
+    <Compile Include="Bilal\Management\CategoryManager.cs" />
+    <Compile Include="Bilal\Management\Product.cs" />
+    <Compile Include="Bilal\Management\ProductMannger.cs" />
+    <Compile Include="Bilal\ValidationAndRegex\CategoryValidation.cs" />
+    <Compile Include="Bilal\ValidationAndRegex\ProductValidation.cs" />
     <Compile Include="Omar\Excptions\AcountDisableException.cs" />
     <Compile Include="Omar\Excptions\FatherExceptions.cs" />
     <Compile Include="Omar\Excptions\UserNameAlreadyExiste.cs" />
@@ -147,6 +179,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ahmad\FormSales\ReturnForm.resx">
       <DependentUpon>ReturnForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bilal\Form Inventory\CategoryManagementForm.resx">
+      <DependentUpon>CategoryManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bilal\Form Inventory\InventoryDashboardForm.resx">
+      <DependentUpon>InventoryDashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bilal\Form Inventory\ProductManagmentForm.resx">
+      <DependentUpon>ProductManagmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bilal\Form Inventory\StockViewForm.resx">
+      <DependentUpon>StockViewForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Omar\Forms Admin\Form_AccountManagement.resx">
       <DependentUpon>Form_AccountManagement.cs</DependentUpon>
@@ -237,6 +281,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Data\Users.txt" />
+    <None Include="Resources\تنزيل1.png" />
+    <None Include="Resources\تنزيل %282%291.png" />
+    <None Include="Resources\x-removebg-preview.png" />
+    <None Include="Resources\viewstock.png" />
+    <None Include="Resources\product-chain.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\inventory1.png" />
+    <None Include="Resources\folder-management.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -31,16 +31,16 @@
             this.btnAccountMang = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnLogOut = new System.Windows.Forms.Button();
-            this.btnMinBox = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.labName = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btnChangePass = new System.Windows.Forms.Button();
-            this.btnSysInfo = new System.Windows.Forms.Button();
             this.pic1 = new System.Windows.Forms.PictureBox();
+            this.btnMinBox = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnInventory = new System.Windows.Forms.Button();
+            this.btnsales_man = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic1)).BeginInit();
             this.SuspendLayout();
@@ -88,32 +88,6 @@
             this.btnLogOut.UseVisualStyleBackColor = false;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
-            // btnMinBox
-            // 
-            this.btnMinBox.BackgroundImage = global::WinForm_Werehouse_Management_System.Properties.Resources.file_00000000785071f49870ab9c3cb76de3__1_;
-            this.btnMinBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnMinBox.FlatAppearance.BorderSize = 0;
-            this.btnMinBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinBox.Location = new System.Drawing.Point(39, 3);
-            this.btnMinBox.Name = "btnMinBox";
-            this.btnMinBox.Size = new System.Drawing.Size(47, 37);
-            this.btnMinBox.TabIndex = 2;
-            this.btnMinBox.UseVisualStyleBackColor = true;
-            this.btnMinBox.Click += new System.EventHandler(this.btnMinBox_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.BackgroundImage = global::WinForm_Werehouse_Management_System.Properties.Resources.تنزيل__2_;
-            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Location = new System.Drawing.Point(2, 3);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(38, 37);
-            this.btnExit.TabIndex = 1;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // labName
             // 
             this.labName.AutoSize = true;
@@ -156,39 +130,6 @@
             this.panel5.Size = new System.Drawing.Size(1, 184);
             this.panel5.TabIndex = 0;
             // 
-            // btnChangePass
-            // 
-            this.btnChangePass.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnChangePass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnChangePass.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnChangePass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChangePass.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChangePass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnChangePass.Location = new System.Drawing.Point(121, 284);
-            this.btnChangePass.Name = "btnChangePass";
-            this.btnChangePass.Size = new System.Drawing.Size(195, 116);
-            this.btnChangePass.TabIndex = 4;
-            this.btnChangePass.Text = "              Product                               AND                          " +
-    "     Category              Managment";
-            this.btnChangePass.UseVisualStyleBackColor = false;
-            // 
-            // btnSysInfo
-            // 
-            this.btnSysInfo.BackColor = System.Drawing.Color.Orange;
-            this.btnSysInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnSysInfo.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnSysInfo.FlatAppearance.BorderSize = 2;
-            this.btnSysInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSysInfo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSysInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnSysInfo.Location = new System.Drawing.Point(358, 284);
-            this.btnSysInfo.Name = "btnSysInfo";
-            this.btnSysInfo.Size = new System.Drawing.Size(197, 116);
-            this.btnSysInfo.TabIndex = 5;
-            this.btnSysInfo.Text = "Sales Management";
-            this.btnSysInfo.UseVisualStyleBackColor = false;
-            this.btnSysInfo.Click += new System.EventHandler(this.btnSysInfo_Click);
-            // 
             // pic1
             // 
             this.pic1.Image = global::WinForm_Werehouse_Management_System.Properties.Resources.تنزيل__3_;
@@ -198,6 +139,69 @@
             this.pic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic1.TabIndex = 5;
             this.pic1.TabStop = false;
+            // 
+            // btnMinBox
+            // 
+            this.btnMinBox.BackgroundImage = global::WinForm_Werehouse_Management_System.Properties.Resources.file_00000000785071f49870ab9c3cb76de3__1_;
+            this.btnMinBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMinBox.FlatAppearance.BorderSize = 0;
+            this.btnMinBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinBox.Location = new System.Drawing.Point(39, 3);
+            this.btnMinBox.Name = "btnMinBox";
+            this.btnMinBox.Size = new System.Drawing.Size(47, 37);
+            this.btnMinBox.TabIndex = 2;
+            this.btnMinBox.UseVisualStyleBackColor = true;
+            this.btnMinBox.Click += new System.EventHandler(this.btnMinBox_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackgroundImage = global::WinForm_Werehouse_Management_System.Properties.Resources.تنزيل__2_;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Location = new System.Drawing.Point(2, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(38, 37);
+            this.btnExit.TabIndex = 1;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnInventory
+            // 
+            this.btnInventory.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnInventory.BackgroundImage = global::WinForm_Werehouse_Management_System.Properties.Resources.تنزيل1;
+            this.btnInventory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnInventory.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnInventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInventory.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInventory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnInventory.Location = new System.Drawing.Point(121, 284);
+            this.btnInventory.Name = "btnInventory";
+            this.btnInventory.Size = new System.Drawing.Size(195, 116);
+            this.btnInventory.TabIndex = 4;
+            this.btnInventory.Text = "Inventory Managemant";
+            this.btnInventory.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnInventory.UseVisualStyleBackColor = false;
+            this.btnInventory.Click += new System.EventHandler(this.btnInventory_Click);
+            // 
+            // btnsales_man
+            // 
+            this.btnsales_man.BackColor = System.Drawing.Color.Orange;
+            this.btnsales_man.BackgroundImage = global::WinForm_Werehouse_Management_System.Properties.Resources.تنزيل__2_1;
+            this.btnsales_man.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnsales_man.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnsales_man.FlatAppearance.BorderSize = 2;
+            this.btnsales_man.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsales_man.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsales_man.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnsales_man.Location = new System.Drawing.Point(358, 284);
+            this.btnsales_man.Name = "btnsales_man";
+            this.btnsales_man.Size = new System.Drawing.Size(197, 116);
+            this.btnsales_man.TabIndex = 5;
+            this.btnsales_man.Text = "Sales Management";
+            this.btnsales_man.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnsales_man.UseVisualStyleBackColor = false;
+            this.btnsales_man.Click += new System.EventHandler(this.btnsales_man_Click);
             // 
             // Form_DashboardAdmin
             // 
@@ -211,8 +215,8 @@
             this.Controls.Add(this.pic1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnChangePass);
-            this.Controls.Add(this.btnSysInfo);
+            this.Controls.Add(this.btnInventory);
+            this.Controls.Add(this.btnsales_man);
             this.Controls.Add(this.btnAccountMang);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_DashboardAdmin";
@@ -229,8 +233,8 @@
         #endregion
 
         private System.Windows.Forms.Button btnAccountMang;
-        private System.Windows.Forms.Button btnSysInfo;
-        private System.Windows.Forms.Button btnChangePass;
+        private System.Windows.Forms.Button btnsales_man;
+        private System.Windows.Forms.Button btnInventory;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label labName;
         private System.Windows.Forms.Panel panel2;

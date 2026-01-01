@@ -19,10 +19,10 @@ namespace WinForm_Werehouse_Management_System
             if (quantity <= 0)
                 throw new Exception("الكمية غير صحيحة");
 
-            if (quantity > product.QuantityInStock)
+            if (quantity > product.Stock)
                 throw new Exception("الكمية غير متوفرة بالمستودع");
             // يبحث عن المنتج 
-            var existing = Items.FirstOrDefault(i => i.Product.Id == product.Id);
+            var existing = Items.FirstOrDefault((Func<CartItem, bool>)(i => i.Product.Id == product.Id));
 
             // فس حال كان المنتج موجود مسبقان
             if (existing != null)
@@ -39,7 +39,7 @@ namespace WinForm_Werehouse_Management_System
         public void RemoveProduct(int productId)
         {
             //جلب العنصر المراد حذفه
-            var item = Items.FirstOrDefault(i => i.Product.Id == productId);
+            var item = Items.FirstOrDefault((Func<CartItem, bool>)(i => i.Product.Id == productId));
 
             if (item == null)
                 throw new Exception("المنتج غير موجود في السلة");
