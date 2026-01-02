@@ -32,8 +32,6 @@ namespace WinForm_Werehouse_Management_System
 
             // تقليل المخزون بعد الإضافة
             ProductService.ReduceQuantity(product.Id, quantity);
-
-
         }
 
         public void RemoveProduct(int productId)
@@ -49,7 +47,6 @@ namespace WinForm_Werehouse_Management_System
 
             Items.Remove(item);
         }
-
 
         public decimal GetTotal()
         {
@@ -70,7 +67,5 @@ namespace WinForm_Werehouse_Management_System
 
             Items.Clear();
         }
-
-
     }
 }

@@ -16,19 +16,15 @@ namespace WinForm_Werehouse_Management_System
         decimal TotalProfit(int month, int year);
         Order GetOrderById(string id);
         bool ReturnOrder(string id);
-
-
     }
 
     public class OrderService : IOrderService
     {
         private readonly JsonFileStorage<Order> storage;
         private List<Order> Orders;
-
-
         public OrderService()
         {
-            storage = new JsonFileStorage<Order>("orders.json");
+            storage = new JsonFileStorage<Order>("orders.txt");
             Orders = storage.Load();
         }
 
@@ -96,8 +92,6 @@ namespace WinForm_Werehouse_Management_System
             Orders.Remove(order);
             storage.Save(Orders);
             return true;
-        }
-  
-
+        } 
     }
 }

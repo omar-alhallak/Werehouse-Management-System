@@ -129,9 +129,6 @@ namespace WinForm_Werehouse_Management_System
                 
 
                 string lowerName = name.ToLower();
-               
-
-                
             }
 
             return result;
@@ -140,6 +137,5 @@ namespace WinForm_Werehouse_Management_System
         {
             storage.Save(products);
         }
-
     }
 }

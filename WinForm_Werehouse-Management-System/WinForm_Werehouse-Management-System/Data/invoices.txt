@@ -1,0 +1,8 @@
+[
+  {
+    "Id": "028ac6e7d4",
+    "CustomerName": "Omar",
+    "InvoiceDate": "2026-01-02T17:54:39.9881075+03:00",
+    "TotalAmount": 2036.0
+  }
+]

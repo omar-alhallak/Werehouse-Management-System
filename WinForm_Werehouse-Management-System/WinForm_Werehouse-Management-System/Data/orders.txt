@@ -1,0 +1,59 @@
+[
+  {
+    "Id": "028ac6e7d4",
+    "CustomerName": "Omar",
+    "Items": [
+      {
+        "Product": {
+          "Id": 12,
+          "Name": "chlorine",
+          "CategoryName": "Deteragent",
+          "Cost": 8.0,
+          "UnitPrice": 12.0,
+          "Stock": 12
+        },
+        "Quantity": 1,
+        "Price": 12.0,
+        "Cost": 8.0,
+        "ProductName": "chlorine",
+        "Total": 12.0,
+        "Profit": 4.0
+      },
+      {
+        "Product": {
+          "Id": 3,
+          "Name": "A17",
+          "CategoryName": "phone",
+          "Cost": 1500.0,
+          "UnitPrice": 2000.0,
+          "Stock": 5
+        },
+        "Quantity": 1,
+        "Price": 2000.0,
+        "Cost": 1500.0,
+        "ProductName": "A17",
+        "Total": 2000.0,
+        "Profit": 500.0
+      },
+      {
+        "Product": {
+          "Id": 4,
+          "Name": "banana",
+          "CategoryName": "fruits",
+          "Cost": 10.0,
+          "UnitPrice": 12.0,
+          "Stock": 112
+        },
+        "Quantity": 2,
+        "Price": 12.0,
+        "Cost": 10.0,
+        "ProductName": "banana",
+        "Total": 24.0,
+        "Profit": 4.0
+      }
+    ],
+    "Date": "2026-01-02T17:54:39.9881075+03:00",
+    "Total": 2036.0,
+    "profitable": 508.0
+  }
+]

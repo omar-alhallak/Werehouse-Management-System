@@ -20,7 +20,7 @@ namespace WinForm_Werehouse_Management_System
 
         public InvoiceService()
         {
-            storage = new JsonFileStorage<Invoice>("invoices.json");
+            storage = new JsonFileStorage<Invoice>("invoices.txt");
             invoices = storage.Load();
         }
 

@@ -1,26 +1,98 @@
 [
   {
     "Id": 1,
-    "Name": "iPhone 15 pro",
-    "CategoryName": "Electronec",
-    "Cost": 1000.0,
-    "UnitPrice": 1200.0,
-    "Stock": 19
+    "Name": "iphone 16 pro",
+    "CategoryName": "phone",
+    "Cost": 10000.0,
+    "UnitPrice": 15000.0,
+    "Stock": 10
   },
   {
     "Id": 2,
-    "Name": "iPhone 16 pro",
-    "CategoryName": "Electronec",
-    "Cost": 1200.0,
-    "UnitPrice": 1500.0,
-    "Stock": 9
+    "Name": "Note 14 pro plus",
+    "CategoryName": "phone",
+    "Cost": 3000.0,
+    "UnitPrice": 3400.0,
+    "Stock": 5
   },
   {
     "Id": 3,
-    "Name": "Suger",
-    "CategoryName": "FoodStuffs",
-    "Cost": 1.0,
-    "UnitPrice": 1.5,
-    "Stock": 90
+    "Name": "A17",
+    "CategoryName": "phone",
+    "Cost": 1500.0,
+    "UnitPrice": 2000.0,
+    "Stock": 4
+  },
+  {
+    "Id": 4,
+    "Name": "banana",
+    "CategoryName": "fruits",
+    "Cost": 10.0,
+    "UnitPrice": 12.0,
+    "Stock": 110
+  },
+  {
+    "Id": 5,
+    "Name": "apple",
+    "CategoryName": "fruits",
+    "Cost": 13.0,
+    "UnitPrice": 15.0,
+    "Stock": 110
+  },
+  {
+    "Id": 6,
+    "Name": "kiwi",
+    "CategoryName": "fruits",
+    "Cost": 30.0,
+    "UnitPrice": 35.0,
+    "Stock": 50
+  },
+  {
+    "Id": 7,
+    "Name": "mango",
+    "CategoryName": "fruits",
+    "Cost": 31.0,
+    "UnitPrice": 46.0,
+    "Stock": 40
+  },
+  {
+    "Id": 8,
+    "Name": "lettuce",
+    "CategoryName": "Vegetables",
+    "Cost": 5.0,
+    "UnitPrice": 8.0,
+    "Stock": 55
+  },
+  {
+    "Id": 9,
+    "Name": "parsley",
+    "CategoryName": "Vegetables",
+    "Cost": 2.0,
+    "UnitPrice": 3.0,
+    "Stock": 12
+  },
+  {
+    "Id": 10,
+    "Name": "tomato",
+    "CategoryName": "Vegetables",
+    "Cost": 9.0,
+    "UnitPrice": 12.0,
+    "Stock": 75
+  },
+  {
+    "Id": 11,
+    "Name": "cucumber",
+    "CategoryName": "Vegetables",
+    "Cost": 12.0,
+    "UnitPrice": 14.0,
+    "Stock": 50
+  },
+  {
+    "Id": 12,
+    "Name": "chlorine",
+    "CategoryName": "Deteragent",
+    "Cost": 8.0,
+    "UnitPrice": 12.0,
+    "Stock": 11
   }
 ]

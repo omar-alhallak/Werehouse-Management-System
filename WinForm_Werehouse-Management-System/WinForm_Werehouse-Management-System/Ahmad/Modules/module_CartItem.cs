@@ -6,16 +6,6 @@ using System.Threading.Tasks;
 
 namespace WinForm_Werehouse_Management_System
 {
-    // تجريبية لمنتج
-    //public class Product2
-    //{
-    //    public int Id { get; set; }
-    //    public string Name { get; set; }
-    //    public decimal Price { get; set; }
-    //    public decimal Cost { get; set; }
-    //    public int QuantityInStock { get; set; }
-    //}
-
     // عنصر في السلة
     public class CartItem
     {

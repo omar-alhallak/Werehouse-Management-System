@@ -1,10 +1,22 @@
 [
   {
     "Id": 1,
-    "Name": "Electronec"
+    "Name": "phone"
   },
   {
     "Id": 2,
-    "Name": "FoodStuffs"
+    "Name": "Food"
+  },
+  {
+    "Id": 3,
+    "Name": "Vegetables"
+  },
+  {
+    "Id": 4,
+    "Name": "fruits"
+  },
+  {
+    "Id": 5,
+    "Name": "Deteragent"
   }
 ]

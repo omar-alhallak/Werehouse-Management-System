@@ -50,12 +50,6 @@ namespace WinForm_Werehouse_Management_System
                 HeaderText = "Id",
                 Width = 50
             });
-            dgvProducts.Columns.Add(new DataGridViewTextBoxColumn
-            {
-                Name = "colCost",
-                HeaderText = "Product Cost",
-                Width = 100
-            });
 
             dgvProducts.Columns.Add(new DataGridViewTextBoxColumn
             {
@@ -64,6 +58,12 @@ namespace WinForm_Werehouse_Management_System
                 AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
             });
 
+            dgvProducts.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "colCost",
+                HeaderText = "Product Cost",
+                Width = 100
+            });
             dgvProducts.Columns.Add(new DataGridViewTextBoxColumn
             {
                 Name = "colCategory",
@@ -99,8 +99,8 @@ namespace WinForm_Werehouse_Management_System
             {
                 dgvProducts.Rows.Add(
                     p.Id,
-                    p.Cost,
                     p.Name,
+                    p.Cost,
                     p.CategoryName,
                     p.UnitPrice,
                     p.Stock
