@@ -70,7 +70,7 @@ namespace WinForm_Werehouse_Management_System
             btnBack2.Visible = Program.LogedINUser != null && Program.LogedINUser.Role == UserRole.Admin;
             if (Program.LogedINUser != null)
             {
-                label4.Text = "Welcoom " + Program.LogedINUser.FullName;
+                lblTitl.Text = "Welcoom " + Program.LogedINUser.FullName;
             }
         }
     }

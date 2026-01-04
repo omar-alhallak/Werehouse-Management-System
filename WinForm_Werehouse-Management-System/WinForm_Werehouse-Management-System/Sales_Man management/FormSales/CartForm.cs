@@ -41,6 +41,10 @@ namespace WinForm_Werehouse_Management_System
             // عرض محتويات السلة الأولى
             RefreshCartUI();
             textBox1.Text = carts[currentIndex].GetTotal().ToString("C0");
+            if (Program.LogedINUser != null)
+            {
+                label6.Text = "Welcoom " + Program.LogedINUser.FullName;
+            }
 
         }
         // لعرض تفاصيل منتج
@@ -237,17 +241,17 @@ namespace WinForm_Werehouse_Management_System
             this.Close();
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void CartForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             if (Application.OpenForms.Count == 0)
             {
                 Application.Exit();
             }
+        }
+
+        private void button2_Click_2(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

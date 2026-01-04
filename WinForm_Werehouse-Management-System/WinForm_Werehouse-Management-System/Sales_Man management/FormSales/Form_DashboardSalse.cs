@@ -44,24 +44,12 @@ namespace WinForm_Werehouse_Management_System
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void DashboardForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             if (Application.OpenForms.Count == 0)
             {
                 Application.Exit();
             }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Form_LogIN LogIN = new Form_LogIN();
-            LogIN.Show();
-            this.Close();
         }
 
         private void btnBack1_Click(object sender, EventArgs e)
@@ -76,8 +64,20 @@ namespace WinForm_Werehouse_Management_System
             btnBack1.Visible = Program.LogedINUser != null && Program.LogedINUser.Role == UserRole.Admin;
             if (Program.LogedINUser != null)
             {
-                label1.Text = "Welcoom " + Program.LogedINUser.FullName;
+                label5.Text = "Welcoom " + Program.LogedINUser.FullName;
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form_LogIN LogIN = new Form_LogIN();
+            LogIN.Show();
+            this.Close();
         }
     }
 }

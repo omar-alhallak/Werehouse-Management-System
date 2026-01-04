@@ -29,19 +29,17 @@
         private void InitializeComponent()
         {
             this.btnAccountMang = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btnLogOut = new System.Windows.Forms.Button();
+            this.btnMinBox = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.labName = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pic1 = new System.Windows.Forms.PictureBox();
-            this.btnMinBox = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.btnInventory = new System.Windows.Forms.Button();
             this.btnsales_man = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,18 +58,6 @@
             this.btnAccountMang.UseVisualStyleBackColor = false;
             this.btnAccountMang.Click += new System.EventHandler(this.btnAccountMang_Click);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.panel1.Controls.Add(this.btnLogOut);
-            this.panel1.Controls.Add(this.btnMinBox);
-            this.panel1.Controls.Add(this.btnExit);
-            this.panel1.Controls.Add(this.labName);
-            this.panel1.Location = new System.Drawing.Point(-5, -5);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(653, 57);
-            this.panel1.TabIndex = 3;
-            // 
             // btnLogOut
             // 
             this.btnLogOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
@@ -80,7 +66,7 @@
             this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogOut.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.btnLogOut.Location = new System.Drawing.Point(559, 8);
+            this.btnLogOut.Location = new System.Drawing.Point(554, 6);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(81, 46);
             this.btnLogOut.TabIndex = 8;
@@ -88,15 +74,44 @@
             this.btnLogOut.UseVisualStyleBackColor = false;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
+            // btnMinBox
+            // 
+            this.btnMinBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.btnMinBox.BackgroundImage = global::WinForm_Werehouse_Management_System.Properties.Resources.file_00000000785071f49870ab9c3cb76de3__1_;
+            this.btnMinBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMinBox.FlatAppearance.BorderSize = 0;
+            this.btnMinBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinBox.Location = new System.Drawing.Point(34, 0);
+            this.btnMinBox.Name = "btnMinBox";
+            this.btnMinBox.Size = new System.Drawing.Size(47, 37);
+            this.btnMinBox.TabIndex = 2;
+            this.btnMinBox.UseVisualStyleBackColor = false;
+            this.btnMinBox.Click += new System.EventHandler(this.btnMinBox_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.btnExit.BackgroundImage = global::WinForm_Werehouse_Management_System.Properties.Resources.تنزيل__2_;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Location = new System.Drawing.Point(-1, 0);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(38, 37);
+            this.btnExit.TabIndex = 1;
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // labName
             // 
-            this.labName.AutoSize = true;
+            this.labName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
             this.labName.Font = new System.Drawing.Font("Arial Narrow", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.labName.Location = new System.Drawing.Point(165, 14);
+            this.labName.Location = new System.Drawing.Point(0, -4);
             this.labName.Name = "labName";
-            this.labName.Size = new System.Drawing.Size(0, 33);
+            this.labName.Size = new System.Drawing.Size(644, 59);
             this.labName.TabIndex = 4;
+            this.labName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
             // 
@@ -139,32 +154,6 @@
             this.pic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic1.TabIndex = 5;
             this.pic1.TabStop = false;
-            // 
-            // btnMinBox
-            // 
-            this.btnMinBox.BackgroundImage = global::WinForm_Werehouse_Management_System.Properties.Resources.file_00000000785071f49870ab9c3cb76de3__1_;
-            this.btnMinBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnMinBox.FlatAppearance.BorderSize = 0;
-            this.btnMinBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinBox.Location = new System.Drawing.Point(39, 3);
-            this.btnMinBox.Name = "btnMinBox";
-            this.btnMinBox.Size = new System.Drawing.Size(47, 37);
-            this.btnMinBox.TabIndex = 2;
-            this.btnMinBox.UseVisualStyleBackColor = true;
-            this.btnMinBox.Click += new System.EventHandler(this.btnMinBox_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.BackgroundImage = global::WinForm_Werehouse_Management_System.Properties.Resources.تنزيل__2_;
-            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Location = new System.Drawing.Point(2, 3);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(38, 37);
-            this.btnExit.TabIndex = 1;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnInventory
             // 
@@ -209,12 +198,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(640, 427);
+            this.Controls.Add(this.btnLogOut);
+            this.Controls.Add(this.btnMinBox);
             this.Controls.Add(this.panel5);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
+            this.Controls.Add(this.labName);
             this.Controls.Add(this.pic1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnInventory);
             this.Controls.Add(this.btnsales_man);
             this.Controls.Add(this.btnAccountMang);
@@ -223,8 +215,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_Dashboard_FormClosed);
             this.Load += new System.EventHandler(this.Form_Dashboard_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic1)).EndInit();
             this.ResumeLayout(false);
 
@@ -235,7 +225,6 @@
         private System.Windows.Forms.Button btnAccountMang;
         private System.Windows.Forms.Button btnsales_man;
         private System.Windows.Forms.Button btnInventory;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label labName;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pic1;

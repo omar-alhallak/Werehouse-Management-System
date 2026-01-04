@@ -4,5 +4,17 @@
     "CustomerName": "Omar",
     "InvoiceDate": "2026-01-02T17:54:39.9881075+03:00",
     "TotalAmount": 2036.0
+  },
+  {
+    "Id": "ed38b8ffb9",
+    "CustomerName": "Omar",
+    "InvoiceDate": "2026-01-04T14:18:50.8051275+03:00",
+    "TotalAmount": 2060.0
+  },
+  {
+    "Id": "bdc05f40e0",
+    "CustomerName": "Omar",
+    "InvoiceDate": "2026-01-04T14:21:10.634917+03:00",
+    "TotalAmount": 2000.0
   }
 ]

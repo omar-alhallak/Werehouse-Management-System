@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.pnlHeader = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblTitl = new System.Windows.Forms.Label();
@@ -41,8 +43,6 @@
             this.btnManageProducts = new System.Windows.Forms.Button();
             this.btnManageCategories = new System.Windows.Forms.Button();
             this.btnBack2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
             this.lblStatus.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +60,24 @@
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(933, 90);
             this.pnlHeader.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(466, 34);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(0, 22);
+            this.label4.TabIndex = 12;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(411, 41);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 17);
+            this.label3.TabIndex = 10;
             // 
             // label1
             // 
@@ -218,24 +236,6 @@
             this.btnBack2.UseVisualStyleBackColor = false;
             this.btnBack2.Visible = false;
             this.btnBack2.Click += new System.EventHandler(this.btnBack2_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(411, 41);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 17);
-            this.label3.TabIndex = 10;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(466, 34);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 22);
-            this.label4.TabIndex = 12;
             // 
             // InventoryDashboardForm
             // 

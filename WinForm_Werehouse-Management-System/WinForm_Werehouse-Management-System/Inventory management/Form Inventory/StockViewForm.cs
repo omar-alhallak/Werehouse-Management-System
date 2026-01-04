@@ -76,8 +76,8 @@ namespace WinForm_Werehouse_Management_System
 
             dgvStock.Columns.Add(new DataGridViewTextBoxColumn
             {
-                Name = "colCoust",
-                HeaderText = "Cust",
+                Name = "colCost",
+                HeaderText = "Cost",
                 Width = 100
             });
 

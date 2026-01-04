@@ -27,6 +27,10 @@ namespace WinForm_Werehouse_Management_System
             btnShow.FlatAppearance.BorderSize = 0;
             btnShow.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnShow.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            if (Program.LogedINUser != null)
+            {
+                label5.Text = "Welcoom " + Program.LogedINUser.FullName;
+            }
         }
 
         private void btnShow_Click_1(object sender, EventArgs e)
@@ -48,12 +52,7 @@ namespace WinForm_Werehouse_Management_System
             Form_DashboardSalse dash = new Form_DashboardSalse();
             dash.Show();
             this.Close();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }  
+        } 
 
         private void InvoiceForm_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -63,9 +62,9 @@ namespace WinForm_Werehouse_Management_System
             }
         }
 
-        private void rtbResult_TextChanged(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }

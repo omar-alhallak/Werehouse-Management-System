@@ -49,162 +49,162 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ahmad\FormSales\CartForm.cs">
+    <Compile Include="Sales_Man management\FormSales\CartForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ahmad\FormSales\CartForm.Designer.cs">
+    <Compile Include="Sales_Man management\FormSales\CartForm.Designer.cs">
       <DependentUpon>CartForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ahmad\FormSales\Form_DashboardSalse.cs">
+    <Compile Include="Sales_Man management\FormSales\Form_DashboardSalse.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ahmad\FormSales\Form_DashboardSalse.Designer.cs">
+    <Compile Include="Sales_Man management\FormSales\Form_DashboardSalse.Designer.cs">
       <DependentUpon>Form_DashboardSalse.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ahmad\FormSales\InvoiceForm.cs">
+    <Compile Include="Sales_Man management\FormSales\InvoiceForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ahmad\FormSales\InvoiceForm.Designer.cs">
+    <Compile Include="Sales_Man management\FormSales\InvoiceForm.Designer.cs">
       <DependentUpon>InvoiceForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ahmad\FormSales\OrderForm.cs">
+    <Compile Include="Sales_Man management\FormSales\OrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ahmad\FormSales\OrderForm.Designer.cs">
+    <Compile Include="Sales_Man management\FormSales\OrderForm.Designer.cs">
       <DependentUpon>OrderForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ahmad\FormSales\ReturnForm.cs">
+    <Compile Include="Sales_Man management\FormSales\ReturnForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ahmad\FormSales\ReturnForm.Designer.cs">
+    <Compile Include="Sales_Man management\FormSales\ReturnForm.Designer.cs">
       <DependentUpon>ReturnForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ahmad\Modules\module_CartItem.cs" />
-    <Compile Include="Ahmad\Modules\module_Invoice.cs" />
-    <Compile Include="Ahmad\Modules\module_Order.cs" />
-    <Compile Include="Ahmad\productService.cs" />
-    <Compile Include="Ahmad\Services\InvoiceService.cs" />
-    <Compile Include="Ahmad\Services\OrderService.cs" />
-    <Compile Include="Ahmad\Services\ShoppingCart.cs" />
-    <Compile Include="Bilal\Exceptions\CategoryException.cs" />
-    <Compile Include="Bilal\Exceptions\ProductException.cs" />
-    <Compile Include="Bilal\Form Inventory\CategoryManagementForm.cs">
+    <Compile Include="Sales_Man management\Modules\module_CartItem.cs" />
+    <Compile Include="Sales_Man management\Modules\module_Invoice.cs" />
+    <Compile Include="Sales_Man management\Modules\module_Order.cs" />
+    <Compile Include="Sales_Man management\productService.cs" />
+    <Compile Include="Sales_Man management\Services\InvoiceService.cs" />
+    <Compile Include="Sales_Man management\Services\OrderService.cs" />
+    <Compile Include="Sales_Man management\Services\ShoppingCart.cs" />
+    <Compile Include="Inventory management\Exceptions\CategoryException.cs" />
+    <Compile Include="Inventory management\Exceptions\ProductException.cs" />
+    <Compile Include="Inventory management\Form Inventory\CategoryManagementForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Bilal\Form Inventory\CategoryManagementForm.Designer.cs">
+    <Compile Include="Inventory management\Form Inventory\CategoryManagementForm.Designer.cs">
       <DependentUpon>CategoryManagementForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Bilal\Form Inventory\InventoryDashboardForm.cs">
+    <Compile Include="Inventory management\Form Inventory\InventoryDashboardForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Bilal\Form Inventory\InventoryDashboardForm.Designer.cs">
+    <Compile Include="Inventory management\Form Inventory\InventoryDashboardForm.Designer.cs">
       <DependentUpon>InventoryDashboardForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Bilal\Form Inventory\ProductManagmentForm.cs">
+    <Compile Include="Inventory management\Form Inventory\ProductManagmentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Bilal\Form Inventory\ProductManagmentForm.Designer.cs">
+    <Compile Include="Inventory management\Form Inventory\ProductManagmentForm.Designer.cs">
       <DependentUpon>ProductManagmentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Bilal\Form Inventory\StockViewForm.cs">
+    <Compile Include="Inventory management\Form Inventory\StockViewForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Bilal\Form Inventory\StockViewForm.Designer.cs">
+    <Compile Include="Inventory management\Form Inventory\StockViewForm.Designer.cs">
       <DependentUpon>StockViewForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Bilal\Management\Category.cs" />
-    <Compile Include="Bilal\Management\CategoryManager.cs" />
-    <Compile Include="Bilal\Management\Product.cs" />
-    <Compile Include="Bilal\Management\ProductMannger.cs" />
-    <Compile Include="Bilal\ValidationAndRegex\CategoryValidation.cs" />
-    <Compile Include="Bilal\ValidationAndRegex\ProductValidation.cs" />
-    <Compile Include="Omar\Excptions\AcountDisableException.cs" />
-    <Compile Include="Omar\Excptions\FatherExceptions.cs" />
-    <Compile Include="Omar\Excptions\UserNameAlreadyExiste.cs" />
-    <Compile Include="Omar\Excptions\UserNameORPasswordEmptyException.cs" />
-    <Compile Include="Omar\Excptions\UserNotFoundException.cs" />
-    <Compile Include="Omar\Forms Admin\Form_AccountManagement.cs">
+    <Compile Include="Inventory management\Management\Category.cs" />
+    <Compile Include="Inventory management\Management\CategoryManager.cs" />
+    <Compile Include="Inventory management\Management\Product.cs" />
+    <Compile Include="Inventory management\Management\ProductMannger.cs" />
+    <Compile Include="Inventory management\ValidationAndRegex\CategoryValidation.cs" />
+    <Compile Include="Inventory management\ValidationAndRegex\ProductValidation.cs" />
+    <Compile Include="Admin System\Excptions\AcountDisableException.cs" />
+    <Compile Include="Admin System\Excptions\FatherExceptions.cs" />
+    <Compile Include="Admin System\Excptions\UserNameAlreadyExiste.cs" />
+    <Compile Include="Admin System\Excptions\UserNameORPasswordEmptyException.cs" />
+    <Compile Include="Admin System\Excptions\UserNotFoundException.cs" />
+    <Compile Include="Admin System\Forms Admin\Form_AccountManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Omar\Forms Admin\Form_AccountManagement.Designer.cs">
+    <Compile Include="Admin System\Forms Admin\Form_AccountManagement.Designer.cs">
       <DependentUpon>Form_AccountManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="Omar\Forms Admin\Form_CreateAccount.cs">
+    <Compile Include="Admin System\Forms Admin\Form_CreateAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Omar\Forms Admin\Form_CreateAccount.Designer.cs">
+    <Compile Include="Admin System\Forms Admin\Form_CreateAccount.Designer.cs">
       <DependentUpon>Form_CreateAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="Omar\Forms Admin\Form_DashboardAdmin.cs">
+    <Compile Include="Admin System\Forms Admin\Form_DashboardAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Omar\Forms Admin\Form_DashboardAdmin.Designer.cs">
+    <Compile Include="Admin System\Forms Admin\Form_DashboardAdmin.Designer.cs">
       <DependentUpon>Form_DashboardAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Omar\Forms Admin\Form_EditAccount.cs">
+    <Compile Include="Admin System\Forms Admin\Form_EditAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Omar\Forms Admin\Form_EditAccount.Designer.cs">
+    <Compile Include="Admin System\Forms Admin\Form_EditAccount.Designer.cs">
       <DependentUpon>Form_EditAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="Omar\Forms Admin\Form_LogIN.cs">
+    <Compile Include="Admin System\Forms Admin\Form_LogIN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Omar\Forms Admin\Form_LogIN.Designer.cs">
+    <Compile Include="Admin System\Forms Admin\Form_LogIN.Designer.cs">
       <DependentUpon>Form_LogIN.cs</DependentUpon>
     </Compile>
-    <Compile Include="Omar\JsonFileStorage.cs" />
-    <Compile Include="Omar\Users\LoadUserGrid.cs" />
-    <Compile Include="Omar\Users\UserRole___Permissions.cs" />
-    <Compile Include="Omar\Users\Users.cs" />
-    <Compile Include="Omar\Users\UserService.cs" />
-    <Compile Include="Omar\Users\User_AuthService.cs" />
-    <Compile Include="Omar\Validation &amp; Regex\HashingFromPassword.cs" />
-    <Compile Include="Omar\Validation &amp; Regex\PasswordHelper.cs" />
-    <Compile Include="Omar\Validation &amp; Regex\PlaceholderHelper.cs" />
-    <Compile Include="Omar\Validation &amp; Regex\Regex.cs" />
+    <Compile Include="Admin System\JsonFileStorage.cs" />
+    <Compile Include="Admin System\Users\LoadUserGrid.cs" />
+    <Compile Include="Admin System\Users\UserRole___Permissions.cs" />
+    <Compile Include="Admin System\Users\Users.cs" />
+    <Compile Include="Admin System\Users\UserService.cs" />
+    <Compile Include="Admin System\Users\User_AuthService.cs" />
+    <Compile Include="Admin System\Validation &amp; Regex\HashingFromPassword.cs" />
+    <Compile Include="Admin System\Validation &amp; Regex\PasswordHelper.cs" />
+    <Compile Include="Admin System\Validation &amp; Regex\PlaceholderHelper.cs" />
+    <Compile Include="Admin System\Validation &amp; Regex\Regex.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Ahmad\FormSales\CartForm.resx">
+    <EmbeddedResource Include="Sales_Man management\FormSales\CartForm.resx">
       <DependentUpon>CartForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ahmad\FormSales\Form_DashboardSalse.resx">
+    <EmbeddedResource Include="Sales_Man management\FormSales\Form_DashboardSalse.resx">
       <DependentUpon>Form_DashboardSalse.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ahmad\FormSales\InvoiceForm.resx">
+    <EmbeddedResource Include="Sales_Man management\FormSales\InvoiceForm.resx">
       <DependentUpon>InvoiceForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ahmad\FormSales\OrderForm.resx">
+    <EmbeddedResource Include="Sales_Man management\FormSales\OrderForm.resx">
       <DependentUpon>OrderForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ahmad\FormSales\ReturnForm.resx">
+    <EmbeddedResource Include="Sales_Man management\FormSales\ReturnForm.resx">
       <DependentUpon>ReturnForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Bilal\Form Inventory\CategoryManagementForm.resx">
+    <EmbeddedResource Include="Inventory management\Form Inventory\CategoryManagementForm.resx">
       <DependentUpon>CategoryManagementForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Bilal\Form Inventory\InventoryDashboardForm.resx">
+    <EmbeddedResource Include="Inventory management\Form Inventory\InventoryDashboardForm.resx">
       <DependentUpon>InventoryDashboardForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Bilal\Form Inventory\ProductManagmentForm.resx">
+    <EmbeddedResource Include="Inventory management\Form Inventory\ProductManagmentForm.resx">
       <DependentUpon>ProductManagmentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Bilal\Form Inventory\StockViewForm.resx">
+    <EmbeddedResource Include="Inventory management\Form Inventory\StockViewForm.resx">
       <DependentUpon>StockViewForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Omar\Forms Admin\Form_AccountManagement.resx">
+    <EmbeddedResource Include="Admin System\Forms Admin\Form_AccountManagement.resx">
       <DependentUpon>Form_AccountManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Omar\Forms Admin\Form_CreateAccount.resx">
+    <EmbeddedResource Include="Admin System\Forms Admin\Form_CreateAccount.resx">
       <DependentUpon>Form_CreateAccount.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Omar\Forms Admin\Form_DashboardAdmin.resx">
+    <EmbeddedResource Include="Admin System\Forms Admin\Form_DashboardAdmin.resx">
       <DependentUpon>Form_DashboardAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Omar\Forms Admin\Form_EditAccount.resx">
+    <EmbeddedResource Include="Admin System\Forms Admin\Form_EditAccount.resx">
       <DependentUpon>Form_EditAccount.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Omar\Forms Admin\Form_LogIN.resx">
+    <EmbeddedResource Include="Admin System\Forms Admin\Form_LogIN.resx">
       <DependentUpon>Form_LogIN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

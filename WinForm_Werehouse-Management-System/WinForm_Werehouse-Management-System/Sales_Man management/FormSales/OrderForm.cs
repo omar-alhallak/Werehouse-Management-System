@@ -28,6 +28,10 @@ namespace WinForm_Werehouse_Management_System
             btnShow.FlatAppearance.BorderSize = 0;          
             btnShow.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnShow.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            if (Program.LogedINUser != null)
+            {
+                label5.Text = "Welcoom " + Program.LogedINUser.FullName;
+            }
         }
 
         private void btnShow_Click(object sender, EventArgs e)
@@ -99,17 +103,17 @@ namespace WinForm_Werehouse_Management_System
             this.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void OrderForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             if (Application.OpenForms.Count == 0)
             {
                 Application.Exit();
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

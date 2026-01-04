@@ -83,13 +83,6 @@ namespace WinForm_Werehouse_Management_System
             this.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-  
-
         private void ReturnForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             if(Application.OpenForms.Count==0)
@@ -101,6 +94,15 @@ namespace WinForm_Werehouse_Management_System
         private void ReturnForm_Load(object sender, EventArgs e)
         {
             PlaceholderHelper.PlaceholderFromTextBox(txtId,"ID");
+            if (Program.LogedINUser != null)
+            {
+                label5.Text = "Welcoom " + Program.LogedINUser.FullName;
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

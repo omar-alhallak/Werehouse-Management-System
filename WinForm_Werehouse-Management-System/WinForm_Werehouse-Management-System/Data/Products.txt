@@ -21,7 +21,7 @@
     "CategoryName": "phone",
     "Cost": 1500.0,
     "UnitPrice": 2000.0,
-    "Stock": 4
+    "Stock": 2
   },
   {
     "Id": 4,
@@ -29,7 +29,7 @@
     "CategoryName": "fruits",
     "Cost": 10.0,
     "UnitPrice": 12.0,
-    "Stock": 110
+    "Stock": 105
   },
   {
     "Id": 5,
