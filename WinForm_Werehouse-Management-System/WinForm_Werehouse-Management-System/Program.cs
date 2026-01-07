@@ -13,7 +13,7 @@ namespace WinForm_Werehouse_Management_System
         /// The main entry point for the application.
         /// </summary>
 
-        public static Users LogedINUser;
+        public static User LogedINUser;
 
         [STAThread]
         static void Main()

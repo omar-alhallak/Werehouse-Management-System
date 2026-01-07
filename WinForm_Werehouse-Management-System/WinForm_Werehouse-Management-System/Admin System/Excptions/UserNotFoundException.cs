@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace WinForm_Werehouse_Management_System.Excptions
 {
-    public class UserNotFoundException : FatherExceptions
+    public class UserNotFoundException : Exception
     {
-        public UserNotFoundException() : base("User not found.")
-        {
-
-        }
+        public UserNotFoundException() : base("User not found."){ }
     }
 }

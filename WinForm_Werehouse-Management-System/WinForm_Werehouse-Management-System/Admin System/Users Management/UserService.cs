@@ -10,23 +10,23 @@ namespace WinForm_Werehouse_Management_System
 {
     public sealed class UserService
     {
-        private readonly JsonFileStorage<Users> storage;
-        private List<Users> users;
+        private readonly JsonFileStorage<User> storage;
+        private List<User> users;
 
         public UserService()
         {
-            storage = new JsonFileStorage<Users>("Users.txt");
+            storage = new JsonFileStorage<User>("Users.txt");
             users = storage.Load();
         }
 
-        public List<Users> GetAllUsers()
+        public List<User> GetAllUsers()
         {
             users = storage.Load();
             return users.ToList();
         }
 
         // البحث عن مستخدم عن طريق UserName
-        public Users FindByUsername(string username)
+        public User FindByUsername(string username)
         {
             if (string.IsNullOrWhiteSpace(username))
                 return null;
@@ -37,7 +37,7 @@ namespace WinForm_Werehouse_Management_System
         }
 
         // إضافة مستخدم جديد مع كلمة مرور
-        public void AddUser(Users user, string plainPassword)
+        public void AddUser(User user, string plainPassword)
         {
             if (user == null)
                 throw new ArgumentNullException(nameof(user));
@@ -52,14 +52,13 @@ namespace WinForm_Werehouse_Management_System
             user.Id = nextId;
 
             user.PasswordHash = HashingFromPassword.HashPassword(plainPassword);
-            user.IsActive = true;
-
+           
             users.Add(user);
             Save();
         }
 
         // (تعديل بيانات المستخدم (الاسم الكامل، الصلاحية، الحالة
-        public void UpdateUser(Users updatedUser)
+        public void UpdateUser(User updatedUser)
         {
             if (updatedUser == null)
                 throw new ArgumentNullException(nameof(updatedUser));

@@ -7,11 +7,8 @@ using WinForm_Werehouse_Management_System.Excptions;
 
 namespace WinForm_Werehouse_Management_System.Omar.Excptions
 {
-    public class AcountDisableException : FatherExceptions
+    public class AcountDisableException : Exception
     {
-        public AcountDisableException() : base("_ هذا الحساب معطل.")
-        {
-
-        }
+        public AcountDisableException() : base("_ هذا الحساب معطل.")  { }
     }
 }

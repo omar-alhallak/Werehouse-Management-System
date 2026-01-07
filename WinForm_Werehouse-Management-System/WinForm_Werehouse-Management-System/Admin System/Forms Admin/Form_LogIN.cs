@@ -25,7 +25,7 @@ namespace WinForm_Werehouse_Management_System
             try
             {
                 var auth = new User_AuthService();
-                Users loggedUser = auth.Login(txtUserName.Text, txtPassword.Text);
+                User loggedUser = auth.Login(txtUserName.Text, txtPassword.Text);
 
                 Program.LogedINUser = loggedUser;
 

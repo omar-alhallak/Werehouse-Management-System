@@ -93,7 +93,7 @@ namespace WinForm_Werehouse_Management_System
                 (UserRole)Enum.Parse(typeof(UserRole), selectedText);
 
             // إنشاء المستخدم  
-            var user = new Users
+            var user = new User
             {
                 UserName = txtUserName.Text.Trim(),
                 FullName = txtFullName.Text.Trim(),

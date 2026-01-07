@@ -119,7 +119,6 @@
     <Compile Include="Inventory management\ValidationAndRegex\CategoryValidation.cs" />
     <Compile Include="Inventory management\ValidationAndRegex\ProductValidation.cs" />
     <Compile Include="Admin System\Excptions\AcountDisableException.cs" />
-    <Compile Include="Admin System\Excptions\FatherExceptions.cs" />
     <Compile Include="Admin System\Excptions\UserNameAlreadyExiste.cs" />
     <Compile Include="Admin System\Excptions\UserNameORPasswordEmptyException.cs" />
     <Compile Include="Admin System\Excptions\UserNotFoundException.cs" />
@@ -154,11 +153,11 @@
       <DependentUpon>Form_LogIN.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin System\JsonFileStorage.cs" />
-    <Compile Include="Admin System\Users\LoadUserGrid.cs" />
-    <Compile Include="Admin System\Users\UserRole___Permissions.cs" />
-    <Compile Include="Admin System\Users\Users.cs" />
-    <Compile Include="Admin System\Users\UserService.cs" />
-    <Compile Include="Admin System\Users\User_AuthService.cs" />
+    <Compile Include="Admin System\Users Management\LoadUserGrid.cs" />
+    <Compile Include="Admin System\Users Management\UserRole.cs" />
+    <Compile Include="Admin System\Users Management\User.cs" />
+    <Compile Include="Admin System\Users Management\UserService.cs" />
+    <Compile Include="Admin System\Users Management\User_AuthService.cs" />
     <Compile Include="Admin System\Validation &amp; Regex\HashingFromPassword.cs" />
     <Compile Include="Admin System\Validation &amp; Regex\PasswordHelper.cs" />
     <Compile Include="Admin System\Validation &amp; Regex\PlaceholderHelper.cs" />

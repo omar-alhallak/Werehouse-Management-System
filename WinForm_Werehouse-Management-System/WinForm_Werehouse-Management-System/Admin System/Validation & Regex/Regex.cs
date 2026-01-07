@@ -20,7 +20,7 @@ namespace WinForm_Werehouse_Management_System
 
             const string pattern = @"^[a-zA-Z0-9\-_]{4,15}$";
 
-            if (string.IsNullOrEmpty(userName)||userName== "UserName")
+            if (string.IsNullOrEmpty(userName) || userName == "UserName")
             {
                 error = "_ أسم المستخدم لا يمكن أن يكون فارغ.";
                 return false;
@@ -42,7 +42,7 @@ namespace WinForm_Werehouse_Management_System
             // يسمح فقط بأستخدتم أحرف أجنبية
             // حد الأقصى للمحارف 30
             // حد أقل 4 محارف
-            error = null;  
+            error = null;
 
             if (string.IsNullOrWhiteSpace(fullName) || fullName == "Full Name")
             {

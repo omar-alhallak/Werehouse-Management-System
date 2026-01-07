@@ -13,9 +13,9 @@ namespace WinForm_Werehouse_Management_System
 
     public partial class Form_EditAccount : Form
     {
-        private readonly Users users;
+        private readonly User users;
 
-        public Form_EditAccount(Users user)
+        public Form_EditAccount(User user)
         {
             InitializeComponent();
             users = user ?? throw new ArgumentException(nameof(user));
@@ -112,11 +112,7 @@ namespace WinForm_Werehouse_Management_System
                     return;
                 }
     
-                var q = MessageBox.Show(
-                    "هل تريد بالتأكيد تغيير كلمة السر لهذا الحساب؟",
-                    "Confirm :",
-                    MessageBoxButtons.YesNo,
-                    MessageBoxIcon.Question);
+                var q = MessageBox.Show("هل تريد بالتأكيد تغيير كلمة السر لهذا الحساب؟","Confirm :",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
 
                 if (q == DialogResult.No)
                 {

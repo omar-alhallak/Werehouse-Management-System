@@ -18,7 +18,7 @@ namespace WinForm_Werehouse_Management_System
             InitializeComponent();
         }
  
-        private void LoadUsers(List<Users> source = null)
+        private void LoadUsers(List<User> source = null)
         {
             var users = source ?? userserver1.GetAllUsers();
 

@@ -58,7 +58,7 @@ namespace WinForm_Werehouse_Management_System.Omar
             File.WriteAllText(filePath, json);
         }
 
-        public string FilePath => filePath;
+        //public string FilePath => filePath;
 
         private void EnsureFileExists()
         {

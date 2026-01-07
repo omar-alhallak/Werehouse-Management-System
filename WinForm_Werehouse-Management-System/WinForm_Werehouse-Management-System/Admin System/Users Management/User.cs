@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WinForm_Werehouse_Management_System
+﻿namespace WinForm_Werehouse_Management_System
 {
-    public class Users
+    public class User
     {
         public int Id { get; set; }
 
@@ -20,7 +14,7 @@ namespace WinForm_Werehouse_Management_System
 
         public bool IsActive { get; set; }
 
-        public Users()
+        public User()
         {
             IsActive = true;
         }

@@ -8,7 +8,7 @@ namespace WinForm_Werehouse_Management_System
 {
     public static class LoadUserGrid
     {
-        public static List<object> BuildGridData(List<Users> users)
+        public static List<object> BuildGridData(List<User> users)
         {
             return users.Select(u => new
             {

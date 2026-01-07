@@ -30,5 +30,13 @@
     "FullName": "Ahmad az adeen",
     "Role": 1,
     "IsActive": false
+  },
+  {
+    "Id": 104,
+    "UserName": "Omar223",
+    "PasswordHash": "100000.xMFuPPAKU6nkW3iiMF209A==.YQiSaEHc4cXJJhy3N5Bc3C1ozw7H0oQM9XxMaI50BDM=",
+    "FullName": "Omar Alhallak",
+    "Role": 0,
+    "IsActive": true
   }
 ]

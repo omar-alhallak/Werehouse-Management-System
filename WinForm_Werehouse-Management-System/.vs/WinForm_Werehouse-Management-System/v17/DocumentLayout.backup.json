@@ -3,15 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\Omar alhallak\\source\\repos\\Werehouse-Management-System\\WinForm_Werehouse-Management-System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3BB35BC1-9522-41F5-9ED9-AA036B7CDC9A}|WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System.csproj|c:\\users\\omar alhallak\\source\\repos\\werehouse-management-system\\winform_werehouse-management-system\\winform_werehouse-management-system\\sales_man management\\formsales\\orderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BB35BC1-9522-41F5-9ED9-AA036B7CDC9A}|WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System.csproj|solutionrelative:winform_werehouse-management-system\\sales_man management\\formsales\\orderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3BB35BC1-9522-41F5-9ED9-AA036B7CDC9A}|WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System.csproj|c:\\users\\omar alhallak\\source\\repos\\werehouse-management-system\\winform_werehouse-management-system\\winform_werehouse-management-system\\data\\users.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3BB35BC1-9522-41F5-9ED9-AA036B7CDC9A}|WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System.csproj|solutionrelative:winform_werehouse-management-system\\data\\users.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BB35BC1-9522-41F5-9ED9-AA036B7CDC9A}|WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System.csproj|c:\\users\\omar alhallak\\source\\repos\\werehouse-management-system\\winform_werehouse-management-system\\winform_werehouse-management-system\\sales_man management\\formsales\\orderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{3BB35BC1-9522-41F5-9ED9-AA036B7CDC9A}|WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System.csproj|solutionrelative:winform_werehouse-management-system\\sales_man management\\formsales\\orderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BB35BC1-9522-41F5-9ED9-AA036B7CDC9A}|WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System.csproj|c:\\users\\omar alhallak\\source\\repos\\werehouse-management-system\\winform_werehouse-management-system\\winform_werehouse-management-system\\admin system\\forms admin\\form_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3BB35BC1-9522-41F5-9ED9-AA036B7CDC9A}|WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System.csproj|C:\\Users\\Omar alhallak\\source\\repos\\Werehouse-Management-System\\WinForm_Werehouse-Management-System\\winform_werehouse-management-system\\admin system\\forms admin\\form_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3BB35BC1-9522-41F5-9ED9-AA036B7CDC9A}|WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System.csproj|solutionrelative:winform_werehouse-management-system\\admin system\\forms admin\\form_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -31,31 +27,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OrderForm.cs",
-              "DocumentMoniker": "C:\\Users\\Omar alhallak\\source\\repos\\Werehouse-Management-System\\WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System\\Sales_Man management\\FormSales\\OrderForm.cs",
-              "RelativeDocumentMoniker": "WinForm_Werehouse-Management-System\\Sales_Man management\\FormSales\\OrderForm.cs",
-              "ToolTip": "C:\\Users\\Omar alhallak\\source\\repos\\Werehouse-Management-System\\WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System\\Sales_Man management\\FormSales\\OrderForm.cs*",
-              "RelativeToolTip": "WinForm_Werehouse-Management-System\\Sales_Man management\\FormSales\\OrderForm.cs*",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAwwBgAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T11:23:02.27Z",
+              "Title": "Users.txt",
+              "DocumentMoniker": "C:\\Users\\Omar alhallak\\source\\repos\\Werehouse-Management-System\\WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System\\Data\\Users.txt",
+              "RelativeDocumentMoniker": "WinForm_Werehouse-Management-System\\Data\\Users.txt",
+              "ToolTip": "C:\\Users\\Omar alhallak\\source\\repos\\Werehouse-Management-System\\WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System\\Data\\Users.txt*",
+              "RelativeToolTip": "WinForm_Werehouse-Management-System\\Data\\Users.txt*",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-01-07T20:30:53.75Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "OrderForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Omar alhallak\\source\\repos\\Werehouse-Management-System\\WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System\\Sales_Man management\\FormSales\\OrderForm.cs",
-              "RelativeDocumentMoniker": "WinForm_Werehouse-Management-System\\Sales_Man management\\FormSales\\OrderForm.cs",
-              "ToolTip": "C:\\Users\\Omar alhallak\\source\\repos\\Werehouse-Management-System\\WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System\\Sales_Man management\\FormSales\\OrderForm.cs [Design]*",
-              "RelativeToolTip": "WinForm_Werehouse-Management-System\\Sales_Man management\\FormSales\\OrderForm.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-07T11:22:59.317Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Form_LogIN.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Omar alhallak\\source\\repos\\Werehouse-Management-System\\WinForm_Werehouse-Management-System\\WinForm_Werehouse-Management-System\\Admin System\\Forms Admin\\Form_LogIN.cs",
               "RelativeDocumentMoniker": "WinForm_Werehouse-Management-System\\Admin System\\Forms Admin\\Form_LogIN.cs",
