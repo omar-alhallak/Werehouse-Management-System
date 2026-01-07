@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinForm_Werehouse_Management_System.Exceptions;
 
 namespace WinForm_Werehouse_Management_System
 {
@@ -117,14 +118,17 @@ namespace WinForm_Werehouse_Management_System
 
             // السعر
             decimal price;
-            decimal.TryParse(txtPrice.Text.Trim(), out price);
+            if (!decimal.TryParse(txtPrice.Text.Trim(), out price))
+                throw new ProductException("يجب ان تكون السعر ارقام");
             // الكلفة
             decimal cost;
-            decimal.TryParse(txtProductCost.Text.Trim(), out cost);
+            if(!decimal.TryParse(txtProductCost.Text.Trim(), out cost))
+                throw new ProductException("يجب ان تكون الكلفة ارقام");
 
             // الكمية
             int stock;
-            int.TryParse(txtQuantity.Text.Trim(), out stock);
+            if(!int.TryParse(txtQuantity.Text.Trim(), out stock))
+                throw new ProductException("يجب ان تكون الكمية ارقام");
 
             Product product = new Product
             {
@@ -178,11 +182,11 @@ namespace WinForm_Werehouse_Management_System
         {
           
         
-            // 1 إذا كبسنا على الهيدر (العناوين فوق) ما نعمل شي
+            //  إذا كبسنا على الهيدر  ما نعمل شي
             if (e.RowIndex < 0)
                 return;
 
-            // نحصل على الصف الذي نقرنا عليه
+            // ناخد الصف يلي كبسنا عليه
             var row = dgvProducts.Rows[e.RowIndex];
 
             if (row.Cells["colId"].Value == null)
@@ -330,6 +334,5 @@ namespace WinForm_Werehouse_Management_System
             var result = productManager.Search(text);
             FillProductGrid(result);
         }
-
     }
 }

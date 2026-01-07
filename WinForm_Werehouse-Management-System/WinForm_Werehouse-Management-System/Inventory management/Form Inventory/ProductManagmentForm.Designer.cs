@@ -72,45 +72,51 @@
             this.panelLeft.Controls.Add(this.lbProductName);
             this.panelLeft.Controls.Add(this.cmbCategory);
             this.panelLeft.Controls.Add(this.label1);
-            this.panelLeft.Location = new System.Drawing.Point(15, 84);
+            this.panelLeft.Location = new System.Drawing.Point(13, 68);
+            this.panelLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(360, 419);
+            this.panelLeft.Size = new System.Drawing.Size(309, 341);
             this.panelLeft.TabIndex = 0;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(19, 65);
+            this.panel1.Location = new System.Drawing.Point(16, 53);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(327, 1);
+            this.panel1.Size = new System.Drawing.Size(280, 1);
             this.panel1.TabIndex = 10;
             // 
             // txtProductCost
             // 
-            this.txtProductCost.Location = new System.Drawing.Point(152, 136);
+            this.txtProductCost.Location = new System.Drawing.Point(130, 110);
+            this.txtProductCost.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtProductCost.Name = "txtProductCost";
-            this.txtProductCost.Size = new System.Drawing.Size(171, 24);
+            this.txtProductCost.Size = new System.Drawing.Size(147, 20);
             this.txtProductCost.TabIndex = 9;
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(152, 185);
+            this.txtPrice.Location = new System.Drawing.Point(130, 150);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(171, 24);
+            this.txtPrice.Size = new System.Drawing.Size(147, 20);
             this.txtPrice.TabIndex = 8;
             // 
             // txtQuantity
             // 
-            this.txtQuantity.Location = new System.Drawing.Point(169, 233);
+            this.txtQuantity.Location = new System.Drawing.Point(145, 189);
+            this.txtQuantity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.Size = new System.Drawing.Size(171, 24);
+            this.txtQuantity.Size = new System.Drawing.Size(147, 20);
             this.txtQuantity.TabIndex = 7;
             // 
             // txtProductName
             // 
-            this.txtProductName.Location = new System.Drawing.Point(152, 91);
+            this.txtProductName.Location = new System.Drawing.Point(130, 74);
+            this.txtProductName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtProductName.Name = "txtProductName";
-            this.txtProductName.Size = new System.Drawing.Size(171, 24);
+            this.txtProductName.Size = new System.Drawing.Size(147, 20);
             this.txtProductName.TabIndex = 6;
             // 
             // lbQuantity
@@ -118,9 +124,9 @@
             this.lbQuantity.BackColor = System.Drawing.Color.Transparent;
             this.lbQuantity.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbQuantity.ForeColor = System.Drawing.Color.Transparent;
-            this.lbQuantity.Location = new System.Drawing.Point(17, 234);
+            this.lbQuantity.Location = new System.Drawing.Point(15, 190);
             this.lbQuantity.Name = "lbQuantity";
-            this.lbQuantity.Size = new System.Drawing.Size(146, 25);
+            this.lbQuantity.Size = new System.Drawing.Size(125, 20);
             this.lbQuantity.TabIndex = 5;
             this.lbQuantity.Text = "Quantity in Stock :";
             // 
@@ -129,9 +135,9 @@
             this.lbPrice.BackColor = System.Drawing.Color.Transparent;
             this.lbPrice.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPrice.ForeColor = System.Drawing.Color.Transparent;
-            this.lbPrice.Location = new System.Drawing.Point(17, 186);
+            this.lbPrice.Location = new System.Drawing.Point(15, 151);
             this.lbPrice.Name = "lbPrice";
-            this.lbPrice.Size = new System.Drawing.Size(129, 25);
+            this.lbPrice.Size = new System.Drawing.Size(111, 20);
             this.lbPrice.TabIndex = 4;
             this.lbPrice.Text = "Unit Price :";
             // 
@@ -140,9 +146,9 @@
             this.lbProductCode.BackColor = System.Drawing.Color.Transparent;
             this.lbProductCode.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbProductCode.ForeColor = System.Drawing.Color.Transparent;
-            this.lbProductCode.Location = new System.Drawing.Point(17, 137);
+            this.lbProductCode.Location = new System.Drawing.Point(15, 111);
             this.lbProductCode.Name = "lbProductCode";
-            this.lbProductCode.Size = new System.Drawing.Size(129, 25);
+            this.lbProductCode.Size = new System.Drawing.Size(111, 20);
             this.lbProductCode.TabIndex = 3;
             this.lbProductCode.Text = "Unit Cost :";
             // 
@@ -151,9 +157,9 @@
             this.lbProductName.BackColor = System.Drawing.Color.Transparent;
             this.lbProductName.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbProductName.ForeColor = System.Drawing.Color.Transparent;
-            this.lbProductName.Location = new System.Drawing.Point(17, 91);
+            this.lbProductName.Location = new System.Drawing.Point(15, 74);
             this.lbProductName.Name = "lbProductName";
-            this.lbProductName.Size = new System.Drawing.Size(129, 25);
+            this.lbProductName.Size = new System.Drawing.Size(111, 20);
             this.lbProductName.TabIndex = 2;
             this.lbProductName.Text = "Product Name :";
             // 
@@ -161,9 +167,10 @@
             // 
             this.cmbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCategory.FormattingEnabled = true;
-            this.cmbCategory.Location = new System.Drawing.Point(121, 19);
+            this.cmbCategory.Location = new System.Drawing.Point(104, 15);
+            this.cmbCategory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbCategory.Name = "cmbCategory";
-            this.cmbCategory.Size = new System.Drawing.Size(225, 24);
+            this.cmbCategory.Size = new System.Drawing.Size(193, 21);
             this.cmbCategory.TabIndex = 1;
             // 
             // label1
@@ -172,9 +179,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(16, 19);
+            this.label1.Location = new System.Drawing.Point(14, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 18);
+            this.label1.Size = new System.Drawing.Size(71, 14);
             this.label1.TabIndex = 0;
             this.label1.Text = "Category :";
             // 
@@ -185,9 +192,10 @@
             this.panelRight.Controls.Add(this.label2);
             this.panelRight.Controls.Add(this.dgvProducts);
             this.panelRight.Controls.Add(this.txtProductSearch);
-            this.panelRight.Location = new System.Drawing.Point(395, 84);
+            this.panelRight.Location = new System.Drawing.Point(339, 68);
+            this.panelRight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelRight.Name = "panelRight";
-            this.panelRight.Size = new System.Drawing.Size(520, 419);
+            this.panelRight.Size = new System.Drawing.Size(446, 341);
             this.panelRight.TabIndex = 1;
             // 
             // label2
@@ -195,9 +203,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(280, 15);
+            this.label2.Location = new System.Drawing.Point(240, 12);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 24);
+            this.label2.Size = new System.Drawing.Size(50, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Search";
             // 
@@ -207,7 +215,8 @@
             this.dgvProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProducts.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dgvProducts.Location = new System.Drawing.Point(3, 45);
+            this.dgvProducts.Location = new System.Drawing.Point(3, 37);
+            this.dgvProducts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvProducts.MultiSelect = false;
             this.dgvProducts.Name = "dgvProducts";
             this.dgvProducts.ReadOnly = true;
@@ -215,16 +224,17 @@
             this.dgvProducts.RowHeadersWidth = 51;
             this.dgvProducts.RowTemplate.Height = 26;
             this.dgvProducts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProducts.Size = new System.Drawing.Size(512, 369);
+            this.dgvProducts.Size = new System.Drawing.Size(439, 300);
             this.dgvProducts.TabIndex = 0;
             this.dgvProducts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProducts_CellClick);
             // 
             // txtProductSearch
             // 
-            this.txtProductSearch.Location = new System.Drawing.Point(344, 15);
+            this.txtProductSearch.Location = new System.Drawing.Point(295, 12);
+            this.txtProductSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtProductSearch.Multiline = true;
             this.txtProductSearch.Name = "txtProductSearch";
-            this.txtProductSearch.Size = new System.Drawing.Size(171, 24);
+            this.txtProductSearch.Size = new System.Drawing.Size(147, 20);
             this.txtProductSearch.TabIndex = 2;
             this.txtProductSearch.TextChanged += new System.EventHandler(this.txtProductSearch_TextChanged);
             // 
@@ -234,9 +244,10 @@
             this.btnAddProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddProduct.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddProduct.ForeColor = System.Drawing.Color.Black;
-            this.btnAddProduct.Location = new System.Drawing.Point(12, 519);
+            this.btnAddProduct.Location = new System.Drawing.Point(10, 422);
+            this.btnAddProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddProduct.Name = "btnAddProduct";
-            this.btnAddProduct.Size = new System.Drawing.Size(147, 45);
+            this.btnAddProduct.Size = new System.Drawing.Size(126, 37);
             this.btnAddProduct.TabIndex = 2;
             this.btnAddProduct.Text = "Add Product";
             this.btnAddProduct.UseVisualStyleBackColor = false;
@@ -247,9 +258,10 @@
             this.btnUpdateProduct.BackColor = System.Drawing.Color.DarkOrange;
             this.btnUpdateProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdateProduct.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateProduct.Location = new System.Drawing.Point(168, 519);
+            this.btnUpdateProduct.Location = new System.Drawing.Point(144, 422);
+            this.btnUpdateProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdateProduct.Name = "btnUpdateProduct";
-            this.btnUpdateProduct.Size = new System.Drawing.Size(171, 45);
+            this.btnUpdateProduct.Size = new System.Drawing.Size(147, 37);
             this.btnUpdateProduct.TabIndex = 3;
             this.btnUpdateProduct.Text = "Update Product";
             this.btnUpdateProduct.UseVisualStyleBackColor = false;
@@ -260,9 +272,10 @@
             this.btnDeleteProduct.BackColor = System.Drawing.Color.IndianRed;
             this.btnDeleteProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteProduct.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteProduct.Location = new System.Drawing.Point(345, 519);
+            this.btnDeleteProduct.Location = new System.Drawing.Point(296, 422);
+            this.btnDeleteProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeleteProduct.Name = "btnDeleteProduct";
-            this.btnDeleteProduct.Size = new System.Drawing.Size(165, 45);
+            this.btnDeleteProduct.Size = new System.Drawing.Size(141, 37);
             this.btnDeleteProduct.TabIndex = 4;
             this.btnDeleteProduct.Text = "Delete Product";
             this.btnDeleteProduct.UseVisualStyleBackColor = false;
@@ -273,9 +286,10 @@
             this.btnBack.BackColor = System.Drawing.Color.SteelBlue;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(516, 519);
+            this.btnBack.Location = new System.Drawing.Point(442, 422);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(160, 45);
+            this.btnBack.Size = new System.Drawing.Size(137, 37);
             this.btnBack.TabIndex = 5;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -288,9 +302,8 @@
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.Black;
             this.lblTitle.Location = new System.Drawing.Point(0, 0);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(933, 81);
+            this.lblTitle.Size = new System.Drawing.Size(800, 66);
             this.lblTitle.TabIndex = 6;
             this.lblTitle.Text = "Product Management";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -299,10 +312,9 @@
             // 
             this.picHeaderIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
             this.picHeaderIcon.Image = global::WinForm_Werehouse_Management_System.Properties.Resources.product_chain;
-            this.picHeaderIcon.Location = new System.Drawing.Point(635, 13);
-            this.picHeaderIcon.Margin = new System.Windows.Forms.Padding(4);
+            this.picHeaderIcon.Location = new System.Drawing.Point(544, 11);
             this.picHeaderIcon.Name = "picHeaderIcon";
-            this.picHeaderIcon.Size = new System.Drawing.Size(56, 59);
+            this.picHeaderIcon.Size = new System.Drawing.Size(48, 48);
             this.picHeaderIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picHeaderIcon.TabIndex = 7;
             this.picHeaderIcon.TabStop = false;
@@ -311,18 +323,18 @@
             // 
             this.lbExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
             this.lbExit.Image = global::WinForm_Werehouse_Management_System.Properties.Resources.x_removebg_preview;
-            this.lbExit.Location = new System.Drawing.Point(4, 0);
+            this.lbExit.Location = new System.Drawing.Point(3, 0);
             this.lbExit.Name = "lbExit";
-            this.lbExit.Size = new System.Drawing.Size(40, 54);
+            this.lbExit.Size = new System.Drawing.Size(34, 44);
             this.lbExit.TabIndex = 11;
             this.lbExit.Click += new System.EventHandler(this.lbExit_Click);
             // 
             // ProductManagmentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(933, 588);
+            this.ClientSize = new System.Drawing.Size(800, 478);
             this.Controls.Add(this.lbExit);
             this.Controls.Add(this.picHeaderIcon);
             this.Controls.Add(this.lblTitle);
@@ -334,6 +346,7 @@
             this.Controls.Add(this.panelLeft);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ProductManagmentForm";

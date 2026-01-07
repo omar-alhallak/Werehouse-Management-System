@@ -5,14 +5,14 @@
     "CategoryName": "phone",
     "Cost": 10000.0,
     "UnitPrice": 15000.0,
-    "Stock": 10
+    "Stock": 9
   },
   {
     "Id": 2,
     "Name": "Note 14 pro plus",
     "CategoryName": "phone",
     "Cost": 3000.0,
-    "UnitPrice": 3400.0,
+    "UnitPrice": 4000.0,
     "Stock": 5
   },
   {
@@ -20,7 +20,7 @@
     "Name": "A17",
     "CategoryName": "phone",
     "Cost": 1500.0,
-    "UnitPrice": 2000.0,
+    "UnitPrice": 2500.0,
     "Stock": 2
   },
   {
@@ -61,7 +61,7 @@
     "CategoryName": "Vegetables",
     "Cost": 5.0,
     "UnitPrice": 8.0,
-    "Stock": 55
+    "Stock": 70
   },
   {
     "Id": 9,
@@ -86,13 +86,5 @@
     "Cost": 12.0,
     "UnitPrice": 14.0,
     "Stock": 50
-  },
-  {
-    "Id": 12,
-    "Name": "chlorine",
-    "CategoryName": "Deteragent",
-    "Cost": 8.0,
-    "UnitPrice": 12.0,
-    "Stock": 11
   }
 ]

@@ -78,7 +78,7 @@ namespace WinForm_Werehouse_Management_System
         // حذف منتج
         public void Delete(int id)
         {
-            // 1) نبحث عن المنتج المطلوب حسب الـ Id
+            // نبحث عن المنتج المطلوب حسب  Id
             Product p = null;
 
             foreach (var prod in products)
@@ -91,16 +91,16 @@ namespace WinForm_Werehouse_Management_System
             }
 
             
-            // 3) حذف المنتج من القائمة
+            //  حذف المنتج من القائمة
             products.Remove(p);
 
-            // 4) إعادة الترقيم بعد الحذف (1 .. n)
+            //  إعادة الترقيم بعد الحذف  
             for (int i = 0; i < products.Count; i++)
             {
                 products[i].Id = i + 1;
             }
 
-            // 5) حفظ القائمة بعد الترتيب في الملف
+            //  حفظ القائمة بعد الترتيب في الملف
             Save();
         }
         ////
@@ -132,6 +132,29 @@ namespace WinForm_Werehouse_Management_System
             }
 
             return result;
+        }
+
+        public void RenameCategory(string oldName, string newName)
+        {
+            if (string.IsNullOrWhiteSpace(oldName) ||string.IsNullOrWhiteSpace(newName))
+                return;
+
+            bool changed = false;
+
+            foreach (var p in products)
+            {
+                if (string.Equals(p.CategoryName, oldName,
+                                  StringComparison.OrdinalIgnoreCase))
+                {
+                    p.CategoryName = newName;
+                    changed = true;
+                }
+            }
+
+            if (changed)
+            {
+                Save();   // حتى نحدّث Products.txt
+            }
         }
         private void Save()
         {

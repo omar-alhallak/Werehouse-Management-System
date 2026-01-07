@@ -38,7 +38,7 @@ namespace WinForm_Werehouse_Management_System
         {
             cmbCategoryFilter.Items.Clear();
 
-            // أول خيار: كل التصنيفات
+            //  كل التصنيفات
             cmbCategoryFilter.Items.Add("All Categories");
 
             foreach (var c in categoryManager.GetAll())
@@ -46,7 +46,7 @@ namespace WinForm_Werehouse_Management_System
                 cmbCategoryFilter.Items.Add(c.Name);
             }
 
-            cmbCategoryFilter.SelectedIndex = 0; // All Categories
+            cmbCategoryFilter.SelectedIndex = 0; 
         }
         private void SetupStockGrid()
         {

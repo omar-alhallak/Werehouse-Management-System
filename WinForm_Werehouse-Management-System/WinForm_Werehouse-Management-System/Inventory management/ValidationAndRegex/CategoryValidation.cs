@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-
-        //خالصة 
+  
 namespace WinForm_Werehouse_Management_System
 {
     public static class CategoryValidation
@@ -13,7 +12,7 @@ namespace WinForm_Werehouse_Management_System
 
         //التحقق من صحة الاسم لازم يكون بين 2 لل30 حرف ويحتوي على حروف وارقام ومسافات وشرطات
         private static readonly Regex NameRegex =
-            new Regex(@"^[A-Za-z0-9 _-]{2,30}$");
+            new Regex(@"^[A-Za-z_-]{2,30}$");
         //التحقق من الاضافة
         public static void ValidateForAdd(string name, List<Category> categories)
         {

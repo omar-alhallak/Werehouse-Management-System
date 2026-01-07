@@ -16,5 +16,11 @@
     "CustomerName": "Omar",
     "InvoiceDate": "2026-01-04T14:21:10.634917+03:00",
     "TotalAmount": 2000.0
+  },
+  {
+    "Id": "9e7ed11d10",
+    "CustomerName": "Twer",
+    "InvoiceDate": "2026-01-06T16:28:33.7473827+03:00",
+    "TotalAmount": 2500.0
   }
 ]

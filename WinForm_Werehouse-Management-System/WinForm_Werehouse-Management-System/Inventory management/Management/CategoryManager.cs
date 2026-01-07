@@ -84,25 +84,25 @@ namespace WinForm_Werehouse_Management_System
                 }
             }
 
-            // 2) إذا ما لقيناه  منرمي استثناء
+            //  إذا ما لقيناه  منرمي استثناء
             if (!found)
                 throw new CategoryException("Category not found.");
 
-            // 3) حذف التصنيف
+            //  حذف التصنيف
             Categories.Remove(c);
 
-            // 4) إعادة الترقيم بعد الحذف
+            //  إعادة الترقيم بعد الحذف
             for (int i = 0; i < Categories.Count; i++)
             {
                 var item = Categories[i];
                 Categories[i] = new Category(i + 1, item.Name);
             }
 
-            // 5) حفظ بعد إعادة الترتيب
+            //  حفظ بعد إعادة الترتيب
             storage.Save(Categories);
         }
 
-        //
+        
         public List<Category> Search(string searchText)
         {
             // ليست لتخزين النتائج

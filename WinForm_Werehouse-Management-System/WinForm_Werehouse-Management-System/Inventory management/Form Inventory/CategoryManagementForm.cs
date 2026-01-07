@@ -15,6 +15,7 @@ namespace WinForm_Werehouse_Management_System
     {
        
         private CategoryManager Manager;
+        private ProductManager _productManager;
         public CategoryManagementForm()
         {
             InitializeComponent();
@@ -92,33 +93,39 @@ namespace WinForm_Werehouse_Management_System
         {
             SetupGrid();
             Manager = new CategoryManager();
+            _productManager = new ProductManager();
             RefreshGrid();
 
         }
-
+        
         private void btnUpdate_Click(object sender, EventArgs e)
         {
            
-            // 1) لازم المستخدم يختار صف من الجدول
+            //  لازم المستخدم يختار صف من الجدول
             if (dgvCategories.SelectedRows.Count == 0)
             {
                 MessageBox.Show("الرجاء اختيار التصنيف اولا", "تعديل التصنيف",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-
+            
             try
             {
-                // 2) أخذ الـ Id من العمود الأول (Id)
+                //أخذ  Id من العمود الأول 
                 int id = Convert.ToInt32(dgvCategories.SelectedRows[0].Cells[0].Value);
 
-                // 3) أخذ الاسم الجديد من textbox
+                string oldName=dgvCategories.CurrentRow.Cells["colName"].Value.ToString();
+
+                // أخذ الاسم الجديد  
                 string newName = txtCategoryName.Text;
 
-                // 4) نداء على المانجر (هو يعمل validation + حفظ)
+                // منادي دالة التعديل من المانجر
                 Manager.Update(id, newName);
 
-                // 5) تنظيف وتحديث
+                //
+                _productManager.RenameCategory(oldName, newName);
+
+                //  تنظيف وتحديث
                 txtCategoryName.Clear();
                 txtCategoryName.Focus();
                 RefreshGrid();
