@@ -21,6 +21,8 @@ namespace WinForm_Werehouse_Management_System
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            label3.Visible = Program.LogedINUser != null && Program.LogedINUser.Role == UserRole.Admin;
+            label4.Visible = Program.LogedINUser != null && Program.LogedINUser.Role == UserRole.Admin;
             PlaceholderHelper.PlaceholderFromTextBox(txtMonth, "MM / YYYY");
             this.ActiveControl = btnShow;
             label4.Text = "0";
