@@ -304,8 +304,8 @@ namespace WinForm_Werehouse_Management_System
                 dgvProducts.Rows.Add(
                     p.Id,
                     p.Name,
-                    p.CategoryName,
                     p.Cost,
+                    p.CategoryName,
                     p.UnitPrice,
                     p.Stock
                 );

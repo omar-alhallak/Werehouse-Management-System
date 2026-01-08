@@ -21,7 +21,7 @@
     "CategoryName": "phone",
     "Cost": 1500.0,
     "UnitPrice": 2500.0,
-    "Stock": 2
+    "Stock": 8
   },
   {
     "Id": 4,

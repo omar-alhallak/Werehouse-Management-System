@@ -114,7 +114,7 @@ namespace WinForm_Werehouse_Management_System
 
             searchText = searchText.Trim().ToLower();
 
-            // إذا البحث فاضي → رجّع كل المنتجات
+            // إذا البحث فاضي  رجّع كل المنتجات
             if (searchText == "")
             {
                 foreach (var p in products)
@@ -123,12 +123,15 @@ namespace WinForm_Werehouse_Management_System
                 return result;
             }
 
-            foreach (var p in products)
+            foreach (var c in products)
             {
-                string name = p.Name ?? "";
-                
-
+                string name = c.Name ?? "";
                 string lowerName = name.ToLower();
+
+                if (lowerName.Contains(searchText))
+                {
+                    result.Add(c);
+                }
             }
 
             return result;
